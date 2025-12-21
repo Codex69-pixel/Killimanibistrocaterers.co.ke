@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kilimanibistro Caterers - Get Your Quote</title>
+    <meta name="description" content="Contact Kilimanibistro Caterers for premium catering services in Kenya. Request a quote for corporate events, weddings, and private functions.">
+        <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
+        <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-section {
+            padding: 100px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            background: var(--gray-light);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .contact-form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 2px rgba(196, 30, 58, 0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .map-section {
+            padding: 50px 0;
+            background: var(--gray-light);
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+        
+        .faq-section {
+            padding: 100px 0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+        
+        .faq-question:hover {
+            background: var(--gray-light);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .business-hours {
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .hours-table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .hours-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .hours-table td {
+            padding: 10px 0;
+        }
+        
+        .hours-table td:first-child {
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo">
+                <span class="brand-name">Kilimani Bistro Caterers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="#quote" class="btn btn-primary">Get Quote</a>
+                <a href="tel:+254706686281" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In <span class="highlight">Touch</span></h1>
+            <p>Let's discuss how we can make your event extraordinary</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="quote">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Request a <span class="highlight">Quote</span></h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                    
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                        <input type="hidden" name="subject" value="New Quote Request - Kilimanibistro Caterers">
+                        <input type="hidden" name="from_name" value="Kilimanibistro Website">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        
+                        <!-- Honeypot for spam -->
+                        <input type="text" name="honeypot" style="display:none">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-type">Event Type *</label>
+                                <select id="event-type" name="event_type" class="form-control" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="private">Private Party</option>
+                                    <option value="conference">Conference</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <input type="number" id="guests" name="guests" class="form-control" min="10" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-date">Event Date *</label>
+                                <input type="date" id="event-date" name="event_date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget" class="form-control">
+                                    <option value="">Select Budget</option>
+                                    <option value="kes-2500-4500">KES 2,500 - 4,500 pp</option>
+                                    <option value="kes-4500-7500">KES 4,500 - 7,500 pp</option>
+                                    <option value="kes-7500-plus">KES 7,500+ pp</option>
+                                    <option value="custom">Custom Quote</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Event Details & Special Requirements</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell us about your event, dietary requirements, and any special requests..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="newsletter" checked>
+                                Subscribe to our newsletter for updates and offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact <span class="highlight">Information</span></h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Nairobi, Kenya</p>
+                            <a href="https://maps.google.com/?q=Nairobi+Kenya" target="_blank" class="btn btn-outline btn-small">Get Directions</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone Numbers</h3>
+                            <p><strong>Main:</strong> +254 706 686281</p>
+                            <p><strong>Emergency:</strong> +254 711 223344</p>
+                            <a href="tel:+254706686281" class="btn btn-outline btn-small">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p><strong>General:</strong> info@kilimanibistrocaterers.co.ke</p>
+                            <p><strong>Quotes:</strong> quotes@kilimanibistrocaterers.co.ke</p>
+                            <a href="mailto:info@kilimanibistrocaterers.co.ke" class="btn btn-outline btn-small">
+                                <i class="fas fa-envelope"></i> Send Email
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p><strong>Mon - Sun:</strong> 8:00 AM - 10:00 PM</p>
+                            <p>Emergency catering available 24/7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="#" class="social-btn"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find <span class="highlight">Us</span></h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817476015366!2d36.821865!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNiJTIDM2wrA0OScxOC43IkU!5e0!3m2!1sen!2ske!4v1623456789012!5m2!1sen!2ske" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked <span class="highlight">Questions</span></h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve in Kenya?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve the entire Nairobi metropolitan area and can cater events across Kenya with advanced notice. For locations beyond Nairobi, additional transportation fees may apply.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How far in advance should I book catering services?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for smaller events (under 50 guests) and 4-6 weeks for larger events (50+ guests). For weddings and major corporate events, we suggest booking 2-3 months in advance to secure your preferred date.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide equipment and setup?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide full setup including tables, chairs, linens, tableware, and serving equipment. Our setup packages can be customized based on your event requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you accommodate dietary restrictions?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We can accommodate various dietary requirements including vegetarian, vegan, gluten-free, halal, kosher, and specific food allergies. Please inform us of any dietary restrictions during the booking process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is your cancellation policy?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancellations made 14+ days before the event receive a full refund. Cancellations 7-14 days before receive a 50% refund. Cancellations within 7 days are non-refundable but can be rescheduled for a future date within 3 months.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <span class="brand-name">Kilimanibistro</span>
+                    </div>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#corporate">Corporate Catering</a></li>
+                        <li><a href="services.html#wedding">Wedding Catering</a></li>
+                        <li><a href="services.html#private">Private Events</a></li>
+                        <li><a href="services.html#menu">Custom Menus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 706 686281</li>
+                        <li><i class="fas fa-envelope"></i> info@kilimanibistrocaterers.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Form submission success message
+            const forms = document.querySelectorAll('.contact-form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    // Validation
+                    const requiredFields = form.querySelectorAll('[required]');
+                    let valid = true;
+                    
+                    requiredFields.forEach(field => {
+                        if (!field.value.trim()) {
+                            valid = false;
+                            field.style.borderColor = 'red';
+                        } else {
+                            field.style.borderColor = '';
+                        }
+                    });
+                    
+                    if (!valid) {
+                        e.preventDefault();
+                        alert('Please fill in all required fields.');
+                    }
+                });
+            });
+            
+            // Phone number formatting
+            const phoneInput = document.getElementById('phone');
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    if (value.startsWith('254')) {
+                        value = value.substring(3);
+                    }
+                    if (value.length > 0) {
+                        value = '+254 ' + value;
+                    }
+                    e.target.value = value;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

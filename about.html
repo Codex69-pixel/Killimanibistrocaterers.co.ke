@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kilimanibistro Caterers - Our Story & Team</title>
+    <meta name="description" content="Learn about Kilimanibistro Caterers' journey, our culinary philosophy, and the team behind Kenya's premier catering services.">
+    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
+    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/catering 2.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            color: white;
+            text-align: center;
+        }
+        
+        .story-section {
+            padding: 100px 0;
+            background-color: var(--gray-light);
+        }
+        
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .story-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .mission-section {
+            padding: 100px 0;
+            background-color: var(--primary-white);
+        }
+        
+        .mission-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .mission-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .mission-icon {
+            font-size: 40px;
+            color: var(--primary-red);
+            margin-bottom: 20px;
+        }
+        
+        .team-section {
+            padding: 100px 0;
+            background-color: var(--gray-light);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .team-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .team-info {
+            padding: 30px;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .team-social a {
+            color: var(--gray-dark);
+            transition: var(--transition);
+        }
+        
+        .team-social a:hover {
+            color: var(--primary-red);
+        }
+        
+        .stats-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Images/catering 4.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+        
+        .values-section {
+            padding: 100px 0;
+            background-color: var(--primary-white);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .value-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .story-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo">
+                <span class="brand-name">Kilimani Bistro Caterers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="Index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="contact.html#quote" class="btn btn-primary">Get Quote</a>
+                <a href="tel:+254706686281" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Our <span class="highlight">Story</span></h1>
+            <p>Delivering culinary excellence since 2015</p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>The Kilimanibistro <span class="highlight">Journey</span></h2>
+                    <p>Founded in 2015, Kilimanibistro Caterers began with a simple vision: to elevate event catering in Kenya through uncompromising quality, creativity, and service excellence.</p>
+                    <p>What started as a small team of passionate chefs has grown into one of Kenya's most trusted catering companies, serving prestigious events across the country.</p>
+                    <p>Our journey is built on a foundation of culinary innovation, attention to detail, and a deep commitment to making every event memorable through exceptional food and service.</p>
+                </div>
+                <div class="story-image">
+                    <img src="Images/cater 1.jpeg" alt="Kilimanibistro Team" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="section-title text-center">Our <span class="highlight">Philosophy</span></h2>
+            <div class="mission-cards">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To create unforgettable culinary experiences that exceed expectations through innovative menus, premium ingredients, and impeccable service.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be Kenya's premier catering service, recognized for setting industry standards in culinary excellence and event innovation.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Our Promise</h3>
+                    <p>To deliver consistent quality, attention to detail, and personalized service that makes every event uniquely memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title text-center">Meet Our <span class="highlight">Team</span></h2>
+            <p class="text-center">Passionate professionals dedicated to culinary excellence</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-image">
+                            <img src="Images/cater02.jpeg" alt="Executive Chef" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3>Chef Michael Wanjala</h3>
+                        <p class="position">Executive Chef</p>
+                        <p>15+ years of culinary experience with international training in French and Italian cuisine.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-image">
+                            <img src="Images/cater04.jpeg" alt="Event Manager" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Mwangi</h3>
+                        <p class="position">Event Director</p>
+                        <p>Specializing in large-scale event planning with 10+ years in luxury hospitality.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-image">
+                            <img src="Images/cater06.jpeg" alt="Pastry Chef" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3>Grace Akinyi</h3>
+                        <p class="position">Pastry Chef</p>
+                        <p>Expert in custom dessert creations and wedding cake design with European training.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Events Catered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3>9</h3>
+                    <p>Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title text-center">Our Core <span class="highlight">Values</span></h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-number">01</div>
+                    <h3>Excellence</h3>
+                    <p>Pursuing perfection in every dish and service detail.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">02</div>
+                    <h3>Innovation</h3>
+                    <p>Continuously evolving our culinary creations and services.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">03</div>
+                    <h3>Integrity</h3>
+                    <p>Building trust through transparency and reliability.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-number">04</div>
+                    <h3>Passion</h3>
+                    <p>Fueling our work with genuine love for culinary arts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Partner with Excellence</h2>
+            <p>Let's create something extraordinary together</p>
+            <div class="cta-buttons">
+                <a href="contact.html#quote" class="btn btn-primary btn-large">Start Planning</a>
+                <a href="tel:+254706686281" class="btn btn-outline btn-large">
+                    <i class="fas fa-phone"></i> Call Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <span class="brand-name">Kilimanibistro</span>
+                    </div>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#corporate">Corporate Catering</a></li>
+                        <li><a href="services.html#wedding">Wedding Catering</a></li>
+                        <li><a href="services.html#private">Private Events</a></li>
+                        <li><a href="services.html#menu">Custom Menus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 706 686281</li>
+                        <li><i class="fas fa-envelope"></i> info@kilimanibistrocaterers.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

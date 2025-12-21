@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Kilimanibistro Caterers - Event Portfolio</title>
+    <meta name="description" content="View Kilimanibistro's catering portfolio: corporate events, weddings, private functions showcasing our culinary excellence in Kenya.">
+    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
+    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo">
+                <span class="brand-name">Kilimani Bistro Caterers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="contact.html#quote" class="btn btn-primary">Get Quote</a>
+                <a href="tel:+254706686281" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our <span class="highlight">Gallery</span></h1>
+            <p>Showcasing our culinary excellence and memorable events</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="private">Private Events</button>
+                <button class="filter-btn" data-filter="setup">Event Setup</button>
+            </div>
+
+            <!-- Service Spotlights: explanations and differentiation -->
+            <div class="service-spotlights">
+                <h2 class="section-title">Service <span class="highlight">Spotlights</span></h2>
+                <p class="spotlights-intro">We specialise across several event types. Below are quick differences to help you choose the right service for your needs.</p>
+                <div class="spotlight-grid">
+                    <div class="spotlight-card">
+                        <h3>Corporate Catering</h3>
+                        <p class="muted">Professional, punctual, and audit-friendly catering for businesses.</p>
+                        <ul>
+                            <li>Menu flexibility for large groups and dietary restrictions</li>
+                            <li>On-time service & formal plating or buffet options</li>
+                            <li>Branded service stations, invoicing and event documentation</li>
+                            <li>Experienced teams for conferences, launches and galas</li>
+                        </ul>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <h3>Wedding Catering</h3>
+                        <p class="muted">Personalised menus and presentation to match your wedding theme.</p>
+                        <ul>
+                            <li>Custom tasting sessions and menu design</li>
+                            <li>Table-side service, plated menus or family-style options</li>
+                            <li>Wedding cake service and bespoke dessert stations</li>
+                            <li>Coordination with planners for decor and timeline</li>
+                        </ul>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <h3>Private Events</h3>
+                        <p class="muted">Intimate gatherings focused on guest experience and personal touches.</p>
+                        <ul>
+                            <li>Flexible menus for small groups and home events</li>
+                            <li>Casual to upscale service styles to fit the occasion</li>
+                            <li>Customizable add-ons like live stations and dessert bars</li>
+                            <li>Attention to dietary and family preferences</li>
+                        </ul>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <h3>Event Setup & Production</h3>
+                        <p class="muted">Logistics, rentals and staffing to make any event run smoothly.</p>
+                        <ul>
+                            <li>Full setup: furniture, linen, chafing & service equipment</li>
+                            <li>Site management and on-site production teams</li>
+                            <li>Coordination with venues and third-party vendors</li>
+                            <li>Scalable solutions for both indoor and outdoor events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery-grid">
+                <!-- Corporate Events -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="Images/catering 3.jpg" alt="Corporate Conference Catering" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Conference</h3>
+                        <p>Tech Industry Summit 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="corporate">
+                    <img src="Images/catering 2.jpg" alt="Board Meeting Lunch" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Board Meeting Lunch</h3>
+                        <p>Executive Dining Setup</p>
+                    </div>
+                </div>
+
+                <!-- Weddings -->
+                <div class="gallery-item" data-category="wedding">
+                    <img src="Images/catering 4.jpg" alt="Wedding Reception Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Wedding Reception</h3>
+                        <p>Elegant Garden Wedding</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="wedding">
+                    <img src="Images/cater06.jpeg" alt="Wedding Cake Table" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Wedding Cake Display</h3>
+                        <p>Custom 4-Tier Design</p>
+                    </div>
+                </div>
+
+                <!-- Private Events -->
+                <div class="gallery-item" data-category="private">
+                    <img src="Images/cater 1.jpeg" alt="Birthday Celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Birthday Celebration</h3>
+                        <p>Private Residence Event</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="private">
+                    <img src="Images/cater 03.jpeg" alt="Anniversary Dinner" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Anniversary Dinner</h3>
+                        <p>Intimate Celebration</p>
+                    </div>
+                </div>
+
+                <!-- Event Setup -->
+                <div class="gallery-item" data-category="setup">
+                    <img src="Images/cater04.jpeg" alt="Buffet Table Setup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Buffet Table Setup</h3>
+                        <p>Premium Service Setup</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="setup">
+                    <img src="Images/cater02.jpeg" alt="Table Setting" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Fine Dining Setup</h3>
+                        <p>Premium Table Setting</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="video-gallery">
+                <h2 class="section-title">Event <span class="highlight">Highlights</span></h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <img src="Images/cater07.jpeg" alt="Wedding Highlights" class="video-thumbnail" loading="lazy">
+                        <div class="play-button" data-video="wedding-highlights">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                            <img src="Images/cater08.jpeg" alt="Corporate Event" class="video-thumbnail" loading="lazy">
+                        <div class="play-button" data-video="corporate-event">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <!-- Client Logos Slider (placeholders) -->
+        <section class="client-logos">
+            <div class="container">
+                <h2 class="section-title">Trusted <span class="highlight">By</span></h2>
+                <div class="logo-slider" aria-label="Client logos carousel">
+                    <div class="logo-track">
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 1"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 2"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 3"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 4"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 5"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 6"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 7"></div>
+                        <div class="logo-item"><img src="Images/logo.jpeg" alt="Client placeholder 8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Placeholder -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What <span class="highlight">Clients</span> Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>“Kilimani Bistro made our corporate dinner flawless — professional team and delicious food.”</p>
+                        <cite>— Client Name, Company</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>“The wedding catering was incredible, our guests are still talking about the food!”</p>
+                        <cite>— Client Name, Bride & Groom</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>“Excellent service and attention to detail for our private event — highly recommended.”</p>
+                        <cite>— Client Name, Private Event</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <span class="brand-name">Kilimani Bistro Caterers</span>
+                    </div>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#corporate">Corporate Catering</a></li>
+                        <li><a href="services.html#wedding">Wedding Catering</a></li>
+                        <li><a href="services.html#private">Private Events</a></li>
+                        <li><a href="services.html#menu">Custom Menus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 706 686281</li>
+                        <li><i class="fas fa-envelope"></i> info@kilimanibistrocaterers.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    const filterValue = button.dataset.filter;
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.dataset.category === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-image');
+            const lightboxCaption = document.querySelector('.lightbox-caption');
+            const closeLightbox = document.querySelector('.lightbox-close');
+            const prevBtn = document.querySelector('.lightbox-prev');
+            const nextBtn = document.querySelector('.lightbox-next');
+            
+            let currentIndex = 0;
+            const images = Array.from(galleryItems);
+            
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    const imgSrc = item.querySelector('img').src;
+                    const caption = item.querySelector('.gallery-overlay').innerHTML;
+                    
+                    lightboxImg.src = imgSrc;
+                    lightboxCaption.innerHTML = caption;
+                    lightbox.classList.add('active');
+                    currentIndex = index;
+                });
+            });
+            
+            closeLightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+            
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                }
+            });
+            
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateLightbox();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateLightbox();
+            });
+            
+            function updateLightbox() {
+                const item = images[currentIndex];
+                const imgSrc = item.querySelector('img').src;
+                const caption = item.querySelector('.gallery-overlay').innerHTML;
+                
+                lightboxImg.src = imgSrc;
+                lightboxCaption.innerHTML = caption;
+            }
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            });
+            
+            // Video modal functionality
+            const videoModal = document.getElementById('videoModal');
+            const playButtons = document.querySelectorAll('.play-button');
+            const modalClose = document.querySelector('.modal-close');
+            const videoFrame = document.getElementById('videoFrame');
+            
+            // Video URLs (replace with your actual video URLs)
+            const videoUrls = {
+                'wedding-highlights': 'https://www.youtube.com/embed/YOUR_VIDEO_ID',
+                'corporate-event': 'https://www.youtube.com/embed/YOUR_VIDEO_ID'
+            };
+            
+            playButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const videoId = button.dataset.video;
+                    if (videoUrls[videoId]) {
+                        videoFrame.src = videoUrls[videoId];
+                        videoModal.style.display = 'flex';
+                    }
+                });
+            });
+            
+            modalClose.addEventListener('click', () => {
+                videoFrame.src = '';
+                videoModal.style.display = 'none';
+            });
+            
+            // Close modal when clicking outside
+            videoModal.addEventListener('click', (e) => {
+                if (e.target === videoModal) {
+                    videoFrame.src = '';
+                    videoModal.style.display = 'none';
+                }
+            });
+
+            // Make logo slider loop seamlessly by duplicating items
+            (function setupLogoSlider() {
+                const logoTrack = document.querySelector('.logo-track');
+                if (!logoTrack) return;
+
+                // Duplicate current children once to allow a continuous scroll
+                const originalChildren = Array.from(logoTrack.children);
+                originalChildren.forEach(child => {
+                    const clone = child.cloneNode(true);
+                    logoTrack.appendChild(clone);
+                });
+
+                // Adjust animation duration proportionally so speed feels consistent
+                try {
+                    const baseDuration = 20; // seconds for the original set
+                    const factor = logoTrack.children.length / originalChildren.length;
+                    const duration = Math.max(10, baseDuration * factor);
+                    logoTrack.style.animationDuration = duration + 's';
+                } catch (e) {
+                    // fail silently
+                }
+            })();
+        });
+    </script>
+</body>
+</html>
