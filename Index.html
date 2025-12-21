@@ -123,10 +123,12 @@
     <link rel="apple-touch-icon" href="Images/logo.jpeg">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" async>
     <link rel="stylesheet" href="styles.css">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts (optimized preload) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -139,16 +141,21 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html#corporate" class="dropdown-link">Corporate Catering</a>
+                        <a href="services.html#wedding" class="dropdown-link">Wedding Catering</a>
+                        <a href="services.html#private" class="dropdown-link">Private Events</a>
+                        <a href="services.html#dropoff" class="dropdown-link">Drop Off Catering</a>
+                    </div>
+                </li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="cta-buttons">
                 <a href="contact.html#quote" class="btn btn-primary">Get Quote</a>
-                <a href="tel:+254706686281" class="btn btn-secondary">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -186,6 +193,17 @@
 
     <!-- Services Preview -->
     <section class="services-preview">
+        <div class="services-bg-wrapper">
+            <img 
+                src="Images/catering-setup.jpg" 
+                alt="Premium Catering Services Background" 
+                class="services-bg-image"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="600"
+            >
+        </div>
         <div class="container">
             <div class="section-header">
                 <h2>Premium Catering <span class="highlight">Services</span></h2>
@@ -238,17 +256,17 @@
                 <div class="dishes-panel active" id="breakfast" role="tabpanel">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <img src="Images/cater 1.jpeg" alt="Hearty Breakfast Platter" loading="lazy">
+                            <img src="Images/cater%201.jpeg" alt="Hearty Breakfast Platter" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Hearty Breakfast Platter</h3>
                             <p>Assortment of breads, eggs, fresh fruits and Kenyan chai</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/cater02.jpeg" alt="Continental Breakfast" loading="lazy">
+                            <img src="Images/cater02.jpeg" alt="Continental Breakfast" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Continental Breakfast</h3>
                             <p>Fresh pastries, yogurt parfaits and seasonal fruit</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/cater 03.jpeg" alt="Hot Breakfast Station" loading="lazy">
+                            <img src="Images/cater%2003.jpeg" alt="Hot Breakfast Station" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Hot Breakfast Station</h3>
                             <p>Made-to-order omelettes, sausages and spiced potatoes</p>
                         </div>
@@ -258,17 +276,17 @@
                 <div class="dishes-panel" id="lunch" role="tabpanel">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <img src="Images/catering 2.jpg" alt="Grilled Chicken Lunch" loading="lazy">
+                            <img src="Images/catering%202.jpg" alt="Grilled Chicken Lunch" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Grilled Chicken Platter</h3>
                             <p>Herb-marinated chicken with roasted vegetables and rice</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/catering 3.jpg" alt="Vegetarian Lunch" loading="lazy">
+                            <img src="Images/catering%203.jpg" alt="Vegetarian Lunch" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Seasonal Vegetarian Bowl</h3>
                             <p>Grains, roasted vegetables, and zesty dressing</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/catering 4.jpg" alt="Signature Salad" loading="lazy">
+                            <img src="Images/catering%204.jpg" alt="Signature Salad" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Signature Salad</h3>
                             <p>Local greens, avocado, nuts, and house vinaigrette</p>
                         </div>
@@ -278,21 +296,53 @@
                 <div class="dishes-panel" id="dinner" role="tabpanel">
                     <div class="menu-grid">
                         <div class="menu-item">
-                            <img src="Images/cater04.jpeg" alt="Braised Beef Dinner" loading="lazy">
+                            <img src="Images/cater04.jpeg" alt="Braised Beef Dinner" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Braised Beef</h3>
                             <p>Slow-cooked beef with rich jus and seasonal sides</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/cater06.jpeg" alt="Seafood Main" loading="lazy">
+                            <img src="Images/cater06.jpeg" alt="Seafood Main" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Grilled Seafood</h3>
                             <p>Selection of prawns and fish with citrus butter</p>
                         </div>
                         <div class="menu-item">
-                            <img src="Images/cater07.jpeg" alt="Dessert Selection" loading="lazy">
+                            <img src="Images/cater07.jpeg" alt="Dessert Selection" loading="lazy" decoding="async" width="300" height="250">
                             <h3>Decadent Desserts</h3>
                             <p>Chef's choice plated desserts to finish the meal</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos: moved from gallery to home -->
+    <section class="client-logos">
+        <div class="container">
+            <div class="section-header compact">
+                <h2>Trusted <span class="highlight">Partners</span></h2>
+                <p>Brands and institutions that trust us with their most important occasions</p>
+            </div>
+            <div class="logo-marquee" role="region" aria-label="Client logos carousel">
+                <div class="logo-track">
+                    <div class="logo-item"><img src="Images/kcb%20logo.png" alt="KCB Group"></div>
+                    <div class="logo-item"><img src="Images/amref%20logo.png" alt="Amref Health Africa"></div>
+                    <div class="logo-item"><img src="Images/UoN_Logo.png" alt="University of Nairobi"></div>
+                    <div class="logo-item"><img src="Images/KENASlogoOne.png" alt="KENAS"></div>
+                    <div class="logo-item"><img src="Images/cms-africa-.jpg" alt="CMS Africa"></div>
+                    <div class="logo-item"><img src="Images/kavi-logo.webp" alt="KAVI"></div>
+                    <div class="logo-item"><img src="Images/sndbx%20logo.png" alt="SNDBX"></div>
+                    <div class="logo-item"><img src="Images/wilde%20digital%20Logo.jpg" alt="Wilde Digital"></div>
+
+                    <!-- duplicate set for seamless loop -->
+                    <div class="logo-item"><img src="Images/kcb%20logo.png" alt="KCB Group"></div>
+                    <div class="logo-item"><img src="Images/amref%20logo.png" alt="Amref Health Africa"></div>
+                    <div class="logo-item"><img src="Images/UoN_Logo.png" alt="University of Nairobi"></div>
+                    <div class="logo-item"><img src="Images/KENASlogoOne.png" alt="KENAS"></div>
+                    <div class="logo-item"><img src="Images/cms-africa-.jpg" alt="CMS Africa"></div>
+                    <div class="logo-item"><img src="Images/kavi-logo.webp" alt="KAVI"></div>
+                    <div class="logo-item"><img src="Images/sndbx%20logo.png" alt="SNDBX"></div>
+                    <div class="logo-item"><img src="Images/wilde%20digital%20Logo.jpg" alt="Wilde Digital"></div>
                 </div>
             </div>
         </div>
@@ -303,35 +353,69 @@
         <div class="container">
             <div class="section-header">
                 <h2>Client <span class="highlight">Testimonials</span></h2>
-                <p>What our clients say about our services</p>
+                <p>Stories from partners who trust us with their guests and reputation</p>
             </div>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <div class="testimonial-collection">
+                <div class="testimonial-card premium">
+                    <div class="testimonial-meta">
+                        <div class="company-badge">
+                            <img src="Images/kcb%20logo.png" alt="KCB Group">
+                            <span>Corporate Gala, Nairobi</span>
+                        </div>
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <p>"Kilimanibistro transformed our corporate gala into an unforgettable culinary experience. Their attention to detail was exceptional!"</p>
+                    <p class="testimonial-quote">“They handled 600 guests seamlessly. Service was warm, plated dishes arrived on cue, and our board was genuinely impressed.”</p>
                     <div class="client">
-                        <h4>Sarah Johnson</h4>
-                        <p>CEO, TechCorp Kenya</p>
+                        <h4>Jane Mwangi</h4>
+                        <p>Events Lead, KCB Group</p>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+
+                <div class="testimonial-card premium">
+                    <div class="testimonial-meta">
+                        <div class="company-badge">
+                            <img src="Images/amref%20logo.png" alt="Amref Health Africa">
+                            <span>Executive Summit</span>
+                        </div>
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <p>"Our wedding catering was flawless. The team exceeded all expectations with their professionalism and exquisite menu."</p>
+                    <p class="testimonial-quote">“Menus were mindful of dietary needs and still felt indulgent. The team anticipated every cue — truly a premium experience.”</p>
                     <div class="client">
-                        <h4>Michael & Grace</h4>
-                        <p>Wedding Clients</p>
+                        <h4>Dr. Amina Otieno</h4>
+                        <p>Program Director, Amref Health Africa</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card premium">
+                    <div class="testimonial-meta">
+                        <div class="company-badge">
+                            <img src="Images/UoN_Logo.png" alt="University of Nairobi">
+                            <span>Chancellor’s Dinner</span>
+                        </div>
+                        <div class="rating" aria-label="5 out of 5 stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">“Refined presentation, gracious service, and a calm team under pressure. Our guests felt celebrated from start to finish.”</p>
+                    <div class="client">
+                        <h4>Prof. David Njoroge</h4>
+                        <p>Events Chair, University of Nairobi</p>
                     </div>
                 </div>
             </div>
@@ -345,9 +429,6 @@
             <p>Contact us today for a personalized catering consultation</p>
             <div class="cta-buttons">
                 <a href="contact.html#quote" class="btn btn-primary btn-large">Request Quote</a>
-                <a href="tel:+254706686281" class="btn btn-outline btn-large">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
             </div>
         </div>
     </section>

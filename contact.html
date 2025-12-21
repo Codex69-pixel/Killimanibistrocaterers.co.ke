@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         .contact-hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/contact-bg.jpg');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/catering-setup.jpg');
             background-size: cover;
             background-position: center;
             padding: 150px 0 100px;
@@ -212,16 +212,21 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html#corporate" class="dropdown-link">Corporate Catering</a>
+                        <a href="services.html#wedding" class="dropdown-link">Wedding Catering</a>
+                        <a href="services.html#private" class="dropdown-link">Private Events</a>
+                        <a href="services.html#dropoff" class="dropdown-link">Drop Off Catering</a>
+                    </div>
+                </li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
             <div class="cta-buttons">
                 <a href="#quote" class="btn btn-primary">Get Quote</a>
-                <a href="tel:+254706686281" class="btn btn-secondary">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -296,16 +301,6 @@
                                 <label for="event-date">Event Date *</label>
                                 <input type="date" id="event-date" name="event_date" class="form-control" required>
                             </div>
-                            <div class="form-group">
-                                <label for="budget">Budget Range</label>
-                                <select id="budget" name="budget" class="form-control">
-                                    <option value="">Select Budget</option>
-                                    <option value="kes-2500-4500">KES 2,500 - 4,500 pp</option>
-                                    <option value="kes-4500-7500">KES 4,500 - 7,500 pp</option>
-                                    <option value="kes-7500-plus">KES 7,500+ pp</option>
-                                    <option value="custom">Custom Quote</option>
-                                </select>
-                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -349,9 +344,6 @@
                             <h3>Phone Numbers</h3>
                             <p><strong>Main:</strong> +254 706 686281</p>
                             <p><strong>Emergency:</strong> +254 711 223344</p>
-                            <a href="tel:+254706686281" class="btn btn-outline btn-small">
-                                <i class="fas fa-phone"></i> Call Now
-                            </a>
                         </div>
                     </div>
                     

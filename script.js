@@ -1,6 +1,7 @@
 // Mobile Navigation & Chat - safe guards if elements are missing
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const navDropdown = document.querySelector('.nav-item-dropdown');
 
 if (hamburger && navMenu) {
     hamburger.addEventListener('click', () => {
@@ -13,6 +14,25 @@ if (hamburger && navMenu) {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     }));
+}
+
+// Dropdown menu on mobile
+if (navDropdown) {
+    const dropdownToggle = navDropdown.querySelector('.nav-link');
+    
+    dropdownToggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            navDropdown.classList.toggle('active');
+        }
+    });
+
+    // Close dropdown when clicking a dropdown link
+    document.querySelectorAll('.dropdown-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navDropdown.classList.remove('active');
+        });
+    });
 }
 
 // Chat Widget (guarded)

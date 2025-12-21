@@ -2,61 +2,22 @@
     "name": "Kilimanibistro Caterers",
     "short_name": "Kilimanibistro",
     "description": "Premium catering services for corporate events, weddings, and private dining across Kenya",
-    "start_url": "/",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#C41E3A",
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "Images/icon-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-128x128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-152x152.png",
-            "sizes": "152x152",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-384x384.png",
-            "sizes": "384x384",
-            "type": "image/png"
-        },
-        {
-            "src": "Images/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "Images/logo.jpeg",
+            "sizes": "144x144 192x192 256x256 384x384 512x512",
+            "type": "image/jpeg",
+            "purpose": "any"
         }
     ],
     "screenshots": [
         {
-            "src": "Images/screenshot1.jpg",
-            "sizes": "1280x720",
-            "type": "image/jpeg"
-        },
-        {
-            "src": "Images/screenshot2.jpg",
+            "src": "Images/logo.jpeg",
             "sizes": "1280x720",
             "type": "image/jpeg"
         }

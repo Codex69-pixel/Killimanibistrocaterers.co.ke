@@ -21,16 +21,21 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html#corporate" class="dropdown-link">Corporate Catering</a>
+                        <a href="services.html#wedding" class="dropdown-link">Wedding Catering</a>
+                        <a href="services.html#private" class="dropdown-link">Private Events</a>
+                        <a href="services.html#dropoff" class="dropdown-link">Drop Off Catering</a>
+                    </div>
+                </li>
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="cta-buttons">
                 <a href="contact.html#quote" class="btn btn-primary">Get Quote</a>
-                <a href="tel:+254706686281" class="btn btn-secondary">
-                    <i class="fas fa-phone"></i> Call Now
-                </a>
             </div>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -92,7 +97,7 @@
             <!-- Private Events -->
             <div class="service-detail" id="private">
                 <div class="service-image">
-                    <img src="Images/cater04.jpeg" alt="Private Event Catering" loading="lazy">
+                    <img src="Images/cater04.jpeg" alt="Private Event Catering" loading="lazy" decoding="async" width="500" height="400">
                 </div>
                 <div class="service-content">
                     <h2>Private Events</h2>
@@ -108,23 +113,137 @@
                 </div>
             </div>
 
-            <!-- Menu Packages removed per request -->
+            <!-- Drop Off Catering -->
+            <div class="service-detail" id="dropoff">
+                <div class="service-content">
+                    <h2>Drop Off Catering</h2>
+                    <p>Perfect for those who want quality food without the service staff. We prepare and deliver everything ready to serve.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ready-to-Serve Meals</li>
+                        <li><i class="fas fa-check"></i> Flexible Menu Selection</li>
+                        <li><i class="fas fa-check"></i> Affordable & Budget-Friendly</li>
+                        <li><i class="fas fa-check"></i> Professional Packaging</li>
+                        <li><i class="fas fa-check"></i> Temperature Control Equipment</li>
+                    </ul>
+                    <a href="contact.html#quote" class="btn btn-primary">Request Drop Off Quote</a>
+                </div>
+                <div class="service-image">
+                    <img src="Images/catering%203.jpg" alt="Drop Off Catering Service" loading="lazy" decoding="async" width="500" height="400">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
         <div class="container">
-            <h2>Our <span class="highlight">Process</span></h2>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Consultation</h3>
-                    <p>Initial meeting to understand your needs and preferences</p>
+            <div class="section-header">
+                <h2>Why <span class="highlight">Choose Us</span></h2>
+                <p>Discover what sets Kilimanibistro apart in the catering industry</p>
+            </div>
+            <div class="choose-us-grid">
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We source only the finest ingredients and maintain the highest culinary standards in every dish we prepare.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <!-- Menu Packages section intentionally removed as requested -->
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Our experienced chefs and service staff are trained professionals dedicated to excellence in every event.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trust & Reliability</h3>
+                    <p>Trusted by Kenya's leading brands and institutions for over 9 years of consistent, dependable service.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Menus</h3>
+                    <p>Custom designed menus that reflect your vision, preferences, and cultural tastes for truly unique events.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Fresh & Natural</h3>
+                    <p>Locally sourced ingredients that are fresh, sustainable, and support Kenyan farmers and communities.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support team available around the clock to address your needs and concerns instantly.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Diverse Cuisines</h3>
+                    <p>From African heritage to International fine dining, we master a wide range of culinary traditions.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Delivery</h3>
+                    <p>Punctual, professional coordination that ensures everything arrives fresh and on schedule, every time.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Luxury Experience</h3>
+                    <p>Premium presentation and meticulous attention to detail that transforms your event into something unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <span class="brand-name">Kilimanibistro</span>
+                    </div>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>

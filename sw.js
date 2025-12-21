@@ -1,5 +1,5 @@
 // Service Worker for PWA
-const CACHE_NAME = 'kilimanibistro-v1.0';
+const CACHE_NAME = 'kilimanibistro-v1.1';
 const urlsToCache = [
     '/',
     '/index.html',
@@ -9,8 +9,7 @@ const urlsToCache = [
     '/contact.html',
     '/styles.css',
     '/script.js',
-    '/Images/logo.jpeg',
-    '/Images/logo.jpeg',
+    '/manifest.json',
     '/Images/logo.jpeg',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
     'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap'
