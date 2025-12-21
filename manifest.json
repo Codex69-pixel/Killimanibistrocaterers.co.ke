@@ -2,28 +2,85 @@
     "name": "Kilimanibistro Caterers",
     "short_name": "Kilimanibistro",
     "description": "Premium catering services for corporate events, weddings, and private dining across Kenya",
-    "start_url": "index.html",
+    "start_url": "/index.html",
+    "scope": "/",
+    "id": "/",
     "display": "standalone",
+    "display_override": ["window-controls-overlay", "standalone"],
     "background_color": "#000000",
     "theme_color": "#C41E3A",
     "orientation": "portrait-primary",
+    
     "icons": [
         {
             "src": "Images/logo.jpeg",
-            "sizes": "144x144 192x192 256x256 384x384 512x512",
+            "sizes": "any",
             "type": "image/jpeg",
             "purpose": "any"
         }
     ],
+    
     "screenshots": [
         {
-            "src": "Images/logo.jpeg",
+            "src": "Images/screenshots/mobile-home.jpg",
+            "sizes": "375x667",
+            "type": "image/jpeg",
+            "form_factor": "narrow",
+            "label": "Kilimanibistro Home Screen"
+        },
+        {
+            "src": "Images/screenshots/mobile-menu.jpg",
+            "sizes": "375x667",
+            "type": "image/jpeg",
+            "form_factor": "narrow",
+            "label": "Our Menu"
+        },
+        {
+            "src": "Images/screenshots/desktop-home.jpg",
             "sizes": "1280x720",
-            "type": "image/jpeg"
+            "type": "image/jpeg",
+            "form_factor": "wide",
+            "label": "Kilimanibistro Desktop View"
+        },
+        {
+            "src": "Images/screenshots/desktop-menu.jpg",
+            "sizes": "1280x720",
+            "type": "image/jpeg",
+            "form_factor": "wide",
+            "label": "Full Menu Display"
         }
     ],
-    "categories": ["business", "food", "lifestyle"],
+    
+    "shortcuts": [
+        {
+            "name": "View Menu",
+            "short_name": "Menu",
+            "description": "Browse our catering menu",
+            "url": "/menu.html"
+        },
+        {
+            "name": "Book Service",
+            "short_name": "Book",
+            "description": "Book catering service",
+            "url": "/booking.html"
+        },
+        {
+            "name": "Contact Us",
+            "short_name": "Contact",
+            "description": "Get in touch with our team",
+            "url": "/contact.html"
+        },
+        {
+            "name": "Special Offers",
+            "short_name": "Offers",
+            "description": "View current promotions",
+            "url": "/offers.html"
+        }
+    ],
+    
+    "categories": ["business", "food", "lifestyle", "shopping"],
     "lang": "en",
     "dir": "ltr",
-    "prefer_related_applications": false
+    "prefer_related_applications": false,
+    "related_applications": []
 }

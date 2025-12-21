@@ -1,22 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- AI Optimized SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Kilimanibistro Caterers - Event Portfolio</title>
+    
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/catering%203.jpg">
+    <link rel="preload" as="image" href="Images/catering%202.jpg">
+    <link rel="preload" as="image" href="Images/catering%204.jpg">
+    
+    <!-- Primary AI SEO Tags -->
+    <title>Gallery | Kilimanibistro Caterers - Event Portfolio in Kenya</title>
     <meta name="description" content="View Kilimanibistro's catering portfolio: corporate events, weddings, private functions showcasing our culinary excellence in Kenya.">
+    <meta name="keywords" content="catering gallery Kenya, event photos Nairobi, wedding catering pictures, corporate catering portfolio, Kilimanibistro events">
+    
+    <!-- AI Generated SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Open Graph AI Tags for Social Media -->
+    <meta property="og:title" content="Gallery | Kilimanibistro Caterers - Event Portfolio">
+    <meta property="og:description" content="Browse our catering gallery showcasing premium events across Kenya">
+    <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
+    <meta property="og:url" content="https://kilimanibistrocaterers.co.ke/gallery.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kilimanibistro Caterers">
+    <meta property="og:locale" content="en_KE">
+    
+    <!-- Twitter AI Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kilimanibistro Gallery | Event Catering Portfolio">
+    <meta name="twitter:description" content="View our premium catering gallery showcasing weddings, corporate events and private functions">
+    <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%204.jpg">
+    
+    <!-- AI Schema.org Structured Data for Gallery -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Kilimanibistro Caterers Gallery",
+        "description": "Portfolio of catering events including corporate functions, weddings, and private celebrations",
+        "url": "https://kilimanibistrocaterers.co.ke/gallery.html",
+        "image": [
+            "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
+            "https://kilimanibistrocaterers.co.ke/Images/catering%202.jpg",
+            "https://kilimanibistrocaterers.co.ke/Images/catering%204.jpg"
+        ],
+        "publisher": {
+            "@type": "Organization",
+            "name": "Kilimanibistro Caterers",
+            "url": "https://kilimanibistrocaterers.co.ke"
+        }
+    }
+    </script>
+    
+    <!-- AI Technical SEO -->
+    <link rel="canonical" href="https://kilimanibistrocaterers.co.ke/gallery.html">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
+    <meta name="author" content="Kilimanibistro Caterers">
+    <meta name="language" content="English">
+    
     <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
     <link rel="apple-touch-icon" href="Images/logo.jpeg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS for immediate image display -->
+    <style>
+    /* Ensure images don't cause layout shift */
+    .gallery-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        background-color: #f5f5f5;
+    }
+    
+    /* Dropdown styles */
+    .nav-item-dropdown {
+        position: relative;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        min-width: 200px;
+        z-index: 1000;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .dropdown-menu a {
+        display: block;
+        padding: 12px 20px;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .dropdown-menu a:hover {
+        background: #f8f8f8;
+        color: #000;
+    }
+    
+    .dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    @media (max-width: 768px) {
+        .dropdown-menu {
+            position: static;
+            box-shadow: none;
+            display: none;
+        }
+        
+        .dropdown-menu.active {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Gallery item animations */
+    .gallery-item {
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+    
+    .gallery-item.hidden {
+        opacity: 0;
+        transform: scale(0.95);
+        pointer-events: none;
+    }
+    
+    /* Lightbox styles */
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .lightbox.active {
+        display: flex;
+        opacity: 1;
+    }
+    
+    .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+    }
+    
+    .lightbox-content img {
+        max-width: 100%;
+        max-height: 80vh;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .lightbox-caption {
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0,0,0,0.7);
+    }
+    
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+    }
+    
+    .lightbox-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.2);
+        border: none;
+        color: white;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10001;
+    }
+    
+    .lightbox-prev {
+        left: 20px;
+    }
+    
+    .lightbox-next {
+        right: 20px;
+    }
+    
+    /* Video Modal */
+    .video-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.95);
+        z-index: 10000;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        position: relative;
+        width: 90%;
+        max-width: 800px;
+        background: #000;
+    }
+    
+    .modal-content iframe {
+        width: 100%;
+        height: 450px;
+    }
+    
+    .modal-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    /* Gallery overlay */
+    .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 15px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+    }
+    
+    /* Video thumbnail */
+    .video-thumbnail {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.7);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        transition: all 0.3s ease;
+    }
+    
+    .play-button:hover {
+        background: rgba(0,0,0,0.9);
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+    
+    /* Gallery filters */
+    .gallery-filters {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        border: 2px solid #333;
+        background: transparent;
+        color: #333;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+    
+    .filter-btn.active,
+    .filter-btn:hover {
+        background: #333;
+        color: white;
+    }
+    
+    /* Gallery grid */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    /* Service spotlights */
+    .service-spotlights {
+        margin: 60px 0;
+    }
+    
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .spotlight-card {
+        background: #f9f9f9;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #c9a96e;
+    }
+    
+    .spotlight-card h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .spotlight-card ul {
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+    
+    .spotlight-card li {
+        margin-bottom: 8px;
+        color: #555;
+    }
+    
+    /* Video gallery */
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .video-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .video-notice {
+        text-align: center;
+        margin-top: 20px;
+        color: #666;
+        font-style: italic;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+        
+        .spotlight-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .video-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .modal-content iframe {
+            height: 300px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .gallery-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .gallery-filters {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .filter-btn {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+    </style>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
             <div class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </div>
             <ul class="nav-menu">
@@ -120,7 +549,7 @@
             <div class="gallery-grid">
                 <!-- Corporate Events -->
                 <div class="gallery-item" data-category="corporate">
-                    <img src="Images/catering 3.jpg" alt="Corporate Conference Catering" loading="lazy">
+                    <img src="Images/catering%203.jpg" alt="Corporate Conference Catering Setup with Buffet" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Corporate Conference</h3>
                         <p>Tech Industry Summit 2024</p>
@@ -128,7 +557,7 @@
                 </div>
                 
                 <div class="gallery-item" data-category="corporate">
-                    <img src="Images/catering 2.jpg" alt="Board Meeting Lunch" loading="lazy">
+                    <img src="Images/catering%202.jpg" alt="Board Meeting Lunch Presentation" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Board Meeting Lunch</h3>
                         <p>Executive Dining Setup</p>
@@ -137,7 +566,7 @@
 
                 <!-- Weddings -->
                 <div class="gallery-item" data-category="wedding">
-                    <img src="Images/catering 4.jpg" alt="Wedding Reception Setup" loading="lazy">
+                    <img src="Images/catering%204.jpg" alt="Wedding Reception Setup with Elegant Decor" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Wedding Reception</h3>
                         <p>Elegant Garden Wedding</p>
@@ -145,7 +574,7 @@
                 </div>
                 
                 <div class="gallery-item" data-category="wedding">
-                    <img src="Images/cater06.jpeg" alt="Wedding Cake Table" loading="lazy">
+                    <img src="Images/cater06.jpeg" alt="Wedding Cake Table with Custom 4-Tier Design" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Wedding Cake Display</h3>
                         <p>Custom 4-Tier Design</p>
@@ -154,7 +583,7 @@
 
                 <!-- Private Events -->
                 <div class="gallery-item" data-category="private">
-                    <img src="Images/cater 1.jpeg" alt="Birthday Celebration" loading="lazy">
+                    <img src="Images/cater%201.jpeg" alt="Birthday Celebration Buffet Setup" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Birthday Celebration</h3>
                         <p>Private Residence Event</p>
@@ -162,7 +591,7 @@
                 </div>
                 
                 <div class="gallery-item" data-category="private">
-                    <img src="Images/cater 03.jpeg" alt="Anniversary Dinner" loading="lazy">
+                    <img src="Images/cater%2003.jpeg" alt="Anniversary Dinner Table Setting" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Anniversary Dinner</h3>
                         <p>Intimate Celebration</p>
@@ -171,7 +600,7 @@
 
                 <!-- Event Setup -->
                 <div class="gallery-item" data-category="setup">
-                    <img src="Images/cater04.jpeg" alt="Buffet Table Setup" loading="lazy">
+                    <img src="Images/cater04.jpeg" alt="Premium Buffet Table Setup with Variety" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Buffet Table Setup</h3>
                         <p>Premium Service Setup</p>
@@ -179,7 +608,7 @@
                 </div>
                 
                 <div class="gallery-item" data-category="setup">
-                    <img src="Images/cater02.jpeg" alt="Table Setting" loading="lazy">
+                    <img src="Images/cater02.jpeg" alt="Fine Dining Table Setting with Elegant Place Settings" loading="eager" width="400" height="300">
                     <div class="gallery-overlay">
                         <h3>Fine Dining Setup</h3>
                         <p>Premium Table Setting</p>
@@ -192,18 +621,19 @@
                 <h2 class="section-title">Event <span class="highlight">Highlights</span></h2>
                 <div class="video-grid">
                     <div class="video-item">
-                        <img src="Images/cater07.jpeg" alt="Wedding Highlights" class="video-thumbnail" loading="lazy">
+                        <img src="Images/cater07.jpeg" alt="Wedding Highlights Video Thumbnail" class="video-thumbnail" loading="eager" width="400" height="300">
                         <div class="play-button" data-video="wedding-highlights">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                     <div class="video-item">
-                            <img src="Images/cater08.jpeg" alt="Corporate Event" class="video-thumbnail" loading="lazy">
+                        <img src="Images/cater08.jpeg" alt="Corporate Event Highlights Video Thumbnail" class="video-thumbnail" loading="eager" width="400" height="300">
                         <div class="play-button" data-video="corporate-event">
                             <i class="fas fa-play"></i>
                         </div>
                     </div>
                 </div>
+                <p class="video-notice"><small>Note: Contact us for full event highlight videos</small></p>
             </div>
         </div>
     </section>
@@ -227,25 +657,25 @@
     <div class="video-modal" id="videoModal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
-            <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Event Highlights Video"></iframe>
         </div>
     </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
                         <span class="brand-name">Kilimani Bistro Caterers</span>
                     </div>
                     <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/kilimanibistrocaterers"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kilimanibistrocaterers"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kilimanibistro"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/kilimanibistro"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -284,10 +714,62 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
-        // Gallery Filtering
+        // Dropdown functionality
         document.addEventListener('DOMContentLoaded', function() {
+            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+            
+            dropdownItems.forEach(item => {
+                const link = item.querySelector('.nav-link');
+                const dropdown = item.querySelector('.dropdown-menu');
+                
+                // Show on hover
+                item.addEventListener('mouseenter', () => {
+                    dropdown.style.display = 'block';
+                    dropdown.style.opacity = '1';
+                    dropdown.style.visibility = 'visible';
+                    dropdown.style.transform = 'translateY(0)';
+                });
+                
+                // Hide on mouse leave
+                item.addEventListener('mouseleave', () => {
+                    dropdown.style.display = 'none';
+                    dropdown.style.opacity = '0';
+                    dropdown.style.visibility = 'hidden';
+                    dropdown.style.transform = 'translateY(-10px)';
+                });
+                
+                // Touch devices support
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const isActive = dropdown.style.display === 'block';
+                        dropdown.style.display = isActive ? 'none' : 'block';
+                        dropdown.style.opacity = isActive ? '0' : '1';
+                        dropdown.style.visibility = isActive ? 'hidden' : 'visible';
+                    }
+                });
+            });
+            
+            // Force immediate image loading
+            const images = document.querySelectorAll('.gallery-item img, .video-thumbnail');
+            images.forEach(img => {
+                if (!img.complete) {
+                    const src = img.src;
+                    const newImg = new Image();
+                    newImg.src = src;
+                    newImg.onload = () => {
+                        img.style.opacity = '1';
+                    };
+                    newImg.onerror = () => {
+                        console.log('Failed to load image:', src);
+                    };
+                } else {
+                    img.style.opacity = '1';
+                }
+            });
+            
+            // Gallery Filtering
             const filterButtons = document.querySelectorAll('.filter-btn');
             const galleryItems = document.querySelectorAll('.gallery-item');
             
@@ -305,9 +787,11 @@
                             item.style.display = 'block';
                             setTimeout(() => {
                                 item.style.opacity = '1';
+                                item.classList.remove('hidden');
                             }, 10);
                         } else {
                             item.style.opacity = '0';
+                            item.classList.add('hidden');
                             setTimeout(() => {
                                 item.style.display = 'none';
                             }, 300);
@@ -325,7 +809,7 @@
             const nextBtn = document.querySelector('.lightbox-next');
             
             let currentIndex = 0;
-            const images = Array.from(galleryItems);
+            const imagesArray = Array.from(galleryItems);
             
             galleryItems.forEach((item, index) => {
                 item.addEventListener('click', () => {
@@ -350,17 +834,17 @@
             });
             
             prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
                 updateLightbox();
             });
             
             nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % images.length;
+                currentIndex = (currentIndex + 1) % imagesArray.length;
                 updateLightbox();
             });
             
             function updateLightbox() {
-                const item = images[currentIndex];
+                const item = imagesArray[currentIndex];
                 const imgSrc = item.querySelector('img').src;
                 const caption = item.querySelector('.gallery-overlay').innerHTML;
                 
@@ -368,7 +852,7 @@
                 lightboxCaption.innerHTML = caption;
             }
             
-            // Keyboard navigation
+            // Keyboard navigation for lightbox
             document.addEventListener('keydown', (e) => {
                 if (!lightbox.classList.contains('active')) return;
                 
@@ -387,18 +871,21 @@
             const modalClose = document.querySelector('.modal-close');
             const videoFrame = document.getElementById('videoFrame');
             
-            // Video URLs (replace with your actual video URLs)
+            // Example video URLs - REPLACE WITH YOUR ACTUAL VIDEO EMBED LINKS
             const videoUrls = {
-                'wedding-highlights': 'https://www.youtube.com/embed/YOUR_VIDEO_ID',
-                'corporate-event': 'https://www.youtube.com/embed/YOUR_VIDEO_ID'
+                'wedding-highlights': 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Example video
+                'corporate-event': 'https://www.youtube.com/embed/dQw4w9WgXcQ'    // Example video
             };
             
             playButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const videoId = button.dataset.video;
                     if (videoUrls[videoId]) {
-                        videoFrame.src = videoUrls[videoId];
+                        videoFrame.src = videoUrls[videoId] + '?autoplay=1';
                         videoModal.style.display = 'flex';
+                    } else {
+                        // Fallback to showing an alert or redirecting to contact page
+                        alert('Video highlights coming soon! Please contact us for full event videos.');
                     }
                 });
             });
@@ -415,30 +902,51 @@
                     videoModal.style.display = 'none';
                 }
             });
-
-            // Make logo slider loop seamlessly by duplicating items
-            (function setupLogoSlider() {
-                const logoTrack = document.querySelector('.logo-track');
-                if (!logoTrack) return;
-
-                // Duplicate current children once to allow a continuous scroll
-                const originalChildren = Array.from(logoTrack.children);
-                originalChildren.forEach(child => {
-                    const clone = child.cloneNode(true);
-                    logoTrack.appendChild(clone);
+            
+            // Mobile menu toggle (if not in script.js)
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
                 });
-
-                // Adjust animation duration proportionally so speed feels consistent
-                try {
-                    const baseDuration = 20; // seconds for the original set
-                    const factor = logoTrack.children.length / originalChildren.length;
-                    const duration = Math.max(10, baseDuration * factor);
-                    logoTrack.style.animationDuration = duration + 's';
-                } catch (e) {
-                    // fail silently
-                }
-            })();
+                
+                // Close mobile menu when clicking on a link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+            
+            // Preload all images in background for better UX
+            const allImages = [
+                'Images/cater07.jpeg',
+                'Images/cater08.jpeg',
+                'Images/cater06.jpeg',
+                'Images/cater04.jpeg',
+                'Images/cater02.jpeg',
+                'Images/cater%201.jpeg',
+                'Images/cater%2003.jpeg'
+            ];
+            
+            allImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
         });
+        
+        // Service Worker Registration for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
     </script>
 </body>
 </html>

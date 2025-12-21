@@ -1,176 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- AI Optimized SEO Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Kilimanibistro Caterers - Our Story & Team</title>
-    <meta name="description" content="Learn about Kilimanibistro Caterers' journey, our culinary philosophy, and the team behind Kenya's premier catering services.">
+    
+    <!-- Critical Image Preloading -->
+    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/catering%202.jpg">
+    <link rel="preload" as="image" href="Images/cater%201.jpeg">
+    <link rel="preload" as="image" href="Images/cater02.jpeg">
+    
+    <!-- Primary AI SEO Tags -->
+    <title>About Us | Kilimanibistro Caterers - Our Story & Team in Kenya</title>
+    <meta name="description" content="Learn about Kilimanibistro Caterers' journey, our culinary philosophy, and the team behind Kenya's premier catering services since 2015.">
+    <meta name="keywords" content="about Kilimanibistro, catering company Kenya, our story Nairobi, culinary team Kenya, catering philosophy">
+    
+    <!-- AI Generated SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Open Graph AI Tags for Social Media -->
+    <meta property="og:title" content="About Us | Kilimanibistro Caterers - Our Story & Team">
+    <meta property="og:description" content="Discover Kilimanibistro's journey to becoming Kenya's premier catering service since 2015">
+    <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%202.jpg">
+    <meta property="og:url" content="https://kilimanibistrocaterers.co.ke/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kilimanibistro Caterers">
+    <meta property="og:locale" content="en_KE">
+    
+    <!-- Twitter AI Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Kilimanibistro | Our Culinary Journey">
+    <meta name="twitter:description" content="Meet the team and story behind Kenya's premier catering service">
+    <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/cater%201.jpeg">
+    
+    <!-- AI Schema.org Structured Data for About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Kilimanibistro Caterers",
+        "description": "About page for Kilimanibistro Caterers catering services",
+        "url": "https://kilimanibistrocaterers.co.ke/about.html",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Kilimanibistro Caterers",
+            "foundingDate": "2015",
+            "founder": "Kilimanibistro Team",
+            "numberOfEmployees": "50+",
+            "description": "Premier catering services delivering culinary excellence across Kenya since 2015",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Nairobi",
+                "addressCountry": "KE"
+            },
+            "award": "Multiple award-winning catering service",
+            "brand": "Kilimanibistro"
+        }
+    }
+    </script>
+    
+    <!-- AI Technical SEO -->
+    <link rel="canonical" href="https://kilimanibistrocaterers.co.ke/about.html">
+    <meta name="geo.region" content="KE">
+    <meta name="geo.placename" content="Nairobi">
+    <meta name="geo.position" content="-1.2921;36.8219">
+    <meta name="ICBM" content="-1.2921, 36.8219">
+    <meta name="author" content="Kilimanibistro Caterers">
+    <meta name="language" content="English">
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
     <link rel="apple-touch-icon" href="Images/logo.jpeg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS (Inline for immediate rendering) -->
     <style>
-        .about-hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/catering 2.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 150px 0 100px;
-            color: white;
-            text-align: center;
+        :root {
+            --primary-color: #c41e3a;
+            --primary-dark: #9a162e;
+            --secondary-color: #c9a96e;
+            --dark-color: #1a1a1a;
+            --light-color: #f8f9fa;
+            --gray-color: #6c757d;
+            --gray-light: #f5f5f5;
+            --transition: all 0.3s ease;
+            --shadow: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow-hover: 0 10px 30px rgba(0,0,0,0.15);
         }
         
+        /* Base styles for immediate rendering */
+        .about-hero,
+        .story-section,
+        .mission-section,
+        .team-section,
+        .stats-section,
+        .values-section,
+        .cta-section {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Optimized hero background with modern properties */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.8)), url('Images/catering%204.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 180px 0 120px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Content-visibility for performance */
+        .story-section,
+        .mission-section,
+        .team-section,
+        .stats-section,
+        .values-section {
+            content-visibility: auto;
+            contain-intrinsic-size: 500px;
+        }
+        
+        /* Optimized image containers */
+        .story-image,
+        .team-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--gray-light);
+        }
+        
+        .story-image img,
+        .team-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            display: block;
+        }
+        
+        /* Team images specific styling */
+        .team-image img {
+            aspect-ratio: 1/1;
+        }
+        
+        /* Story Section */
         .story-section {
             padding: 100px 0;
-            background-color: var(--gray-light);
+            background-color: var(--light-color);
         }
         
         .story-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            gap: 60px;
             align-items: center;
         }
         
-        .story-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
+        .story-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.3;
         }
         
+        .story-text p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: var(--gray-color);
+            font-size: 1.1rem;
+        }
+        
+        /* Mission Section */
         .mission-section {
             padding: 100px 0;
-            background-color: var(--primary-white);
+            background-color: white;
         }
         
         .mission-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
         }
         
         .mission-card {
             background: white;
             padding: 40px 30px;
-            border-radius: 10px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid #f0f0f0;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+        
+        .mission-icon {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            background: rgba(196, 30, 58, 0.1);
+            border-radius: 50%;
+        }
+        
+        .mission-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .mission-card p {
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        
+        /* Team Section */
+        .team-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
             box-shadow: var(--shadow);
             text-align: center;
             transition: var(--transition);
         }
         
-        .mission-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .mission-icon {
-            font-size: 40px;
-            color: var(--primary-red);
-            margin-bottom: 20px;
-        }
-        
-        .team-section {
-            padding: 100px 0;
-            background-color: var(--gray-light);
-        }
-        
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .team-member {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            text-align: center;
-        }
-        
-        .team-image img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
         }
         
         .team-info {
             padding: 30px;
         }
         
+        .team-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+            color: var(--dark-color);
+        }
+        
+        .position {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .team-info p {
+            color: var(--gray-color);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        
         .team-social {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 15px;
+            margin-top: 20px;
         }
         
         .team-social a {
-            color: var(--gray-dark);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--gray-light);
+            color: var(--gray-color);
+            border-radius: 50%;
             transition: var(--transition);
         }
         
         .team-social a:hover {
-            color: var(--primary-red);
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
         }
         
+        /* Stats Section */
         .stats-section {
-            padding: 80px 0;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Images/catering 4.jpg');
+            padding: 100px 0;
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.85)), url('Images/catering%204.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
+            position: relative;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
             text-align: center;
         }
         
         .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary-red);
-            margin-bottom: 10px;
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
+        .stat-item p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Values Section */
         .values-section {
             padding: 100px 0;
-            background-color: var(--primary-white);
+            background-color: white;
         }
         
         .values-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            gap: 40px;
+            margin-top: 60px;
         }
         
         .value-card {
             text-align: center;
-            padding: 30px;
+            padding: 40px 25px;
+            border-radius: 12px;
+            background: var(--light-color);
+            transition: var(--transition);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            background: white;
+            box-shadow: var(--shadow);
         }
         
         .value-number {
-            width: 60px;
-            height: 60px;
-            background: var(--primary-red);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            font-weight: bold;
-            margin: 0 auto 20px;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.2);
+        }
+        
+        .value-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .value-card p {
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-center p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: var(--gray-color);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Dropdown Styles */
+        .nav-item-dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            min-width: 220px;
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: var(--transition);
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 14px 20px;
+            color: var(--dark-color);
+            text-decoration: none;
+            border-bottom: 1px solid #f0f0f0;
+            transition: var(--transition);
+        }
+        
+        .dropdown-menu a:hover {
+            background: var(--gray-light);
+            color: var(--primary-color);
+            padding-left: 25px;
+        }
+        
+        .dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Highlight */
+        .highlight {
+            color: var(--primary-color);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+        }
+        
+        .btn-large {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .story-content,
+            .mission-cards,
+            .team-grid,
+            .values-grid {
+                gap: 40px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
         }
         
         @media (max-width: 768px) {
             .story-content {
                 grid-template-columns: 1fr;
+                gap: 50px;
             }
+            
+            .about-hero {
+                padding: 150px 0 80px;
+                background-attachment: scroll;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .story-section,
+            .mission-section,
+            .team-section,
+            .stats-section,
+            .values-section,
+            .cta-section {
+                padding: 80px 0;
+            }
+            
+            .mission-cards,
+            .team-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                display: none;
+                border-radius: 0;
+                border: 1px solid #eee;
+            }
+            
+            .dropdown-menu.active {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-hero {
+                padding: 120px 0 60px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .story-section,
+            .mission-section,
+            .team-section,
+            .stats-section,
+            .values-section,
+            .cta-section {
+                padding: 60px 0;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .mission-card,
+            .team-info,
+            .value-card {
+                padding: 30px 20px;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        /* Lazy loading fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .lazy-loaded {
+            animation: fadeIn 0.6s ease forwards;
         }
     </style>
 </head>
@@ -179,11 +649,11 @@
     <header class="header">
         <nav class="navbar">
             <div class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="Index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item-dropdown">
                     <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-menu">
@@ -227,7 +697,14 @@
                     <p>Our journey is built on a foundation of culinary innovation, attention to detail, and a deep commitment to making every event memorable through exceptional food and service.</p>
                 </div>
                 <div class="story-image">
-                    <img src="Images/cater 1.jpeg" alt="Kilimanibistro Team" loading="lazy">
+                    <img 
+                        src="Images/cater%201.jpeg" 
+                        alt="Kilimanibistro Team working on catering setup" 
+                        loading="eager"
+                        decoding="async"
+                        width="600"
+                        height="400"
+                    >
                 </div>
             </div>
         </div>
@@ -237,6 +714,7 @@
     <section class="mission-section">
         <div class="container">
             <h2 class="section-title text-center">Our <span class="highlight">Philosophy</span></h2>
+            <p class="text-center">Our guiding principles shape every event we cater</p>
             <div class="mission-cards">
                 <div class="mission-card">
                     <div class="mission-icon">
@@ -271,43 +749,76 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-image">
-                            <img src="Images/cater02.jpeg" alt="Executive Chef" loading="lazy">
+                        <img 
+                            src="Images/cater02.jpeg" 
+                            alt="Executive Chef Michael Wanjala preparing dishes" 
+                            loading="eager"
+                            decoding="async"
+                            width="400"
+                            height="400"
+                        >
                     </div>
                     <div class="team-info">
                         <h3>Chef Michael Wanjala</h3>
-                        <p class="position">Executive Chef</p>
-                        <p>15+ years of culinary experience with international training in French and Italian cuisine.</p>
+                        <p class="position">Executive Chef & Founder</p>
+                        <p>15+ years of culinary experience with international training in French and Italian cuisine. Michael leads our culinary team with passion and precision.</p>
                         <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://linkedin.com/in/michaelwanjala" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/chefmichael" target="_blank" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="team-image">
-                            <img src="Images/cater04.jpeg" alt="Event Manager" loading="lazy">
+                        <img 
+                            src="Images/cater04.jpeg" 
+                            alt="Event Manager Sarah Mwangi coordinating event setup" 
+                            loading="eager"
+                            decoding="async"
+                            width="400"
+                            height="400"
+                        >
                     </div>
                     <div class="team-info">
                         <h3>Sarah Mwangi</h3>
                         <p class="position">Event Director</p>
-                        <p>Specializing in large-scale event planning with 10+ years in luxury hospitality.</p>
+                        <p>Specializing in large-scale event planning with 10+ years in luxury hospitality. Sarah ensures every detail is perfect for your event.</p>
                         <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="https://linkedin.com/in/sarahmwangi" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://twitter.com/sarah_eventpro" target="_blank" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="team-image">
-                            <img src="Images/cater06.jpeg" alt="Pastry Chef" loading="lazy">
+                        <img 
+                            src="Images/cater06.jpeg" 
+                            alt="Pastry Chef Grace Akinyi creating custom desserts" 
+                            loading="eager"
+                            decoding="async"
+                            width="400"
+                            height="400"
+                        >
                     </div>
                     <div class="team-info">
                         <h3>Grace Akinyi</h3>
-                        <p class="position">Pastry Chef</p>
-                        <p>Expert in custom dessert creations and wedding cake design with European training.</p>
+                        <p class="position">Head Pastry Chef</p>
+                        <p>Expert in custom dessert creations and wedding cake design with European training. Grace brings sweetness and artistry to every event.</p>
                         <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/in/graceakinyi" target="_blank" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://instagram.com/grace_pastryarts" target="_blank" aria-label="Instagram Profile">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -320,19 +831,19 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <h3>500+</h3>
+                    <h3 data-count="500">500+</h3>
                     <p>Events Catered</p>
                 </div>
                 <div class="stat-item">
-                    <h3>50+</h3>
+                    <h3 data-count="50">50+</h3>
                     <p>Team Members</p>
                 </div>
                 <div class="stat-item">
-                    <h3>98%</h3>
+                    <h3 data-count="98">98%</h3>
                     <p>Client Satisfaction</p>
                 </div>
                 <div class="stat-item">
-                    <h3>9</h3>
+                    <h3 data-count="9">9</h3>
                     <p>Years of Excellence</p>
                 </div>
             </div>
@@ -343,26 +854,27 @@
     <section class="values-section">
         <div class="container">
             <h2 class="section-title text-center">Our Core <span class="highlight">Values</span></h2>
+            <p class="text-center">The principles that guide our work and define our culture</p>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-number">01</div>
                     <h3>Excellence</h3>
-                    <p>Pursuing perfection in every dish and service detail.</p>
+                    <p>Pursuing perfection in every dish and service detail, never settling for "good enough."</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">02</div>
                     <h3>Innovation</h3>
-                    <p>Continuously evolving our culinary creations and services.</p>
+                    <p>Continuously evolving our culinary creations and services to surprise and delight.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">03</div>
                     <h3>Integrity</h3>
-                    <p>Building trust through transparency and reliability.</p>
+                    <p>Building trust through transparency, reliability, and ethical business practices.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">04</div>
                     <h3>Passion</h3>
-                    <p>Fueling our work with genuine love for culinary arts.</p>
+                    <p>Fueling our work with genuine love for culinary arts and exceptional service.</p>
                 </div>
             </div>
         </div>
@@ -372,9 +884,11 @@
     <section class="cta-section">
         <div class="container">
             <h2>Partner with Excellence</h2>
-            <p>Let's create something extraordinary together</p>
+            <p>Let's create something extraordinary together. Experience the Kilimanibistro difference.</p>
             <div class="cta-buttons">
-                <a href="contact.html#quote" class="btn btn-primary btn-large">Start Planning</a>
+                <a href="contact.html#quote" class="btn btn-primary btn-large">
+                    <i class="fas fa-calendar-alt"></i> Start Planning Your Event
+                </a>
             </div>
         </div>
     </section>
@@ -385,34 +899,34 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager" decoding="async">
                         <span class="brand-name">Kilimanibistro</span>
                     </div>
                     <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/kilimanibistrocaterers"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kilimanibistrocaterers"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kilimanibistro"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/kilimanibistro"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="services.html#corporate">Corporate Catering</a></li>
-                        <li><a href="services.html#wedding">Wedding Catering</a></li>
-                        <li><a href="services.html#private">Private Events</a></li>
-                        <li><a href="services.html#menu">Custom Menus</a></li>
+                        <li><a href="services.html#corporate"><i class="fas fa-briefcase"></i> Corporate Catering</a></li>
+                        <li><a href="services.html#wedding"><i class="fas fa-heart"></i> Wedding Catering</a></li>
+                        <li><a href="services.html#private"><i class="fas fa-users"></i> Private Events</a></li>
+                        <li><a href="services.html#menu"><i class="fas fa-utensils"></i> Custom Menus</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -427,11 +941,171 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
-                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+                <p><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a> | <a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Performance Optimizations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dropdown functionality
+            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+            
+            dropdownItems.forEach(item => {
+                const link = item.querySelector('.nav-link');
+                const dropdown = item.querySelector('.dropdown-menu');
+                
+                // Show on hover
+                item.addEventListener('mouseenter', () => {
+                    dropdown.style.display = 'block';
+                    dropdown.style.opacity = '1';
+                    dropdown.style.visibility = 'visible';
+                    dropdown.style.transform = 'translateY(0)';
+                });
+                
+                // Hide on mouse leave
+                item.addEventListener('mouseleave', () => {
+                    dropdown.style.display = 'none';
+                    dropdown.style.opacity = '0';
+                    dropdown.style.visibility = 'hidden';
+                    dropdown.style.transform = 'translateY(-10px)';
+                });
+                
+                // Touch devices support
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const isActive = dropdown.style.display === 'block';
+                        dropdown.style.display = isActive ? 'none' : 'block';
+                        dropdown.style.opacity = isActive ? '0' : '1';
+                        dropdown.style.visibility = isActive ? 'hidden' : 'visible';
+                    }
+                });
+            });
+            
+            // Preload remaining images after initial load
+            setTimeout(() => {
+                const imagesToPreload = [
+                    'Images/cater04.jpeg',
+                    'Images/cater06.jpeg',
+                    'Images/catering%204.jpg'
+                ];
+                
+                imagesToPreload.forEach(src => {
+                    const img = new Image();
+                    img.src = src;
+                });
+            }, 1000);
+            
+            // Animate stats counter
+            const statsSection = document.querySelector('.stats-section');
+            const statNumbers = document.querySelectorAll('.stat-item h3');
+            
+            const animateCounter = (element, target) => {
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    element.textContent = Math.floor(current) + (element.dataset.count.includes('%') ? '%' : '+');
+                }, 30);
+            };
+            
+            // Intersection Observer for stats animation
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        statNumbers.forEach(stat => {
+                            const target = parseInt(stat.dataset.count);
+                            animateCounter(stat, target);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            if (statsSection) {
+                observer.observe(statsSection);
+            }
+            
+            // Lazy load images with Intersection Observer
+            const lazyImages = document.querySelectorAll('img');
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (!img.complete) {
+                            img.addEventListener('load', () => {
+                                img.classList.add('lazy-loaded');
+                            });
+                        } else {
+                            img.classList.add('lazy-loaded');
+                        }
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            
+            lazyImages.forEach(img => imageObserver.observe(img));
+            
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+                
+                // Close mobile menu when clicking on a link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') !== '#') {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(this.getAttribute('href'));
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Service Worker Registration for PWA
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('sw.js').catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        });
+        
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Log performance metrics
+            if ('performance' in window) {
+                const timing = performance.timing;
+                const loadTime = timing.loadEventEnd - timing.navigationStart;
+                console.log(`Page loaded in ${loadTime}ms`);
+            }
+        });
+    </script>
 </body>
 </html>
