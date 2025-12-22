@@ -2519,6 +2519,26 @@ textarea.form-control {
         padding: 20px 0;
         height: calc(100vh - 70px);
         overflow-y: auto;
+        z-index: 999;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .nav-menu .nav-link {
+        display: block;
+        padding: 15px 20px;
+        color: var(--gray-dark);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .nav-menu .nav-link:hover,
+    .nav-menu .nav-link.active {
+        color: var(--primary-red);
+        background-color: rgba(196, 30, 58, 0.05);
     }
     
     .nav-menu.active {
