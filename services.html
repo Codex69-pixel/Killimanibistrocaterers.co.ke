@@ -310,13 +310,25 @@
         @media (max-width: 768px) {
             .service-detail {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 30px;
                 margin-bottom: 60px;
             }
             
-            .service-image img {
-                height: 300px;
+            .service-image {
                 order: -1;
+                width: 100%;
+            }
+
+            .service-image img {
+                height: auto;
+                width: 100%;
+                max-width: 100%;
+                display: block;
+            }
+
+            .service-content {
+                width: 100%;
+                padding: 0;
             }
             
             .service-content h2 {
@@ -337,11 +349,6 @@
                 max-width: 500px;
                 margin-left: auto;
                 margin-right: auto;
-            }
-            
-            /* Reverse order for alternating layout on mobile */
-            .service-detail:nth-child(even) .service-image {
-                order: -1;
             }
         }
         
@@ -428,6 +435,9 @@
 
             <!-- Wedding Catering -->
             <div class="service-detail" id="wedding">
+                <div class="service-image">
+                    <img src="Images/catering%204.jpg" alt="Wedding Catering Service Setup" loading="eager" decoding="async" width="600" height="400">
+                </div>
                 <div class="service-content">
                     <h2>Wedding Catering</h2>
                     <p>Create unforgettable memories with our exquisite wedding catering services tailored to your love story. We handle every detail so you can focus on celebrating your special day.</p>
@@ -440,9 +450,6 @@
                         <li><i class="fas fa-check"></i> Tasting Sessions & Menu Planning</li>
                     </ul>
                     <a href="contact.html#quote" class="btn btn-primary">Plan Your Wedding</a>
-                </div>
-                <div class="service-image">
-                    <img src="Images/catering%204.jpg" alt="Wedding Catering Service Setup" loading="eager" decoding="async" width="600" height="400">
                 </div>
             </div>
 
@@ -468,6 +475,9 @@
 
             <!-- Drop Off Catering -->
             <div class="service-detail" id="dropoff">
+                <div class="service-image">
+                    <img src="Images/catering%203.jpg" alt="Drop Off Catering Setup" loading="eager" decoding="async" width="600" height="400">
+                </div>
                 <div class="service-content">
                     <h2>Drop Off Catering</h2>
                     <p>Perfect for those who want quality food without the service staff. We prepare, package, and deliver everything ready to serve at your preferred location.</p>
@@ -480,9 +490,6 @@
                         <li><i class="fas fa-check"></i> Set-up & Clear-up Service</li>
                     </ul>
                     <a href="contact.html#quote" class="btn btn-primary">Request Drop Off Quote</a>
-                </div>
-                <div class="service-image">
-                    <img src="Images/catering%203.jpg" alt="Drop Off Catering Setup" loading="eager" decoding="async" width="600" height="400">
                 </div>
             </div>
         </div>

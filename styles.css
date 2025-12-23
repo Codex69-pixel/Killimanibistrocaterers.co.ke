@@ -563,11 +563,6 @@ p {
 }
 
 /* Services Details Section */
-.services-details {
-    padding: 100px 0;
-    background: #f8f9fa;
-}
-
 .service-detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2434,11 +2429,20 @@ textarea.form-control {
     
     .service-detail {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
+    }
+
+    .service-image {
+        order: -1;
+        width: 100%;
+        overflow: hidden;
     }
 
     .service-image img {
-        height: 300px;
+        height: 250px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
     }
     
     .services-bg-wrapper {
