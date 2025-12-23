@@ -72,34 +72,6 @@ function initNavigation() {
                     dropdown.style.transform = 'translateY(-10px)';
                 }
             });
-            
-            // Mobile: Toggle on click
-            link.addEventListener('click', (e) => {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    // Close other dropdowns
-                    dropdownItems.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            const otherDropdown = otherItem.querySelector('.dropdown-menu');
-                            otherDropdown.style.display = 'none';
-                            otherDropdown.classList.remove('active');
-                        }
-                    });
-                    
-                    // Toggle current dropdown
-                    const isActive = dropdown.style.display === 'block';
-                    dropdown.style.display = isActive ? 'none' : 'block';
-                    dropdown.classList.toggle('active', !isActive);
-                    
-                    // Rotate chevron
-                    const chevron = link.querySelector('.fa-chevron-down');
-                    if (chevron) {
-                        chevron.style.transform = isActive ? 'rotate(0deg)' : 'rotate(180deg)';
-                    }
-                }
-            });
         });
 
         // Close dropdowns when clicking outside
@@ -107,11 +79,7 @@ function initNavigation() {
             if (!e.target.closest('.nav-item-dropdown')) {
                 dropdownItems.forEach(item => {
                     const dropdown = item.querySelector('.dropdown-menu');
-                    dropdown.style.display = 'none';
                     dropdown.classList.remove('active');
-                    
-                    const chevron = item.querySelector('.fa-chevron-down');
-                    if (chevron) chevron.style.transform = 'rotate(0deg)';
                 });
             }
         });
