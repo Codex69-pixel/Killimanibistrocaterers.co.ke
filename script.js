@@ -187,7 +187,7 @@ function initChatWidget() {
                         window.location.href = 'contact.html';
                         break;
                     case 'whatsapp':
-                        window.open('https://wa.me/254706686281', '_blank');
+                        window.open('https://wa.me/254111553616', '_blank');
                         break;
                     default:
                         console.log('Unknown action:', action);
