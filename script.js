@@ -35,55 +35,101 @@ function initNavigation() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.classList.toggle('menu-open');
+            
+            // Close all dropdowns when toggling mobile menu
+            dropdownItems.forEach(item => {
+                item.classList.remove('active');
+                const dropdown = item.querySelector('.dropdown-menu');
+                const icon = item.querySelector('.dropdown-icon');
+                if (dropdown) dropdown.classList.remove('active');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            });
         });
 
-        // Close mobile menu when clicking a link
+        // Close mobile menu when clicking a link (non-dropdown links)
         document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    }
-
-    // Desktop dropdown functionality
-    if (dropdownItems.length > 0) {
-        dropdownItems.forEach(item => {
-            const link = item.querySelector('.nav-link');
-            const dropdown = item.querySelector('.dropdown-menu');
-            
-            // Desktop: Show on hover
-            item.addEventListener('mouseenter', () => {
-                if (window.innerWidth > 768) {
-                    dropdown.style.display = 'block';
-                    dropdown.style.opacity = '1';
-                    dropdown.style.visibility = 'visible';
-                    dropdown.style.transform = 'translateY(0)';
-                }
-            });
-            
-            // Desktop: Hide on mouse leave
-            item.addEventListener('mouseleave', () => {
-                if (window.innerWidth > 768) {
-                    dropdown.style.display = 'none';
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-10px)';
-                }
-            });
-        });
-
-        // Close dropdowns when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item-dropdown')) {
-                dropdownItems.forEach(item => {
-                    const dropdown = item.querySelector('.dropdown-menu');
-                    dropdown.classList.remove('active');
+            if (!link.closest('.nav-item-dropdown')) {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
                 });
             }
         });
     }
+
+    // Dropdown toggle functionality
+    dropdownItems.forEach(item => {
+        const dropdownLink = item.querySelector('.nav-link');
+        const dropdown = item.querySelector('.dropdown-menu');
+        const icon = item.querySelector('.dropdown-icon');
+        
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Toggle current dropdown
+                const isActive = item.classList.contains('active');
+                
+                // Close all other dropdowns
+                dropdownItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        const otherDropdown = otherItem.querySelector('.dropdown-menu');
+                        const otherIcon = otherItem.querySelector('.dropdown-icon');
+                        if (otherDropdown) otherDropdown.classList.remove('active');
+                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current
+                if (!isActive) {
+                    item.classList.add('active');
+                    if (dropdown) dropdown.classList.add('active');
+                    if (icon) icon.style.transform = 'rotate(180deg)';
+                } else {
+                    item.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('active');
+                    if (icon) icon.style.transform = 'rotate(0deg)';
+                }
+            }
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item-dropdown')) {
+            dropdownItems.forEach(item => {
+                item.classList.remove('active');
+                const dropdown = item.querySelector('.dropdown-menu');
+                const icon = item.querySelector('.dropdown-icon');
+                if (dropdown) dropdown.classList.remove('active');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            });
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            // Reset mobile dropdowns on desktop
+            dropdownItems.forEach(item => {
+                item.classList.remove('active');
+                const dropdown = item.querySelector('.dropdown-menu');
+                const icon = item.querySelector('.dropdown-icon');
+                if (dropdown) dropdown.classList.remove('active');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            });
+            
+            // Close mobile menu if open
+            if (hamburger && hamburger.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                if (navMenu) navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        }
+    });
 }
 
 // ============================================
@@ -119,8 +165,8 @@ function initChatWidget() {
                     case 'quote':
                         window.location.href = 'contact.html#quote';
                         break;
-                    case 'menu':
-                        window.location.href = 'services.html';
+                    case 'follow':
+                        window.open('https://www.instagram.com/kilimanibistro/?hl=en', '_blank');
                         break;
                     case 'contact':
                         window.location.href = 'contact.html';

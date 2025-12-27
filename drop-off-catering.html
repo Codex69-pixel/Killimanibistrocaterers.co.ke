@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- AI SEO Tags for Drop-Off Catering -->
+    <title>Drop-Off Catering Services | Kilimanibistro - Nairobi Delivery</title>
+    <meta name="description" content="Affordable drop-off catering in Nairobi. Hot meals delivered ready-to-serve with minimal setup. Perfect for offices, meetings, and casual events.">
+    <meta name="keywords" content="drop-off catering Nairobi, food delivery catering Kenya, office lunch delivery, ready-to-serve meals, affordable catering Nairobi">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Drop-Off Catering | Kilimanibistro - Nairobi Delivery">
+    <meta property="og:description" content="Quality food without service staff. We prepare, package, and deliver everything ready to serve.">
+    <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
+    <meta property="og:url" content="https://kilimanibistrocaterers.co.ke/drop-off-catering.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kilimanibistro Caterers">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Kilimanibistro Drop-Off Catering",
+        "description": "Drop-off catering services in Nairobi, Kenya",
+        "servesCuisine": ["African", "International", "Corporate"],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "makesOffer": {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Service",
+                "name": "Drop-Off Catering Package",
+                "description": "Delivery of ready-to-serve meals with professional packaging"
+            }
+        }
+    }
+    </script>
+    
+    <link rel="canonical" href="https://kilimanibistrocaterers.co.ke/drop-off-catering.html">
+    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Service Page Specific Styles */
+        .service-hero {
+            background: url('Images/catering%203.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            color: white;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .service-hero .highlight {
+            color: #ffd700;
+        }
+        
+        .service-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .service-details {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .service-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .service-description {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        
+        .service-description h2 {
+            color: #c41e3a;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .service-description > p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .includes-section {
+            background: white;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+        }
+        
+        .includes-section h3 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #c41e3a;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .includes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .include-item {
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #c41e3a;
+            transition: transform 0.3s ease;
+        }
+        
+        .include-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .include-item h4 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .include-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .include-item li {
+            padding: 8px 0;
+            color: #555;
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.6;
+        }
+        
+        .include-item li:before {
+            content: "✓";
+            color: #c41e3a;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .service-cta {
+            text-align: center;
+            margin-top: 50px;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #c41e3a 0%, #a1162a 100%);
+            border-radius: 10px;
+            color: white;
+        }
+        
+        .service-cta h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        .service-cta .btn {
+            background: white;
+            color: #c41e3a;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        
+        .service-cta .btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Why Choose Us Section Styles */
+        .why-choose-us {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .section-header .highlight {
+            color: #c41e3a;
+        }
+        
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .choose-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .choose-card {
+            text-align: center;
+            padding: 40px 25px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .choose-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #c41e3a;
+        }
+        
+        .choose-icon {
+            font-size: 48px;
+            color: #c41e3a;
+            margin-bottom: 20px;
+        }
+        
+        .choose-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .choose-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service-hero {
+                padding: 120px 0 80px;
+                min-height: 300px;
+            }
+            
+            .service-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .service-details {
+                padding: 60px 0;
+            }
+            
+            .service-description,
+            .includes-section {
+                padding: 30px 20px;
+            }
+            
+            .includes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-cta {
+                padding: 40px 20px;
+            }
+            
+            .service-cta h3 {
+                font-size: 1.6rem;
+            }
+            
+            .why-choose-us {
+                padding: 60px 0;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .choose-us-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .service-hero {
+                padding: 100px 0 60px;
+            }
+            
+            .service-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .service-description h2 {
+                font-size: 1.8rem;
+            }
+            
+            .includes-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
+                <span class="brand-name">Kilimani Bistro Caterers</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Catering Services Dropdown -->
+                <li class="nav-item-dropdown">
+                    <a href="services.html" class="nav-link active">
+                        Catering Services 
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">All Services Overview</a>
+                        <a href="wedding-catering.html">Wedding Catering</a>
+                        <a href="private-event-catering.html">Private Event Catering</a>
+                        <a href="corporate-catering.html">Corporate Catering</a>
+                        <a href="drop-off-catering.html">Drop Off Catering</a>
+                    </div>
+                </li>
+                
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                
+                <!-- About with Our Restaurant Dropdown -->
+                <li class="nav-item-dropdown">
+                    <a href="about.html" class="nav-link">
+                        About 
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about.html#story">The Kilimani Bistro Story</a>
+                        <a href="about.html#ambiance">Ambiance & Location</a>
+                        <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </li>
+                
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="contact.html#quote" class="btn btn-primary">Get Quote</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Drop-Off Catering Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>Drop-Off <span class="highlight">Catering</span></h1>
+            <p>Perfect for those who want quality food without the service staff. We prepare, package, and deliver everything ready to serve at your preferred location in Nairobi.</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="service-details">
+        <div class="service-container">
+            <!-- Service Description -->
+            <div class="service-description">
+                <h2>Convenient Drop-Off Catering in Nairobi</h2>
+                <p>At Kilimanibistro, we understand that not every event needs full-service catering. Our drop-off catering service provides the perfect solution for offices, meetings, casual gatherings, and events where you want great food without the additional service staff. We handle all the preparation in our professional kitchen, then deliver everything ready to serve right to your doorstep.</p>
+                <p>With our temperature-controlled delivery vehicles and professional packaging, your food arrives fresh, hot, and ready to enjoy. Whether you need individual meal boxes for a team meeting or bulk containers for a family gathering, we provide clear instructions and everything needed for easy setup.</p>
+            </div>
+
+            <!-- What's Included -->
+            <div class="includes-section">
+                <h3>What's Included in Our Drop-Off Catering</h3>
+                <div class="includes-grid">
+                    <div class="include-item">
+                        <h4>Delivery & Packaging</h4>
+                        <ul>
+                            <li>Delivery of hot, fresh meals in food-safe packaging</li>
+                            <li>Meal kits or bulk containers based on order size</li>
+                            <li>Clear serving instructions with each delivery</li>
+                            <li>Temperature-controlled delivery vehicles</li>
+                            <li>On-time delivery guaranteed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="include-item">
+                        <h4>Setup Support</h4>
+                        <ul>
+                            <li>Disposable utensils, plates, and napkins available</li>
+                            <li>Food warmers and chafing dishes (optional)</li>
+                            <li>Minimal setup required by the host</li>
+                            <li>Clear labeling for all menu items</li>
+                            <li>Serving suggestions and portion guidance</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="include-item">
+                        <h4>Flexible Ordering</h4>
+                        <ul>
+                            <li>Affordable pricing with no service fees</li>
+                            <li>Fast turnaround (24-48 hour notice)</li>
+                            <li>Small to large group sizes (10-500+ people)</li>
+                            <li>Regular delivery schedules for offices</li>
+                            <li>Easy order adjustments up to 48 hours before</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="service-cta">
+                <h3>Need Food Delivered Ready-to-Serve?</h3>
+                <p>Get fresh, delicious meals delivered to your office or event with our convenient drop-off service</p>
+                <a href="contact.html?service=drop-off" class="btn">Order Drop-Off Catering</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why <span class="highlight">Choose Our</span> Drop-Off Service</h2>
+                <p>The perfect balance of quality, convenience, and value</p>
+            </div>
+            <div class="choose-us-grid">
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Reliable Delivery</h3>
+                    <p>On-time delivery guaranteed with temperature-controlled vehicles to keep food at perfect serving temperature.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick Turnaround</h3>
+                    <p>Last-minute orders welcome with 24-hour notice. Perfect for unexpected meetings and spontaneous gatherings.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cost-Effective</h3>
+                    <p>No service staff charges means more affordable catering. Pay only for the food, not the service.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Professional Packaging</h3>
+                    <p>Food arrives in professional, secure packaging that maintains temperature and presentation quality.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant Quality</h3>
+                    <p>Same high-quality food as our full-service events, prepared by our expert chef team.</p>
+                </div>
+
+                <div class="choose-card">
+                    <div class="choose-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Easy Ordering</h3>
+                    <p>Simple online ordering or phone orders with helpful staff to guide your selection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
+                        <span class="brand-name">Kilimanibistro</span>
+                    </div>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/kilimanibistrocaterers"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kilimanibistrocaterers"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kilimanibistro"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/kilimanibistro"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#corporate">Corporate Catering</a></li>
+                        <li><a href="services.html#wedding">Wedding Catering</a></li>
+                        <li><a href="services.html#private">Private Events</a></li>
+                        <li><a href="services.html#menu">Custom Menus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 706 686281</li>
+                        <li><i class="fas fa-envelope"></i> info@kilimanibistrocaterers.co.ke</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            // Mobile menu toggle
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    
+                    // Close all dropdowns when toggling mobile menu
+                    dropdownItems.forEach(item => {
+                        item.classList.remove('active');
+                        const dropdown = item.querySelector('.dropdown-menu');
+                        const icon = item.querySelector('.dropdown-icon');
+                        if (dropdown) dropdown.classList.remove('active');
+                        if (icon) icon.style.transform = 'rotate(0deg)';
+                    });
+                });
+            }
+            
+            // Dropdown toggle functionality
+            dropdownItems.forEach(item => {
+                const dropdownLink = item.querySelector('.nav-link');
+                const dropdown = item.querySelector('.dropdown-menu');
+                const icon = item.querySelector('.dropdown-icon');
+                
+                dropdownLink.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        // Toggle current dropdown
+                        const isActive = item.classList.contains('active');
+                        
+                        // Close all other dropdowns
+                        dropdownItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.classList.remove('active');
+                                const otherDropdown = otherItem.querySelector('.dropdown-menu');
+                                const otherIcon = otherItem.querySelector('.dropdown-icon');
+                                if (otherDropdown) otherDropdown.classList.remove('active');
+                                if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                            }
+                        });
+                        
+                        // Toggle current
+                        if (!isActive) {
+                            item.classList.add('active');
+                            if (dropdown) dropdown.classList.add('active');
+                            if (icon) icon.style.transform = 'rotate(180deg)';
+                        } else {
+                            item.classList.remove('active');
+                            if (dropdown) dropdown.classList.remove('active');
+                            if (icon) icon.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+            });
+            
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-item-dropdown')) {
+                    dropdownItems.forEach(item => {
+                        item.classList.remove('active');
+                        const dropdown = item.querySelector('.dropdown-menu');
+                        const icon = item.querySelector('.dropdown-icon');
+                        if (dropdown) dropdown.classList.remove('active');
+                        if (icon) icon.style.transform = 'rotate(0deg)';
+                    });
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    // Reset mobile dropdowns on desktop
+                    dropdownItems.forEach(item => {
+                        item.classList.remove('active');
+                        const dropdown = item.querySelector('.dropdown-menu');
+                        const icon = item.querySelector('.dropdown-icon');
+                        if (dropdown) dropdown.classList.remove('active');
+                        if (icon) icon.style.transform = 'rotate(0deg)';
+                    });
+                    
+                    // Close mobile menu if open
+                    if (hamburger && hamburger.classList.contains('active')) {
+                        hamburger.classList.remove('active');
+                        if (navMenu) navMenu.classList.remove('active');
+                    }
+                }
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            // Close mobile menu if open
+                            if (hamburger && hamburger.classList.contains('active')) {
+                                hamburger.classList.remove('active');
+                                navMenu.classList.remove('active');
+                            }
+                            
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -7,14 +7,14 @@
     
     <!-- Critical Image Preloading -->
     <link rel="preload" as="image" href="Images/logo.jpeg">
-    <link rel="preload" as="image" href="Images/catering%202.jpg">
+    <link rel="preload" as="image" href="Images/catering%203.jpg">
     <link rel="preload" as="image" href="Images/cater%201.jpeg">
     <link rel="preload" as="image" href="Images/cater02.jpeg">
     
     <!-- Primary AI SEO Tags -->
-    <title>About Us | Kilimanibistro Caterers - Our Story & Team in Kenya</title>
-    <meta name="description" content="Learn about Kilimanibistro Caterers' journey, our culinary philosophy, and the team behind Kenya's premier catering services since 2015.">
-    <meta name="keywords" content="about Kilimanibistro, catering company Kenya, our story Nairobi, culinary team Kenya, catering philosophy">
+    <title>About Kilimani Bistro | Our Restaurant Story & Catering Services</title>
+    <meta name="description" content="Discover Kilimani Bistro's dual story: A premier Nairobi restaurant and Kenya's top catering service since 2015. Our culinary philosophy, team, and values.">
+    <meta name="keywords" content="Kilimani Bistro Nairobi, restaurant about us, catering company Kenya, our story, culinary team Kenya, fine dining Nairobi">
     
     <!-- AI Generated SEO Meta Tags -->
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -22,18 +22,18 @@
     <meta name="bingbot" content="index, follow">
     
     <!-- Open Graph AI Tags for Social Media -->
-    <meta property="og:title" content="About Us | Kilimanibistro Caterers - Our Story & Team">
-    <meta property="og:description" content="Discover Kilimanibistro's journey to becoming Kenya's premier catering service since 2015">
-    <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%202.jpg">
+    <meta property="og:title" content="About Kilimani Bistro | Restaurant & Catering Services">
+    <meta property="og:description" content="Experience Nairobi's finest dining at Kilimani Bistro and premium catering services for all events since 2015">
+    <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
     <meta property="og:url" content="https://kilimanibistrocaterers.co.ke/about.html">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Kilimanibistro Caterers">
+    <meta property="og:site_name" content="Kilimani Bistro & Caterers">
     <meta property="og:locale" content="en_KE">
     
     <!-- Twitter AI Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Kilimanibistro | Our Culinary Journey">
-    <meta name="twitter:description" content="Meet the team and story behind Kenya's premier catering service">
+    <meta name="twitter:title" content="About Kilimani Bistro | Dining & Catering Excellence">
+    <meta name="twitter:description" content="Discover our Nairobi restaurant and premium catering services">
     <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/cater%201.jpeg">
     
     <!-- AI Schema.org Structured Data for About Page -->
@@ -41,24 +41,31 @@
     {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "name": "About Kilimanibistro Caterers",
-        "description": "About page for Kilimanibistro Caterers catering services",
+        "name": "About Kilimani Bistro",
+        "description": "About page for Kilimani Bistro restaurant and catering services",
         "url": "https://kilimanibistrocaterers.co.ke/about.html",
-        "mainEntity": {
-            "@type": "Organization",
-            "name": "Kilimanibistro Caterers",
-            "foundingDate": "2015",
-            "founder": "Kilimanibistro Team",
-            "numberOfEmployees": "50+",
-            "description": "Premier catering services delivering culinary excellence across Kenya since 2015",
+        "mainEntity": [{
+            "@type": "Restaurant",
+            "name": "Kilimani Bistro",
+            "servesCuisine": ["Contemporary Kenyan", "Fusion", "International"],
+            "priceRange": "$$",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Nairobi",
                 "addressCountry": "KE"
             },
+            "openingHours": "Mo-Su 08:00-22:00"
+        },
+        {
+            "@type": "Organization",
+            "name": "Kilimani Bistro Caterers",
+            "foundingDate": "2015",
+            "founder": "Kilimani Bistro Team",
+            "numberOfEmployees": "50+",
+            "description": "Premier catering services delivering culinary excellence across Kenya since 2015",
             "award": "Multiple award-winning catering service",
-            "brand": "Kilimanibistro"
-        }
+            "brand": "Kilimani Bistro"
+        }]
     }
     </script>
     
@@ -68,7 +75,7 @@
     <meta name="geo.placename" content="Nairobi">
     <meta name="geo.position" content="-1.2921;36.8219">
     <meta name="ICBM" content="-1.2921, 36.8219">
-    <meta name="author" content="Kilimanibistro Caterers">
+    <meta name="author" content="Kilimani Bistro">
     <meta name="language" content="English">
     
     <!-- Performance Optimizations -->
@@ -95,21 +102,24 @@
             --transition: all 0.3s ease;
             --shadow: 0 5px 15px rgba(0,0,0,0.1);
             --shadow-hover: 0 10px 30px rgba(0,0,0,0.15);
+            --shadow-dark: 0 8px 25px rgba(0,0,0,0.25);
         }
         
         /* Base styles for immediate rendering */
         .about-hero,
+        .restaurant-hero,
         .story-section,
         .mission-section,
         .team-section,
         .stats-section,
         .values-section,
-        .cta-section {
+        .cta-section,
+        .instagram-section {
             opacity: 1;
             transform: translateY(0);
         }
         
-        /* Optimized hero background with modern properties */
+        /* Optimized hero background */
         .about-hero {
             background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.8)), url('Images/catering%204.jpg');
             background-size: cover;
@@ -122,12 +132,193 @@
             position: relative;
         }
         
+        /* Restaurant Hero Section */
+        .restaurant-hero {
+            background: linear-gradient(rgba(26,26,26,0.9), rgba(26,26,26,0.85)), url('Images/catering%203.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: white;
+            position: relative;
+        }
+        
+        .restaurant-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .restaurant-hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .restaurant-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .restaurant-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .restaurant-hero-image {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-dark);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: var(--transition);
+        }
+        
+        .restaurant-hero-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .restaurant-hero-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Restaurant Info Cards */
+        .restaurant-info-section {
+            padding: 100px 0;
+            background: url('Images/cater09.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .restaurant-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .restaurant-card {
+            background: var(--dark-color);
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-dark);
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .restaurant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .restaurant-card-header {
+            padding: 30px 30px 20px;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .restaurant-card-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .restaurant-card-header .highlight {
+            color: var(--secondary-color);
+        }
+        
+        .restaurant-card-body {
+            padding: 30px;
+        }
+        
+        .restaurant-card-body p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        .restaurant-features {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0;
+        }
+        
+        .restaurant-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+        }
+        
+        .restaurant-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .restaurant-features i {
+            color: var(--primary-color);
+            margin-right: 15px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* Instagram Section */
+        .instagram-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark-color) 0%, #2a2a2a 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .instagram-section .btn {
+            background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);
+            color: white;
+            padding: 16px 45px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 5px 20px rgba(253, 29, 29, 0.3);
+        }
+        
+        .instagram-section .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(253, 29, 29, 0.4);
+        }
+        
+        .instagram-quote {
+            margin-top: 50px;
+            font-style: italic;
+            color: rgba(255,255,255,0.8);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .instagram-quote i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
         /* Content-visibility for performance */
         .story-section,
         .mission-section,
         .team-section,
         .stats-section,
-        .values-section {
+        .values-section,
+        .restaurant-info-section {
             content-visibility: auto;
             contain-intrinsic-size: 500px;
         }
@@ -160,7 +351,7 @@
         /* Story Section */
         .story-section {
             padding: 100px 0;
-            background-color: var(--light-color);
+            background-color: white;
         }
         
         .story-content {
@@ -186,7 +377,7 @@
         /* Mission Section */
         .mission-section {
             padding: 100px 0;
-            background-color: white;
+            background-color: var(--light-color);
         }
         
         .mission-cards {
@@ -240,7 +431,7 @@
         /* Team Section */
         .team-section {
             padding: 100px 0;
-            background-color: var(--light-color);
+            background-color: white;
         }
         
         .team-grid {
@@ -347,7 +538,7 @@
         /* Values Section */
         .values-section {
             padding: 100px 0;
-            background-color: white;
+            background-color: var(--light-color);
         }
         
         .values-grid {
@@ -361,14 +552,16 @@
             text-align: center;
             padding: 40px 25px;
             border-radius: 12px;
-            background: var(--light-color);
+            background: white;
             transition: var(--transition);
+            border: 2px solid transparent;
+            box-shadow: var(--shadow);
         }
         
         .value-card:hover {
             transform: translateY(-5px);
-            background: white;
-            box-shadow: var(--shadow);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-hover);
         }
         
         .value-number {
@@ -477,6 +670,11 @@
             border-bottom: none;
         }
         
+        .dropdown-menu a i {
+            margin-left: 5px;
+            font-size: 0.8rem;
+        }
+        
         /* Container */
         .container {
             max-width: 1200px;
@@ -507,6 +705,7 @@
         .btn:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         .btn-primary {
@@ -518,12 +717,24 @@
             font-size: 1.1rem;
         }
         
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary-color);
+        }
+        
         /* Responsive Design */
         @media (max-width: 992px) {
             .story-content,
+            .restaurant-hero-content,
             .mission-cards,
             .team-grid,
-            .values-grid {
+            .values-grid,
+            .restaurant-cards {
                 gap: 40px;
             }
             
@@ -534,10 +745,15 @@
             .section-title {
                 font-size: 2.2rem;
             }
+            
+            .restaurant-hero h2 {
+                font-size: 2.3rem;
+            }
         }
         
         @media (max-width: 768px) {
-            .story-content {
+            .story-content,
+            .restaurant-hero-content {
                 grid-template-columns: 1fr;
                 gap: 50px;
             }
@@ -551,18 +767,25 @@
                 font-size: 2.5rem;
             }
             
+            .restaurant-hero {
+                padding: 80px 0 60px;
+            }
+            
             .story-section,
             .mission-section,
             .team-section,
             .stats-section,
             .values-section,
-            .cta-section {
+            .cta-section,
+            .instagram-section,
+            .restaurant-info-section {
                 padding: 80px 0;
             }
             
             .mission-cards,
             .team-grid,
-            .values-grid {
+            .values-grid,
+            .restaurant-cards {
                 grid-template-columns: 1fr;
                 max-width: 500px;
                 margin-left: auto;
@@ -591,6 +814,10 @@
                 visibility: visible;
                 transform: translateY(0);
             }
+            
+            .restaurant-links {
+                justify-content: center;
+            }
         }
         
         @media (max-width: 480px) {
@@ -607,7 +834,9 @@
             .team-section,
             .stats-section,
             .values-section,
-            .cta-section {
+            .cta-section,
+            .instagram-section,
+            .restaurant-info-section {
                 padding: 60px 0;
             }
             
@@ -618,12 +847,26 @@
             
             .mission-card,
             .team-info,
-            .value-card {
+            .value-card,
+            .restaurant-card-body {
                 padding: 30px 20px;
+            }
+            
+            .restaurant-card-header {
+                padding: 20px 20px 15px;
             }
             
             .container {
                 padding: 0 15px;
+            }
+            
+            .restaurant-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .restaurant-links .btn {
+                width: 100%;
+                text-align: center;
             }
         }
         
@@ -642,6 +885,12 @@
         .lazy-loaded {
             animation: fadeIn 0.6s ease forwards;
         }
+        
+        /* External link indicator */
+        .external-link i {
+            font-size: 0.7em;
+            margin-left: 3px;
+        }
     </style>
 </head>
 <body>
@@ -649,14 +898,42 @@
     <header class="header">
         <nav class="navbar">
             <div class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
-                <span class="brand-name">Kilimani Bistro Caterers</span>
+                <img src="Images/logo.jpeg" alt="Kilimani Bistro Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
+                <span class="brand-name">Kilimani Bistro & Caterers</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
+                
+                <!-- Catering Services Dropdown -->
+                <li class="nav-item-dropdown">
+                    <a href="services.html" class="nav-link">
+                        Catering Services 
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="services.html">All Services Overview</a>
+                        <a href="wedding-catering.html">Wedding Catering</a>
+                        <a href="private-event-catering.html">Private Event Catering</a>
+                        <a href="corporate-catering.html">Corporate Catering</a>
+                        <a href="drop-off-catering.html">Drop Off Catering</a>
+                    </div>
+                </li>
+                
                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
+                
+                <!-- About with Our Restaurant Dropdown -->
+                <li class="nav-item-dropdown">
+                    <a href="about.html" class="nav-link active">
+                        About 
+                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="about.html#story">The Kilimani Bistro Story</a>
+                        <a href="about.html#ambiance">Ambiance & Location</a>
+                        <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </li>
+                
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="cta-buttons">
@@ -678,21 +955,119 @@
         </div>
     </section>
 
+    <!-- Restaurant Hero Section -->
+    <section class="restaurant-hero" id="story">
+        <div class="container">
+            <div class="restaurant-hero-content">
+                <div>
+                    <h2>Welcome to <span class="highlight">Kilimani Bistro</span></h2>
+                    <p>More than just a catering company, Kilimani Bistro is a vibrant culinary destination in the heart of Nairobi. We bring the same passion for quality and flavor from our events directly to your table in our elegant restaurant setting.</p>
+                    <p>Experience the fusion of contemporary Kenyan cuisine with international flair in a sophisticated yet welcoming atmosphere designed for memorable dining experiences.</p>
+                    <div class="restaurant-links">
+                        <a href="#ambiance" class="btn btn-primary"><i class="fas fa-map-marker-alt"></i> Visit Our Restaurant</a>
+                        <a href="contact.html#reservations" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Make a Reservation</a>
+                    </div>
+                </div>
+                <div class="restaurant-hero-image">
+                    <!-- Replace with actual restaurant image -->
+                    <img src="Images/cater%201.jpeg" alt="Elegant dining at Kilimani Bistro restaurant" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Information Section -->
+    <section class="restaurant-info-section" id="ambiance">
+        <div class="container">
+            <h2 class="section-title text-center">The <span class="highlight">Kilimani Bistro</span> Experience</h2>
+            <p class="text-center">Discover what makes our restaurant a Nairobi culinary destination</p>
+            
+            <div class="restaurant-cards">
+                <div class="restaurant-card">
+                    <div class="restaurant-card-header">
+                        <h3><i class="fas fa-utensils"></i> Our <span class="highlight">Cuisine</span></h3>
+                    </div>
+                    <div class="restaurant-card-body">
+                        <p>Our menu celebrates the rich diversity of Kenyan ingredients through contemporary techniques and international influences. From farm-to-table freshness to artisanal presentations, every dish tells a story.</p>
+                        <p><strong>Signature Dishes:</strong> Nyama Choma with chef's special glaze, Swahili seafood curry, and our famous chocolate tamarind dessert.</p>
+                        <ul class="restaurant-features">
+                            <li><i class="fas fa-check-circle"></i> Contemporary Kenyan Fusion</li>
+                            <li><i class="fas fa-check-circle"></i> Daily Chef's Specials</li>
+                            <li><i class="fas fa-check-circle"></i> Extensive Wine & Cocktail Selection</li>
+                            <li><i class="fas fa-check-circle"></i> Vegetarian & Vegan Options</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="restaurant-card">
+                    <div class="restaurant-card-header">
+                        <h3><i class="fas fa-map-marker-alt"></i> Location & <span class="highlight">Ambiance</span></h3>
+                    </div>
+                    <div class="restaurant-card-body">
+                        <p>Nestled in the vibrant Kilimani neighborhood, our restaurant offers an elegant retreat with warm, sophisticated décor that blends modern design with traditional Kenyan elements.</p>
+                        <p><strong>Atmosphere:</strong> Intimate lighting, curated art by local artists, and comfortable seating create the perfect setting for business lunches, romantic dinners, or special celebrations.</p>
+                        <ul class="restaurant-features">
+                            <li><i class="fas fa-wifi"></i> Complimentary WiFi</li>
+                            <li><i class="fas fa-music"></i> Live Music Weekends</li>
+                            <li><i class="fas fa-umbrella"></i> Outdoor Terrace Seating</li>
+                            <li><i class="fas fa-car"></i> Valet Parking Available</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="restaurant-card">
+                    <div class="restaurant-card-header">
+                        <h3><i class="fas fa-clock"></i> Hours & <span class="highlight">Reservations</span></h3>
+                    </div>
+                    <div class="restaurant-card-body">
+                        <p>We're here to serve you with the same excellence that defines our catering services. Advanced reservations are recommended, especially for weekend dining and special occasions.</p>
+                        <p><strong>Operating Hours:</strong><br>
+                        Monday - Sunday: 8:00 AM - 10:00 PM<br>
+                        Breakfast: 8:00 AM - 11:00 AM<br>
+                        Lunch: 12:00 PM - 3:00 PM<br>
+                        Dinner: 6:00 PM - 10:00 PM</p>
+                        <ul class="restaurant-features">
+                            <li><i class="fas fa-phone-alt"></i> +254 706 686281</li>
+                            <li><i class="fas fa-envelope"></i> dine@kilimanibistro.co.ke</li>
+                            <li><i class="fas fa-users"></i> Groups up to 50 persons</li>
+                            <li><i class="fas fa-birthday-cake"></i> Special events catering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="container text-center">
+            <h2 class="section-title">Experience the <span class="highlight">Flavor</span> on Instagram</h2>
+            <p style="max-width: 700px; margin: 0 auto 40px; opacity: 0.9;">Follow our journey, daily specials, and behind-the-scenes moments at Kilimani Bistro. See why Nairobi food lovers keep coming back for more.</p>
+            <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="btn btn-large">
+                <i class="fab fa-instagram"></i> Follow @kilimanibistro
+            </a>
+            <div class="instagram-quote">
+                <p><i class="fas fa-quote-left"></i> The ambiance, the service, and most importantly the food - everything was perfect! Kilimani Bistro has become our favorite spot for special occasions. <i class="fas fa-quote-right"></i></p>
+                <p style="margin-top: 15px; font-weight: 600;">– A satisfied guest review</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Story Section -->
     <section class="story-section">
         <div class="container">
             <div class="story-content">
                 <div class="story-text">
-                    <h2>The Kilimanibistro <span class="highlight">Journey</span></h2>
-                    <p>Founded in 2015, Kilimanibistro Caterers began with a simple vision: to elevate event catering in Kenya through uncompromising quality, creativity, and service excellence.</p>
-                    <p>What started as a small team of passionate chefs has grown into one of Kenya's most trusted catering companies, serving prestigious events across the country.</p>
-                    <p>Our journey is built on a foundation of culinary innovation, attention to detail, and a deep commitment to making every event memorable through exceptional food and service.</p>
+                    <h2>The Kilimani Bistro <span class="highlight">Journey</span></h2>
+                    <p>Founded in 2015, Kilimani Bistro began with a simple vision: to elevate dining and event catering in Kenya through uncompromising quality, creativity, and service excellence.</p>
+                    <p>What started as a small team of passionate chefs has grown into one of Kenya's most trusted culinary destinations, serving prestigious events across the country while maintaining our beloved restaurant in Nairobi.</p>
+                    <p>Our journey is built on a foundation of culinary innovation, attention to detail, and a deep commitment to making every dining experience memorable through exceptional food and service.</p>
                 </div>
                 <div class="story-image">
                     <img 
                         src="Images/cater%201.jpeg" 
-                        alt="Kilimanibistro Team working on catering setup" 
-                        loading="eager"
+                        alt="Kilimani Bistro Team working on catering setup" 
+                        loading="lazy"
                         decoding="async"
                         width="600"
                         height="400"
@@ -706,28 +1081,28 @@
     <section class="mission-section">
         <div class="container">
             <h2 class="section-title text-center">Our <span class="highlight">Philosophy</span></h2>
-            <p class="text-center">Our guiding principles shape every event we cater</p>
+            <p class="text-center">Our guiding principles shape every meal we serve and every event we cater</p>
             <div class="mission-cards">
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
                     <h3>Our Mission</h3>
-                    <p>To create unforgettable culinary experiences that exceed expectations through innovative menus, premium ingredients, and impeccable service.</p>
+                    <p>To create unforgettable culinary experiences that exceed expectations through innovative menus, premium ingredients, and impeccable service in both our restaurant and catering services.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i class="fas fa-eye"></i>
                     </div>
                     <h3>Our Vision</h3>
-                    <p>To be Kenya's premier catering service, recognized for setting industry standards in culinary excellence and event innovation.</p>
+                    <p>To be Kenya's premier dining and catering destination, recognized for setting industry standards in culinary excellence, hospitality, and event innovation.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
                     <h3>Our Promise</h3>
-                    <p>To deliver consistent quality, attention to detail, and personalized service that makes every event uniquely memorable.</p>
+                    <p>To deliver consistent quality, attention to detail, and personalized service that makes every restaurant visit and event uniquely memorable and special.</p>
                 </div>
             </div>
         </div>
@@ -737,14 +1112,14 @@
     <section class="team-section">
         <div class="container">
             <h2 class="section-title text-center">Meet Our <span class="highlight">Team</span></h2>
-            <p class="text-center">Passionate professionals dedicated to culinary excellence</p>
+            <p class="text-center">Passionate professionals dedicated to culinary excellence in both our restaurant and catering services</p>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-image">
                         <img 
                             src="Images/cater02.jpeg" 
                             alt="Executive Chef Michael Wanjala preparing dishes" 
-                            loading="eager"
+                            loading="lazy"
                             decoding="async"
                             width="400"
                             height="400"
@@ -753,12 +1128,12 @@
                     <div class="team-info">
                         <h3>Chef Michael Wanjala</h3>
                         <p class="position">Executive Chef & Founder</p>
-                        <p>15+ years of culinary experience with international training in French and Italian cuisine. Michael leads our culinary team with passion and precision.</p>
+                        <p>15+ years of culinary experience with international training in French and Italian cuisine. Michael leads our culinary team with passion and precision, crafting both our restaurant menu and catering offerings.</p>
                         <div class="team-social">
-                            <a href="https://linkedin.com/in/michaelwanjala" target="_blank" aria-label="LinkedIn Profile">
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://twitter.com/chefmichael" target="_blank" aria-label="Twitter Profile">
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter Profile">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
@@ -769,7 +1144,7 @@
                         <img 
                             src="Images/cater04.jpeg" 
                             alt="Event Manager Sarah Mwangi coordinating event setup" 
-                            loading="eager"
+                            loading="lazy"
                             decoding="async"
                             width="400"
                             height="400"
@@ -777,13 +1152,13 @@
                     </div>
                     <div class="team-info">
                         <h3>Sarah Mwangi</h3>
-                        <p class="position">Event Director</p>
-                        <p>Specializing in large-scale event planning with 10+ years in luxury hospitality. Sarah ensures every detail is perfect for your event.</p>
+                        <p class="position">Restaurant & Event Director</p>
+                        <p>Specializing in hospitality management with 10+ years in luxury dining and events. Sarah ensures every detail is perfect for your restaurant visit or catered event.</p>
                         <div class="team-social">
-                            <a href="https://linkedin.com/in/sarahmwangi" target="_blank" aria-label="LinkedIn Profile">
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://twitter.com/sarah_eventpro" target="_blank" aria-label="Twitter Profile">
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter Profile">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
@@ -794,7 +1169,7 @@
                         <img 
                             src="Images/cater06.jpeg" 
                             alt="Pastry Chef Grace Akinyi creating custom desserts" 
-                            loading="eager"
+                            loading="lazy"
                             decoding="async"
                             width="400"
                             height="400"
@@ -803,12 +1178,12 @@
                     <div class="team-info">
                         <h3>Grace Akinyi</h3>
                         <p class="position">Head Pastry Chef</p>
-                        <p>Expert in custom dessert creations and wedding cake design with European training. Grace brings sweetness and artistry to every event.</p>
+                        <p>Expert in custom dessert creations and pastry design with European training. Grace brings sweetness and artistry to every restaurant dessert and catering event.</p>
                         <div class="team-social">
-                            <a href="https://linkedin.com/in/graceakinyi" target="_blank" aria-label="LinkedIn Profile">
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://instagram.com/grace_pastryarts" target="_blank" aria-label="Instagram Profile">
+                            <a href="https://instagram.com" target="_blank" aria-label="Instagram Profile">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>
@@ -846,27 +1221,27 @@
     <section class="values-section">
         <div class="container">
             <h2 class="section-title text-center">Our Core <span class="highlight">Values</span></h2>
-            <p class="text-center">The principles that guide our work and define our culture</p>
+            <p class="text-center">The principles that guide our work and define our culture in both restaurant and catering</p>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-number">01</div>
                     <h3>Excellence</h3>
-                    <p>Pursuing perfection in every dish and service detail, never settling for "good enough."</p>
+                    <p>Pursuing perfection in every dish and service detail, never settling for "good enough" in our restaurant or catering.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">02</div>
                     <h3>Innovation</h3>
-                    <p>Continuously evolving our culinary creations and services to surprise and delight.</p>
+                    <p>Continuously evolving our culinary creations and services to surprise and delight our guests.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">03</div>
                     <h3>Integrity</h3>
-                    <p>Building trust through transparency, reliability, and ethical business practices.</p>
+                    <p>Building trust through transparency, reliability, and ethical business practices in all we do.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-number">04</div>
                     <h3>Passion</h3>
-                    <p>Fueling our work with genuine love for culinary arts and exceptional service.</p>
+                    <p>Fueling our work with genuine love for culinary arts and exceptional hospitality experiences.</p>
                 </div>
             </div>
         </div>
@@ -876,10 +1251,13 @@
     <section class="cta-section">
         <div class="container">
             <h2>Partner with Excellence</h2>
-            <p>Let's create something extraordinary together. Experience the Kilimanibistro difference.</p>
+            <p>Whether dining in our restaurant or planning a catered event, let's create something extraordinary together. Experience the Kilimani Bistro difference.</p>
             <div class="cta-buttons">
                 <a href="contact.html#quote" class="btn btn-primary btn-large">
-                    <i class="fas fa-calendar-alt"></i> Start Planning Your Event
+                    <i class="fas fa-calendar-alt"></i> Plan Your Catered Event
+                </a>
+                <a href="contact.html#reservations" class="btn btn-outline btn-large" style="margin-left: 20px;">
+                    <i class="fas fa-utensils"></i> Reserve a Table
                 </a>
             </div>
         </div>
@@ -891,49 +1269,51 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager" decoding="async">
-                        <span class="brand-name">Kilimanibistro</span>
+                        <img src="Images/logo.jpeg" alt="Kilimani Bistro Logo" class="logo" width="80" height="50" loading="lazy">
+                        <span class="brand-name">Kilimani Bistro & Caterers</span>
                     </div>
-                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <p>Premier restaurant and catering services delivering culinary excellence across Kenya since 2015.</p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/kilimanibistrocaterers"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/kilimanibistrocaterers"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/kilimanibistro"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/company/kilimanibistro"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kilimanibistro/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
-                        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
-                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
-                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html#story">Our Restaurant</a></li>
+                        <li><a href="services.html">Catering Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="services.html#corporate"><i class="fas fa-briefcase"></i> Corporate Catering</a></li>
-                        <li><a href="services.html#wedding"><i class="fas fa-heart"></i> Wedding Catering</a></li>
-                        <li><a href="services.html#private"><i class="fas fa-users"></i> Private Events</a></li>
-                        <li><a href="services.html#menu"><i class="fas fa-utensils"></i> Custom Menus</a></li>
+                        <li><a href="services.html#corporate">Corporate Catering</a></li>
+                        <li><a href="services.html#wedding">Wedding Catering</a></li>
+                        <li><a href="services.html#private">Private Events</a></li>
+                        <li><a href="about.html#menu">Restaurant Dining</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Contact Info</h3>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kilimani, Nairobi, Kenya</li>
                         <li><i class="fas fa-phone"></i> +254 706 686281</li>
-                        <li><i class="fas fa-envelope"></i> info@kilimanibistrocaterers.co.ke</li>
+                        <li><i class="fas fa-envelope"></i> dine@kilimanibistro.co.ke</li>
+                        <li><i class="fas fa-envelope"></i> events@kilimanibistro.co.ke</li>
                         <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Kilimanibistro Caterers. All rights reserved.</p>
-                <p><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a> | <a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a></p>
+                <p>&copy; 2024 Kilimani Bistro & Caterers. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
             </div>
         </div>
     </footer>
@@ -1087,6 +1467,18 @@
                     });
                 });
             }
+            
+            // Restaurant card hover effects enhancement
+            const restaurantCards = document.querySelectorAll('.restaurant-card');
+            restaurantCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
         });
         
         // Performance monitoring
@@ -1095,7 +1487,7 @@
             if ('performance' in window) {
                 const timing = performance.timing;
                 const loadTime = timing.loadEventEnd - timing.navigationStart;
-                console.log(`Page loaded in ${loadTime}ms`);
+                console.log(`Kilimani Bistro About Page loaded in ${loadTime}ms`);
             }
         });
     </script>
