@@ -58,7 +58,7 @@
                 "addressCountry": "KE",
                 "postalCode": "00100"
             },
-            "openingHours": "Mo-Su 07:00-21:00"
+            "openingHours": "Mo-Su 08:00-22:00"
         },
         {
             "@type": "Organization",
@@ -637,6 +637,10 @@
         }
         
         /* Dropdown Styles */
+        /* Ensure nav links and dropdown items don't wrap letters vertically */
+        .nav-link {
+            white-space: nowrap;
+        }
         .nav-item-dropdown {
             position: relative;
         }
@@ -664,6 +668,9 @@
             text-decoration: none;
             border-bottom: 1px solid #f0f0f0;
             transition: var(--transition);
+            white-space: nowrap;
+            word-break: normal;
+            overflow-wrap: normal;
         }
         
         .dropdown-menu a:hover {
@@ -1028,7 +1035,7 @@
                     <div class="restaurant-card-body">
                         <p>We're here to serve you with the same excellence that defines our catering services. Advanced reservations are recommended, especially for weekend dining and special occasions.</p>
                         <p><strong>Operating Hours:</strong><br>
-                        Monday - Sunday: 7:00 AM - 9:00 PM<br>
+                        Monday - Sunday: 8:00 AM - 10:00 PM<br>
                         Breakfast: 8:00 AM - 11:00 AM<br>
                         Lunch: 12:00 PM - 3:00 PM<br>
                         Dinner: 6:00 PM - 10:00 PM</p>
@@ -1313,7 +1320,7 @@
                         <li><i class="fas fa-phone"></i> +254 111 553616</li>
                         <li><i class="fas fa-envelope"></i> dine@kilimanibistro.co.ke</li>
                         <li><i class="fas fa-envelope"></i> events@kilimanibistro.co.ke</li>
-                        <li><i class="fas fa-clock"></i> Mon-Sun: 7:00 AM - 9:00 PM</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</li>
                     </ul>
                 </div>
             </div>
