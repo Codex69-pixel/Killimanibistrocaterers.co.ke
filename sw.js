@@ -14,15 +14,12 @@ const CORE_ASSETS = [
     '/script.js',
     '/manifest.json',
     '/Images/logo.jpeg',
-    '/Images/logo-192.png',
-    '/Images/logo-512.png',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
     'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap'
 ];
 
 // Image assets to cache (catering images)
 const IMAGE_ASSETS = [
-    '/Images/catering%202.jpg',
     '/Images/catering%203.jpg',
     '/Images/catering%204.jpg',
     '/Images/catering-setup.jpg',
@@ -30,9 +27,12 @@ const IMAGE_ASSETS = [
     '/Images/cater02.jpeg',
     '/Images/cater%2003.jpeg',
     '/Images/cater04.jpeg',
+    '/Images/cater05.jpeg',
     '/Images/cater06.jpeg',
     '/Images/cater07.jpeg',
     '/Images/cater08.jpeg',
+    '/Images/cater09.jpeg',
+    '/Images/cater10.jpeg',
     '/Images/kcb%20logo.png',
     '/Images/amref%20logo.png',
     '/Images/UoN_Logo.png',
@@ -111,8 +111,6 @@ const CACHE_STRATEGIES = {
         { url: '/script.js', strategy: 'stale-while-revalidate' },
         { url: '/manifest.json', strategy: 'cache-first' },
         { url: '/Images/logo.jpeg', strategy: 'cache-first' },
-        { url: '/Images/logo-192.png', strategy: 'cache-first' },
-        { url: '/Images/logo-512.png', strategy: 'cache-first' },
         { url: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', strategy: 'stale-while-revalidate' },
         { url: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap', strategy: 'stale-while-revalidate' }
     ],

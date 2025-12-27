@@ -63,37 +63,52 @@ function initNavigation() {
         const dropdownLink = item.querySelector('.nav-link');
         const dropdown = item.querySelector('.dropdown-menu');
         const icon = item.querySelector('.dropdown-icon');
+        const dropdownLinks = dropdown ? dropdown.querySelectorAll('a') : [];
         
         dropdownLink.addEventListener('click', function(e) {
             if (window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                // Toggle current dropdown
                 const isActive = item.classList.contains('active');
-                
-                // Close all other dropdowns
-                dropdownItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('active');
-                        const otherDropdown = otherItem.querySelector('.dropdown-menu');
-                        const otherIcon = otherItem.querySelector('.dropdown-icon');
-                        if (otherDropdown) otherDropdown.classList.remove('active');
-                        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
-                    }
-                });
-                
-                // Toggle current
+
+                // First tap opens the dropdown; second tap follows the link
                 if (!isActive) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close all other dropdowns
+                    dropdownItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherDropdown = otherItem.querySelector('.dropdown-menu');
+                            const otherIcon = otherItem.querySelector('.dropdown-icon');
+                            if (otherDropdown) otherDropdown.classList.remove('active');
+                            if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    // Open current dropdown
                     item.classList.add('active');
                     if (dropdown) dropdown.classList.add('active');
                     if (icon) icon.style.transform = 'rotate(180deg)';
                 } else {
-                    item.classList.remove('active');
-                    if (dropdown) dropdown.classList.remove('active');
-                    if (icon) icon.style.transform = 'rotate(0deg)';
+                    // Allow navigation on second tap and close the mobile menu
+                    if (hamburger && hamburger.classList.contains('active')) {
+                        hamburger.classList.remove('active');
+                        if (navMenu) navMenu.classList.remove('active');
+                        document.body.classList.remove('menu-open');
+                    }
                 }
             }
+        });
+
+        // Close the mobile menu when a dropdown link is chosen
+        dropdownLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    if (hamburger) hamburger.classList.remove('active');
+                    if (navMenu) navMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
         });
     });
     
