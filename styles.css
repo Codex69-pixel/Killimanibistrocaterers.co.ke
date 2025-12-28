@@ -35,7 +35,7 @@
     --primary-dark-red: #9a162e;
     --primary-black: #000000;
     --primary-white: #FFFFFF;
-    --accent-gold: #D4AF37;
+    --accent-gold: #C41E3A;
     --gray-light: #F5F5F5;
     --gray-dark: #333333;
     --gray-medium: #6c757d;
@@ -1776,7 +1776,7 @@ textarea.form-control {
 }
 
 .rating {
-    color: var(--accent-gold);
+    color: var(--primary-red);
     display: flex;
     gap: 4px;
     flex-shrink: 0;
@@ -3039,7 +3039,7 @@ textarea.form-control {
         --primary-red: #b30000;
         --primary-black: #000000;
         --primary-white: #ffffff;
-        --accent-gold: #b8860b;
+        --accent-gold: #C41E3A;
         --gray-light: #f0f0f0;
         --gray-dark: #000000;
     }
