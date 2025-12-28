@@ -389,6 +389,7 @@ p {
     display: flex;
     gap: 15px;
     align-items: center;
+    margin-left: 40px;
 }
 
 .hamburger {
