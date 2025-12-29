@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all components
+    initHeroSlideshow();
     initNavigation();
     initChatWidget();
     initImageOptimization();
@@ -19,6 +20,55 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnalytics();
     initServiceWorker();
 });
+
+// ============================================
+// HERO SLIDESHOW
+// ============================================
+
+function initHeroSlideshow() {
+    const slides = document.querySelectorAll('.slide');
+    
+    if (slides.length === 0) return;
+    
+    let currentSlide = 0;
+    
+    // Show first slide immediately
+    slides[0].classList.add('active');
+    
+    // Preload all images
+    slides.forEach(slide => {
+        const img = slide.querySelector('img');
+        if (img && !img.complete) {
+            img.loading = 'eager';
+        }
+    });
+    
+    function showSlide(n) {
+        // Remove active class from all slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+        
+        // Wrap around if needed
+        if (n >= slides.length) {
+            currentSlide = 0;
+        } else if (n < 0) {
+            currentSlide = slides.length - 1;
+        } else {
+            currentSlide = n;
+        }
+        
+        // Show current slide
+        slides[currentSlide].classList.add('active');
+    }
+    
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+    
+    // Auto-advance every 5 seconds
+    setInterval(nextSlide, 5000);
+}
 
 // ============================================
 // NAVIGATION & DROPDOWN

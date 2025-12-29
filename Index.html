@@ -391,10 +391,10 @@
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <div class="logo-container">
+            <a href="index.html" class="logo-container">
                 <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 
@@ -443,26 +443,38 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Reliable Catering for <span class="highlight">Nairobi Offices & Events</span></h1>
-            <p class="hero-subtitle">Based in Kilimani, we deliver on-time meals for meetings, corporate events, and daily office lunches across Nairobi</p>
-            <div class="hero-buttons">
-                <a href="services.html" class="btn btn-primary btn-large">Our Services</a>
-                <a href="contact.html#quote" class="btn btn-outline btn-large">Book Consultation</a>
+        <div class="hero-container">
+            <div class="hero-text-side">
+                <h1 class="hero-title">Exquisite Catering for <span class="highlight">Every Occasion</span></h1>
+                <p class="hero-subtitle">From intimate gatherings to grand celebrations, we bring culinary excellence to your events across Nairobi</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary btn-large">Explore Services</a>
+                    <a href="contact.html#quote" class="btn btn-outline btn-large">Get a Quote</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Events Catered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat">
+                        <h3>9+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <h3>500+</h3>
-                <p>Events Catered</p>
-            </div>
-            <div class="stat">
-                <h3>98%</h3>
-                <p>Client Satisfaction</p>
-            </div>
-            <div class="stat">
-                <h3>24/7</h3>
-                <p>Support Available</p>
+            <div class="hero-image-side">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="Images/hero-image.png" alt="Professional catering setup with elegant buffet display" loading="eager">
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/hero-image 02.png" alt="Catering services at upscale event" loading="eager">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -714,10 +726,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo-container">
+                    <a href="index.html" class="logo-container">
                         <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
                         <span class="brand-name">Kilimanibistro</span>
-                    </div>
+                    </a>
                     <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100063911658532"><i class="fab fa-facebook-f"></i></a>
@@ -761,26 +773,10 @@
         </div>
     </footer>
 
-    <!-- Chat Widget -->
-    <div class="chat-widget">
-        <button class="chat-toggle">
-            <i class="fas fa-comments"></i>
-        </button>
-        <div class="chat-box">
-            <div class="chat-header">
-                <h4>Chat with Us</h4>
-                <button class="chat-close">&times;</button>
-            </div>
-            <div class="chat-body">
-                <p>Hello! How can we help you today?</p>
-                <div class="quick-actions">
-                    <button class="quick-btn" data-action="quote">Get Quote</button>
-                    <button class="quick-btn" data-action="follow">Follow Us</button>
-                    <button class="quick-btn" data-action="contact">Contact Info</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- WhatsApp Chat Widget -->
+    <a href="https://wa.me/254722233257?text=Hello%20Kilimanibistro%20Caterers,%20I%20would%20like%20to%20inquire%20about%20your%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Scripts -->
     <script src="script.js"></script>
