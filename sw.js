@@ -6,7 +6,11 @@ const APP_VERSION = '2.0.0';
 const CORE_ASSETS = [
     '/',
     '/index.html',
-    '/services.html',
+    '/restaurant-catering.html',
+    '/corporate-catering.html',
+    '/private-event-catering.html',
+    '/concession-catering.html',
+    '/wedding-catering.html',
     '/gallery.html',
     '/about.html',
     '/contact.html',

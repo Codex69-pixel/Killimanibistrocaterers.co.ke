@@ -371,6 +371,16 @@
         border-bottom: none;
     }
     
+    /* Desktop dropdown hover */
+    @media (min-width: 769px) {
+        .nav-item-dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    
     @media (max-width: 768px) {
         .dropdown-menu {
             position: static;
@@ -400,16 +410,15 @@
                 
                 <!-- Catering Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="services.html" class="nav-link">
+                    <a href="#" class="nav-link">
                         Catering Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="services.html">All Services Overview</a>
-                        <a href="wedding-catering.html">Wedding Catering</a>
-                        <a href="private-event-catering.html">Private Event Catering</a>
+                        <a href="restaurant-catering.html">Restaurant Catering</a>
                         <a href="corporate-catering.html">Corporate Catering</a>
-                        <a href="drop-off-catering.html">Drop Off Catering</a>
+                        <a href="private-event-catering.html">Private Event Catering</a>
+                        <a href="concession-catering.html">Concession Catering</a>
                     </div>
                 </li>
                 
@@ -723,19 +732,18 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Services</h3>
                     <ul>
+                        <li><a href="restaurant-catering.html">Restaurant Catering</a></li>
                         <li><a href="corporate-catering.html">Corporate Catering</a></li>
-                        <li><a href="wedding-catering.html">Wedding Catering</a></li>
                         <li><a href="private-event-catering.html">Private Events</a></li>
-                        <li><a href="drop-off-catering.html">Drop Off Catering</a></li>
+                        <li><a href="concession-catering.html">Concession Catering</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
