@@ -466,45 +466,7 @@
             font-size: 1rem;
         }
         
-        /* Dropdown Styles */
-        .nav-item-dropdown {
-            position: relative;
-        }
-        
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: var(--shadow);
-            border-radius: 8px;
-            min-width: 220px;
-            z-index: 1000;
-            display: none;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: var(--transition);
-        }
-        
-        .dropdown-menu a {
-            display: block;
-            padding: 14px 20px;
-            color: var(--dark-color);
-            text-decoration: none;
-            border-bottom: 1px solid #f0f0f0;
-            transition: var(--transition);
-        }
-        
-        .dropdown-menu a:hover {
-            background: var(--gray-light);
-            color: var(--primary-color);
-            padding-left: 25px;
-        }
-        
-        .dropdown-menu a:last-child {
-            border-bottom: none;
-        }
+        /* (Dropdown styles removed to use global styles.css) */
         
         /* Success Message */
         .form-success {
@@ -593,20 +555,7 @@
                 padding: 0 20px 20px;
             }
             
-            .dropdown-menu {
-                position: static;
-                box-shadow: none;
-                display: none;
-                border-radius: 0;
-                border: 1px solid #eee;
-            }
-            
-            .dropdown-menu.active {
-                display: block;
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
+            /* (Mobile dropdown styles removed to use global styles.css) */
         }
         
         @media (max-width: 480px) {
@@ -634,17 +583,17 @@
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="logo-container">
+            <a href="Index.html" class="logo-container">
                 <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="Index.html" class="nav-link">Home</a></li>
                 
                 <!-- Catering Services Dropdown -->
                 <li class="nav-item-dropdown">
                     <a href="#" class="nav-link">
-                        Catering Services 
+                        Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
@@ -665,7 +614,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a href="/Blog">Blog</a>
-                        <a href="about.html#ambiance">Ambiance & Location</a>
+                        <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </li>
@@ -973,8 +922,7 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -1008,40 +956,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Dropdown functionality
-            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
-            
-            dropdownItems.forEach(item => {
-                const link = item.querySelector('.nav-link');
-                const dropdown = item.querySelector('.dropdown-menu');
-                
-                // Show on hover
-                item.addEventListener('mouseenter', () => {
-                    dropdown.style.display = 'block';
-                    dropdown.style.opacity = '1';
-                    dropdown.style.visibility = 'visible';
-                    dropdown.style.transform = 'translateY(0)';
-                });
-                
-                // Hide on mouse leave
-                item.addEventListener('mouseleave', () => {
-                    dropdown.style.display = 'none';
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-10px)';
-                });
-                
-                // Touch devices support
-                link.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        const isActive = dropdown.style.display === 'block';
-                        dropdown.style.display = isActive ? 'none' : 'block';
-                        dropdown.style.opacity = isActive ? '0' : '1';
-                        dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-                    }
-                });
-            });
+            // (Dropdown functionality removed; handled by shared script.js)
             
             // FAQ functionality
             const faqItems = document.querySelectorAll('.faq-item');
@@ -1209,24 +1124,7 @@
                 });
             }
             
-            // Mobile menu toggle
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (hamburger && navMenu) {
-                hamburger.addEventListener('click', () => {
-                    hamburger.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-                
-                // Close mobile menu when clicking on a link
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.addEventListener('click', () => {
-                        hamburger.classList.remove('active');
-                        navMenu.classList.remove('active');
-                    });
-                });
-            }
+            // (Mobile menu toggle removed; handled by shared script.js)
             
             // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1260,6 +1158,7 @@
     <a href="https://wa.me/254722233257?text=Hello%20Kilimanibistro%20Caterers,%20I%20would%20like%20to%20inquire%20about%20your%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script src="script.js"></script>
 </body>
 </html>
 

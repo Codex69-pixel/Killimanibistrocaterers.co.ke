@@ -85,58 +85,7 @@
         background-color: #f5f5f5;
     }
     
-    /* Dropdown styles */
-    .nav-item-dropdown {
-        position: relative;
-    }
-    
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: white;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        border-radius: 4px;
-        min-width: 200px;
-        z-index: 1000;
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    
-    .dropdown-menu a {
-        display: block;
-        padding: 12px 20px;
-        color: #333;
-        text-decoration: none;
-        border-bottom: 1px solid #f0f0f0;
-    }
-    
-    .dropdown-menu a:hover {
-        background: #f8f8f8;
-        color: #000;
-    }
-    
-    .dropdown-menu a:last-child {
-        border-bottom: none;
-    }
-    
-    @media (max-width: 768px) {
-        .dropdown-menu {
-            position: static;
-            box-shadow: none;
-            display: none;
-        }
-        
-        .dropdown-menu.active {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-    }
+    /* Navbar dropdown styles are defined globally in styles.css */
     
     /* Gallery item animations */
     .gallery-item {
@@ -444,17 +393,17 @@
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="logo-container">
+            <a href="Index.html" class="logo-container">
                 <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="Index.html" class="nav-link">Home</a></li>
                 
-                <!-- Catering Services Dropdown -->
+                <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
                     <a href="#" class="nav-link">
-                        Catering Services 
+                        Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
@@ -475,7 +424,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a href="/Blog">Blog</a>
-                        <a href="about.html#ambiance">Ambiance & Location</a>
+                        <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </li>
@@ -685,9 +634,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
-                        <span class="brand-name">Kilimanibistro</span>
+                    <a href="Index.html" class="logo-container">
+                        <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="80" height="50" loading="eager">
+                        <span class="brand-name">Kilimani Bistro Caterers</span>
                     </a>
                     <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
                     <div class="social-links">
@@ -699,8 +648,7 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -733,239 +681,158 @@
     </footer>
 
     <script>
-        // Dropdown functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
-            
-            dropdownItems.forEach(item => {
-                const link = item.querySelector('.nav-link');
-                const dropdown = item.querySelector('.dropdown-menu');
-                
-                // Show on hover
-                item.addEventListener('mouseenter', () => {
-                    dropdown.style.display = 'block';
-                    dropdown.style.opacity = '1';
-                    dropdown.style.visibility = 'visible';
-                    dropdown.style.transform = 'translateY(0)';
-                });
-                
-                // Hide on mouse leave
-                item.addEventListener('mouseleave', () => {
-                    dropdown.style.display = 'none';
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-10px)';
-                });
-                
-                // Touch devices support
-                link.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        const isActive = dropdown.style.display === 'block';
-                        dropdown.style.display = isActive ? 'none' : 'block';
-                        dropdown.style.opacity = isActive ? '0' : '1';
-                        dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-                    }
-                });
-            });
-            
-            // Force immediate image loading
-            const images = document.querySelectorAll('.gallery-item img, .video-thumbnail');
-            images.forEach(img => {
-                if (!img.complete) {
-                    const src = img.src;
-                    const newImg = new Image();
-                    newImg.src = src;
-                    newImg.onload = () => {
-                        img.style.opacity = '1';
-                    };
-                    newImg.onerror = () => {
-                        console.log('Failed to load image:', src);
-                    };
-                } else {
-                    img.style.opacity = '1';
-                }
-            });
-            
-            // Gallery Filtering
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-                    
-                    const filterValue = button.dataset.filter;
-                    
-                    // Filter gallery items
-                    galleryItems.forEach(item => {
-                        if (filterValue === 'all' || item.dataset.category === filterValue) {
-                            item.style.display = 'block';
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.classList.remove('hidden');
-                            }, 10);
-                        } else {
-                            item.style.opacity = '0';
-                            item.classList.add('hidden');
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-            
-            // Lightbox functionality
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-image');
-            const lightboxCaption = document.querySelector('.lightbox-caption');
-            const closeLightbox = document.querySelector('.lightbox-close');
-            const prevBtn = document.querySelector('.lightbox-prev');
-            const nextBtn = document.querySelector('.lightbox-next');
-            
-            let currentIndex = 0;
-            const imagesArray = Array.from(galleryItems);
-            
-            galleryItems.forEach((item, index) => {
-                item.addEventListener('click', () => {
-                    const imgSrc = item.querySelector('img').src;
-                    const caption = item.querySelector('.gallery-overlay').innerHTML;
-                    
-                    lightboxImg.src = imgSrc;
-                    lightboxCaption.innerHTML = caption;
-                    lightbox.classList.add('active');
-                    currentIndex = index;
-                });
-            });
-            
-            closeLightbox.addEventListener('click', () => {
-                lightbox.classList.remove('active');
-            });
-            
-            lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) {
-                    lightbox.classList.remove('active');
-                }
-            });
-            
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
-                updateLightbox();
-            });
-            
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % imagesArray.length;
-                updateLightbox();
-            });
-            
-            function updateLightbox() {
-                const item = imagesArray[currentIndex];
-                const imgSrc = item.querySelector('img').src;
-                const caption = item.querySelector('.gallery-overlay').innerHTML;
-                
-                lightboxImg.src = imgSrc;
-                lightboxCaption.innerHTML = caption;
+    document.addEventListener('DOMContentLoaded', function() {
+        // Force immediate image loading
+        const images = document.querySelectorAll('.gallery-item img, .video-thumbnail');
+        images.forEach(img => {
+            if (!img.complete) {
+                const newImg = new Image();
+                newImg.src = img.src;
+                newImg.onload = () => { img.style.opacity = '1'; };
+            } else {
+                img.style.opacity = '1';
             }
-            
-            // Keyboard navigation for lightbox
-            document.addEventListener('keydown', (e) => {
-                if (!lightbox.classList.contains('active')) return;
-                
-                if (e.key === 'Escape') {
-                    lightbox.classList.remove('active');
-                } else if (e.key === 'ArrowLeft') {
-                    prevBtn.click();
-                } else if (e.key === 'ArrowRight') {
-                    nextBtn.click();
-                }
-            });
-            
-            // Video modal functionality
-            const videoModal = document.getElementById('videoModal');
-            const playButtons = document.querySelectorAll('.play-button');
-            const modalClose = document.querySelector('.modal-close');
-            const videoFrame = document.getElementById('videoFrame');
-            
-            // Example video URLs - REPLACE WITH YOUR ACTUAL VIDEO EMBED LINKS
-            const videoUrls = {
-                'wedding-highlights': 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Example video
-                'corporate-event': 'https://www.youtube.com/embed/dQw4w9WgXcQ'    // Example video
-            };
-            
-            playButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const videoId = button.dataset.video;
-                    if (videoUrls[videoId]) {
-                        videoFrame.src = videoUrls[videoId] + '?autoplay=1';
-                        videoModal.style.display = 'flex';
+        });
+
+        // Gallery Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filterValue = button.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.dataset.category === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.classList.remove('hidden');
+                        }, 10);
                     } else {
-                        // Fallback to showing an alert or redirecting to contact page
-                        alert('Video highlights coming soon! Please contact us for full event videos.');
+                        item.style.opacity = '0';
+                        item.classList.add('hidden');
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
                     }
                 });
-            });
-            
-            modalClose.addEventListener('click', () => {
-                videoFrame.src = '';
-                videoModal.style.display = 'none';
-            });
-            
-            // Close modal when clicking outside
-            videoModal.addEventListener('click', (e) => {
-                if (e.target === videoModal) {
-                    videoFrame.src = '';
-                    videoModal.style.display = 'none';
-                }
-            });
-            
-            // Mobile menu toggle (if not in script.js)
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            if (hamburger && navMenu) {
-                hamburger.addEventListener('click', () => {
-                    hamburger.classList.toggle('active');
-                    navMenu.classList.toggle('active');
-                });
-                
-                // Close mobile menu when clicking on a link
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    link.addEventListener('click', () => {
-                        hamburger.classList.remove('active');
-                        navMenu.classList.remove('active');
-                    });
-                });
-            }
-            
-            // Preload all images in background for better UX
-            const allImages = [
-                'Images/cater07.jpeg',
-                'Images/cater08.jpeg',
-                'Images/cater06.jpeg',
-                'Images/cater04.jpeg',
-                'Images/cater02.jpeg',
-                'Images/cater%201.jpeg',
-                'Images/cater%2003.jpeg'
-            ];
-            
-            allImages.forEach(src => {
-                const img = new Image();
-                img.src = src;
             });
         });
-        
-        // Service Worker Registration for PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').catch(err => {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-image');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const closeLightbox = document.querySelector('.lightbox-close');
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        let currentIndex = 0;
+        const imagesArray = Array.from(galleryItems);
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                const caption = item.querySelector('.gallery-overlay').innerHTML;
+                lightboxImg.src = imgSrc;
+                lightboxCaption.innerHTML = caption;
+                lightbox.classList.add('active');
+                currentIndex = index;
             });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        function updateLightbox() {
+            const item = imagesArray[currentIndex];
+            const imgSrc = item.querySelector('img').src;
+            const caption = item.querySelector('.gallery-overlay').innerHTML;
+            lightboxImg.src = imgSrc;
+            lightboxCaption.innerHTML = caption;
         }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+            updateLightbox();
+        });
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % imagesArray.length;
+            updateLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            } else if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        });
+
+        // Video modal functionality
+        const videoModal = document.getElementById('videoModal');
+        const playButtons = document.querySelectorAll('.play-button');
+        const modalClose = document.querySelector('.modal-close');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoUrls = {
+            'wedding-highlights': 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+            'corporate-event': 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        };
+        playButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const videoId = button.dataset.video;
+                if (videoUrls[videoId]) {
+                    videoFrame.src = videoUrls[videoId] + '?autoplay=1';
+                    videoModal.style.display = 'flex';
+                } else {
+                    alert('Video highlights coming soon! Please contact us for full event videos.');
+                }
+            });
+        });
+        modalClose.addEventListener('click', () => {
+            videoFrame.src = '';
+            videoModal.style.display = 'none';
+        });
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoFrame.src = '';
+                videoModal.style.display = 'none';
+            }
+        });
+
+        // Preload all images in background for better UX
+        const allImages = [
+            'Images/cater07.jpeg',
+            'Images/cater08.jpeg',
+            'Images/cater06.jpeg',
+            'Images/cater04.jpeg',
+            'Images/cater02.jpeg',
+            'Images/cater%201.jpeg',
+            'Images/cater%2003.jpeg'
+        ];
+        allImages.forEach(src => { const img = new Image(); img.src = src; });
+    });
+
+    // Service Worker Registration for PWA
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js').catch(err => {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
     </script>
+    <!-- Load shared behavior -->
+    <script src="script.js"></script>
     
     <!-- WhatsApp Chat Widget -->
     <a href="https://wa.me/254722233257?text=Hello%20Kilimanibistro%20Caterers,%20I%20would%20like%20to%20inquire%20about%20your%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">

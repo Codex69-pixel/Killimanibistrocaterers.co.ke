@@ -636,58 +636,6 @@
             line-height: 1.7;
         }
         
-        /* Dropdown Styles */
-        /* Ensure nav links and dropdown items don't wrap letters vertically */
-        .nav-link {
-            white-space: nowrap;
-        }
-        .nav-item-dropdown {
-            position: relative;
-        }
-        
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: var(--shadow);
-            border-radius: 8px;
-            min-width: 220px;
-            z-index: 1000;
-            display: none;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: var(--transition);
-        }
-        
-        .dropdown-menu a {
-            display: block;
-            padding: 14px 20px;
-            color: var(--dark-color);
-            text-decoration: none;
-            border-bottom: 1px solid #f0f0f0;
-            transition: var(--transition);
-            white-space: nowrap;
-            word-break: normal;
-            overflow-wrap: normal;
-        }
-        
-        .dropdown-menu a:hover {
-            background: var(--gray-light);
-            color: var(--primary-color);
-            padding-left: 25px;
-        }
-        
-        .dropdown-menu a:last-child {
-            border-bottom: none;
-        }
-        
-        .dropdown-menu a i {
-            margin-left: 5px;
-            font-size: 0.8rem;
-        }
-        
         /* Container */
         .container {
             max-width: 1200px;
@@ -910,17 +858,17 @@
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <div class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimani Bistro Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
-                <span class="brand-name">Kilimani Bistro & Caterers</span>
-            </div>
+            <a href="Index.html" class="logo-container">
+                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
+                <span class="brand-name">Kilimani Bistro Caterers</span>
+            </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="Index.html" class="nav-link">Home</a></li>
                 
                 <!-- Catering Services Dropdown -->
                 <li class="nav-item-dropdown">
                     <a href="#" class="nav-link">
-                        Catering Services 
+                        Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
@@ -941,7 +889,7 @@
                     </a>
                     <div class="dropdown-menu">
                         <a href="about.html#story">The Kilimani Bistro Story</a>
-                        <a href="about.html#ambiance">Ambiance & Location</a>
+                        <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </li>
@@ -1295,9 +1243,7 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html#story">Our Restaurant</a></li>
-                        <li><a href="services.html">Catering Services</a></li>
+                        <li><a href="Index.html">Home</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -1333,41 +1279,6 @@
     <script>
         // Performance Optimizations
         document.addEventListener('DOMContentLoaded', function() {
-            // Dropdown functionality
-            const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
-            
-            dropdownItems.forEach(item => {
-                const link = item.querySelector('.nav-link');
-                const dropdown = item.querySelector('.dropdown-menu');
-                
-                // Show on hover
-                item.addEventListener('mouseenter', () => {
-                    dropdown.style.display = 'block';
-                    dropdown.style.opacity = '1';
-                    dropdown.style.visibility = 'visible';
-                    dropdown.style.transform = 'translateY(0)';
-                });
-                
-                // Hide on mouse leave
-                item.addEventListener('mouseleave', () => {
-                    dropdown.style.display = 'none';
-                    dropdown.style.opacity = '0';
-                    dropdown.style.visibility = 'hidden';
-                    dropdown.style.transform = 'translateY(-10px)';
-                });
-                
-                // Touch devices support
-                link.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        const isActive = dropdown.style.display === 'block';
-                        dropdown.style.display = isActive ? 'none' : 'block';
-                        dropdown.style.opacity = isActive ? '0' : '1';
-                        dropdown.style.visibility = isActive ? 'hidden' : 'visible';
-                    }
-                });
-            });
-            
             // Preload remaining images after initial load
             setTimeout(() => {
                 const imagesToPreload = [
