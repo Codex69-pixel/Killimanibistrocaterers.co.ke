@@ -187,6 +187,90 @@
             color: #666;
             line-height: 1.6;
         }
+
+        .restaurant-spotlight {
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0 10px;
+        }
+
+        .restaurant-spotlight figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.15);
+        }
+
+        .restaurant-spotlight img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .restaurant-spotlight .badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(196, 30, 58, 0.95);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .restaurant-spotlight .copy h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .restaurant-spotlight .copy p {
+            color: #4a4a4a;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+
+        .restaurant-spotlight .copy ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 18px;
+        }
+
+        .restaurant-spotlight .copy li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .restaurant-spotlight .copy li i {
+            color: #C41E3A;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        .restaurant-spotlight .note {
+            background: #f8f9fa;
+            padding: 14px 16px;
+            border-left: 4px solid #C41E3A;
+            border-radius: 8px;
+            font-size: 0.98rem;
+            color: #333;
+        }
         
         .types-section {
             background: white;
@@ -289,6 +373,11 @@
             .benefits-section {
                 padding: 40px 30px;
             }
+
+            .restaurant-spotlight {
+                padding: 40px 30px;
+                gap: 24px;
+            }
             
             .features-grid {
                 grid-template-columns: 1fr;
@@ -330,7 +419,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="about.html#story">The Kilimani Bistro Story</a>
+                        <a href="/Blog">Blog</a>
                         <a href="about.html#ambiance">Ambiance & Location</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -366,6 +455,24 @@
             <div class="intro-section">
                 <h2>What is Restaurant Catering?</h2>
                 <p>Restaurant catering is when a restaurant provides <strong>food and beverage services for events or private functions</strong>, bringing the full restaurant experience to your chosen venue. Unlike quick-service concession catering, restaurant catering focuses on <strong>full-course meals</strong> with professional service, making it perfect for formal and semi-formal events where quality and presentation are paramount.</p>
+            </div>
+
+            <!-- Restaurant Catering Visual & Explanation -->
+            <div class="restaurant-spotlight" aria-labelledby="restaurant-spotlight-heading">
+                <figure>
+                    <span class="badge">Live Buffet</span>
+                    <img src="/Images/restaurant-catering.jpg" alt="Buffet line of chafing dishes with grilled chicken wings, fish stew, and corn at a Nairobi restaurant catering event" width="960" height="768" loading="lazy">
+                </figure>
+                <div class="copy">
+                    <h2 id="restaurant-spotlight-heading">What Our Restaurant Catering Looks Like</h2>
+                    <p>See the real setup: polished chafing dishes, garnished mains, and clearly separated courses so guests move smoothly down the line. This is the same Nairobi-standard restaurant catering we deploy for weddings, galas, office celebrations, and private dinners.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i><span>Freshly refilled buffet line with proteins, sides, and vegetarian options—kept hot, labelled, and photo-ready.</span></li>
+                        <li><i class="fas fa-leaf"></i><span>Balanced menu flow: starters first, hearty mains center, desserts last—optimized for guest satisfaction and speed.</span></li>
+                        <li><i class="fas fa-hand-holding-heart"></i><span>Service team on-site to guide guests, manage portions, and maintain cleanliness throughout service.</span></li>
+                    </ul>
+                    <div class="note">We can theme linens, labels, and garnish styling to match your brand palette or event decor while keeping the line efficient.</div>
+                </div>
             </div>
 
             <!-- Key Features -->

@@ -190,6 +190,90 @@
             line-height: 1.6;
             font-size: 0.95rem;
         }
+
+        .concession-stand-spotlight {
+            background: white;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+            margin: 40px 0 10px;
+        }
+
+        .concession-stand-spotlight figure {
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.15);
+        }
+
+        .concession-stand-spotlight img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .concession-stand-spotlight .badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(196, 30, 58, 0.95);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .concession-stand-copy h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+
+        .concession-stand-copy p {
+            color: #4a4a4a;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+
+        .concession-stand-copy ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 18px;
+        }
+
+        .concession-stand-copy li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .concession-stand-copy li i {
+            color: #C41E3A;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        .concession-stand-copy .note {
+            background: #f8f9fa;
+            padding: 14px 16px;
+            border-left: 4px solid #C41E3A;
+            border-radius: 8px;
+            font-size: 0.98rem;
+            color: #333;
+        }
         
         .types-section {
             background: white;
@@ -236,6 +320,11 @@
             background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
             padding: 80px 60px;
+
+            .concession-stand-spotlight {
+                padding: 40px 30px;
+                gap: 24px;
+            }
             border-radius: 10px;
             margin: 40px 0;
         }
@@ -339,7 +428,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="about.html#story">The Kilimani Bistro Story</a>
+                        <a href="/Blog">Blog</a>
                         <a href="about.html#ambiance">Ambiance & Location</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -375,6 +464,24 @@
             <div class="intro-section">
                 <h2>What is Concession Catering?</h2>
                 <p>Concession catering is a type of food service where a business provides <strong>ready-to-eat meals, snacks, or beverages</strong> in temporary or semi-permanent setups at events, venues, or high-traffic locations. Think of it as food "on-the-go" for large crowds—it's different from traditional catering because it focuses on <strong>quick service</strong> and often <strong>portable food</strong>, rather than formal sit-down meals.</p>
+            </div>
+
+            <!-- Concession Stand Visual & Explanation -->
+            <div class="concession-stand-spotlight" aria-labelledby="concession-stand-heading">
+                <figure>
+                    <span class="badge">Real Setup</span>
+                    <img src="/Images/concession-catering 01.jpg" alt="Carnival-style concession catering setup with chafing dishes, candy jars, and colorful decor" width="1024" height="768" loading="lazy">
+                </figure>
+                <div class="concession-stand-copy">
+                    <h2 id="concession-stand-heading">What a Concession Stand Looks Like</h2>
+                    <p>Guests eat with their eyes first. This is how our Nairobi concession catering looks on-site: vibrant skirting, clear labeling, hot chafing dishes for mains, candy and snacks up front, and visible condiments so people know exactly what they can grab in seconds.</p>
+                    <ul>
+                        <li><i class="fas fa-store"></i><span>Queue-friendly layout with sneeze guards and chafing dishes so lines move fast even during peak rush.</span></li>
+                        <li><i class="fas fa-utensils"></i><span>Hot mains on one side, snacks and sweet treats on the other, plus drink tubs nearby for quick upsells.</span></li>
+                        <li><i class="fas fa-clipboard-list"></i><span>Readable menu board and allergen tags that keep choices clear and boost conversion for every guest.</span></li>
+                    </ul>
+                    <div class="note">We keep aisles clear, label everything, and dress the stall to match your brand or theme—perfect for festivals, sports days, school fairs, and corporate family days.</div>
+                </div>
             </div>
 
             <!-- Key Features -->
