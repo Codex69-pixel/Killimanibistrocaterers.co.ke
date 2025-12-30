@@ -210,8 +210,20 @@
             border-radius: 8px;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
+            color: #333;
+            background-color: #ffffff;
             transition: var(--transition);
-            background: white;
+        }
+        
+        .form-control::placeholder {
+            color: #999;
+            opacity: 0.7;
+        }
+        
+        .form-control option {
+            color: #333;
+            background-color: #ffffff;
+            padding: 10px;
         }
         
         .form-control:focus {
@@ -646,7 +658,7 @@
                     </div>
                     
                     <form class="contact-form" id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="8a8a5e92-e8f2-40ae-8f6d-8d8f8f8f8f8f">
+                        <input type="hidden" name="access_key" value="3f830d9b-48c9-4765-b70a-742b62b8983b">
                         <input type="hidden" name="subject" value="New Quote Request - Kilimanibistro Caterers">
                         <input type="hidden" name="from_name" value="Kilimanibistro Website">
                         <input type="checkbox" name="botcheck" style="display: none;">
@@ -1101,26 +1113,43 @@
                     submitBtn.disabled = true;
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                     
-                    // Simulate form submission (replace with actual fetch to web3forms)
-                    setTimeout(() => {
-                        // Show success message
-                        successMessage.classList.add('show');
-                        
-                        // Reset form
-                        quoteForm.reset();
-                        
+                    // Create FormData object with all form fields
+                    const formData = new FormData(quoteForm);
+                    
+                    // Submit to Web3Forms
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Show success message
+                            successMessage.classList.add('show');
+                            
+                            // Reset form
+                            quoteForm.reset();
+                            
+                            // Scroll to success message
+                            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            
+                            // Hide success message after 5 seconds
+                            setTimeout(() => {
+                                successMessage.classList.remove('show');
+                            }, 5000);
+                        } else {
+                            alert('Failed to send quote request. Please try again or contact us directly.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error sending quote request. Please try again or contact us directly at +254722233257');
+                    })
+                    .finally(() => {
                         // Reset submit button
                         submitBtn.disabled = false;
                         submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Request';
-                        
-                        // Scroll to success message
-                        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        
-                        // Hide success message after 5 seconds
-                        setTimeout(() => {
-                            successMessage.classList.remove('show');
-                        }, 5000);
-                    }, 1500);
+                    });
                 });
             }
             
