@@ -1,0 +1,674 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cookieadmin\n"
+"POT-Creation-Date: 2025-09-26 12:20+0530\n"
+"PO-Revision-Date: 2025-10-13 13:19+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_html_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: cookieadmin\n"
+"X-Poedit-SearchPath-1: cookieadmin-pro\n"
+
+#: cookieadmin-pro/includes/admin.php:57 cookieadmin/includes/admin.php:85
+msgid "Consent Logs"
+msgstr "Jurnale de consimțământ"
+
+#: cookieadmin-pro/includes/admin.php:82
+msgid "Consent Id"
+msgstr "ID consimțământ"
+
+#: cookieadmin-pro/includes/admin.php:83
+msgid "Status"
+msgstr "Stare"
+
+#: cookieadmin-pro/includes/admin.php:84
+msgid "Country"
+msgstr "Țară"
+
+#: cookieadmin-pro/includes/admin.php:85
+msgid "User IP (Anonymized)"
+msgstr "IP utilizator (anonimizat)"
+
+#: cookieadmin-pro/includes/admin.php:86
+msgid "Time"
+msgstr "Timp"
+
+#: cookieadmin-pro/includes/admin.php:113
+msgid "No consent logs recorded yet!"
+msgstr "Nu există încă jurnale de consimțământ înregistrate!"
+
+#: cookieadmin-pro/includes/admin.php:125
+msgid "Displaying"
+msgstr "Se afișează"
+
+#: cookieadmin-pro/includes/admin.php:125
+msgid "of"
+msgstr "din"
+
+#: cookieadmin-pro/includes/admin.php:125
+msgid "item(s)"
+msgstr "element(e)"
+
+#: cookieadmin-pro/includes/admin.php:235
+#: cookieadmin-pro/includes/admin.php:320
+msgid "Accepted"
+msgstr "Acceptat"
+
+#: cookieadmin-pro/includes/admin.php:238
+#: cookieadmin-pro/includes/admin.php:322
+msgid "Rejected"
+msgstr "Respins"
+
+#: cookieadmin-pro/includes/admin.php:241
+#: cookieadmin-pro/includes/admin.php:324
+msgid "Partially Accepted"
+msgstr "Parțial acceptat"
+
+#: cookieadmin-pro/includes/admin.php:302
+msgid "No data to export"
+msgstr "Nu există date de exportat"
+
+#: cookieadmin-pro/includes/admin.php:360
+msgid "Unknow version difference type"
+msgstr "Tip necunoscut de diferență de versiune"
+
+#: cookieadmin-pro/includes/functions.php:227
+msgid "Install CookieAdmin Pro License Key"
+msgstr "Instalează cheia de licență CookieAdmin Pro"
+
+#: cookieadmin-pro/includes/functions.php:404
+#, php-format
+msgid "Your SoftWP license has %1$sexpired%2$s. Please renew it to continue receiving uninterrupted updates and support for %3$s."
+msgstr "Licența ta SoftWP a %1$sexpirat%2$s. Te rugăm să o reînnoiești pentru a continua să primești actualizări și suport neîntrerupt pentru %3$s."
+
+#: cookieadmin-pro/includes/functions.php:461
+msgid "Cookie Scan can be triggered once an hour"
+msgstr "Scanarea cookie-urilor poate fi declanșată o dată pe oră"
+
+#: cookieadmin-pro/includes/license.php:21
+msgid "Security Check Failed"
+msgstr "Verificarea securității a eșuat"
+
+#: cookieadmin-pro/includes/license.php:28
+msgid "The license key was not submitted"
+msgstr "Cheia de licență nu a fost trimisă"
+
+#: cookieadmin-pro/includes/license.php:35
+msgid "The response was malformed"
+msgstr "Răspunsul a fost incorect format"
+
+#: cookieadmin-pro/includes/license.php:42
+msgid "The license key is invalid"
+msgstr "Cheia de licență este invalidă"
+
+#: cookieadmin-pro/includes/license.php:46
+msgid "Successfully updated the license key"
+msgstr "Cheia de licență a fost actualizată cu succes"
+
+#: cookieadmin-pro/includes/license.php:58 cookieadmin/includes/admin.php:88
+msgid "License"
+msgstr "Licență"
+
+#: cookieadmin-pro/includes/license.php:64
+msgid "CookieAdmin Version"
+msgstr "Versiunea CookieAdmin"
+
+#: cookieadmin-pro/includes/license.php:66
+msgid "Pro Version"
+msgstr "Versiunea Pro"
+
+#: cookieadmin-pro/includes/license.php:71
+msgid "CookieAdmin License"
+msgstr "Licența CookieAdmin"
+
+#: cookieadmin-pro/includes/license.php:74
+msgid "Unlicensed"
+msgstr "Fără licență"
+
+#: cookieadmin-pro/includes/license.php:84
+msgid "License Status"
+msgstr "Starea licenței"
+
+#: cookieadmin-pro/includes/license.php:85
+msgid "License Expires"
+msgstr "Licența expiră"
+
+#: cookieadmin-pro/includes/license.php:100
+msgid "Server's IP Address"
+msgstr "Adresa IP a serverului"
+
+#: cookieadmin-pro/includes/plugin-update-checker.php:776
+msgid "Check for updates"
+msgstr "Verifică actualizări"
+
+#: cookieadmin-pro/includes/plugin-update-checker.php:821
+msgid "This plugin is up to date."
+msgstr "Acest plugin este actualizat."
+
+#: cookieadmin-pro/includes/plugin-update-checker.php:823
+msgid "A new version of this plugin is available."
+msgstr "O nouă versiune a acestui plugin este disponibilă."
+
+#: cookieadmin-pro/includes/plugin-update-checker.php:825
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Stare necunoscută a verificatorului de actualizări \"%s\""
+
+#: cookieadmin-pro/includes/scanner.php:42
+msgid "Network error: "
+msgstr "Eroare de rețea: "
+
+#: cookieadmin-pro/includes/scanner.php:54
+msgid "Status Code: "
+msgstr "Cod de stare: "
+
+#: cookieadmin-pro/includes/scanner.php:60
+msgid "The scanner server returned an unreadable response."
+msgstr "Serverul scannerului a returnat un răspuns ilizibil."
+
+#: cookieadmin-pro/includes/short-cirtuit.php:122
+msgid "You have not installed the free version of CookieAdmin. CookieAdmin Pro depends on the free version, so you must install it first in order to use CookieAdmin Pro."
+msgstr "Nu ați instalat versiunea gratuită a CookieAdmin. CookieAdmin Pro depinde de versiunea gratuită, deci trebuie să o instalați mai întâi pentru a folosi CookieAdmin Pro."
+
+#: cookieadmin-pro/includes/short-cirtuit.php:136
+msgid "CookieAdmin Pro depends on the free version of CookieAdmin, so you need to install / update the free version first."
+msgstr "CookieAdmin Pro depinde de versiunea gratuită a CookieAdmin, deci trebuie să instalați / actualizați mai întâi versiunea gratuită."
+
+#: cookieadmin-pro/includes/short-cirtuit.php:137
+msgid "Install/Update Now"
+msgstr "Instalează/Actualizează acum"
+
+#: cookieadmin-pro/init.php:142
+msgid "You are using an older version of CookieAdmin Pro. We recommend updating to the latest version to ensure seamless and uninterrupted use of the application."
+msgstr "Folosiți o versiune mai veche de CookieAdmin Pro. Vă recomandăm să actualizați la cea mai recentă versiune pentru a asigura o utilizare fără întreruperi a aplicației."
+
+#: cookieadmin-pro/init.php:148
+msgid "You are using an older version of CookieAdmin. We recommend updating to the latest free version to ensure smooth and uninterrupted use of the application."
+msgstr "Folosiți o versiune mai veche de CookieAdmin. Vă recomandăm să actualizați la cea mai recentă versiune gratuită pentru o utilizare fluidă și neîntreruptă a aplicației."
+
+#: cookieadmin/assets/cookie/policies.php:17
+msgid "We respect your privacy"
+msgstr "Respectăm confidențialitatea dvs"
+
+#: cookieadmin/assets/cookie/policies.php:18
+msgid "Cookies help us improve your experience, deliver personalized content, and analyze traffic. You can choose which cookies to allow by clicking <b>Customize</b>. Click <b>Accept All</b> to consent or <b>Reject All</b> to decline non-essential cookies."
+msgstr "Cookie-urile ne ajută să îmbunătățim experiența dvs., să oferim conținut personalizat și să analizăm traficul. Puteți alege ce cookie-uri să permiteți făcând clic pe <b>Personalizează</b>. Apăsați <b>Acceptă toate</b> pentru a consimți sau <b>Respinge toate</b> pentru a refuza cookie-urile neesențiale."
+
+#: cookieadmin/assets/cookie/policies.php:19
+msgid "Personalize Your Cookie Preferences"
+msgstr "Personalizați preferințele pentru cookie-uri"
+
+#: cookieadmin/assets/cookie/policies.php:20
+msgid "We use cookies to ensure smooth navigation and enable essential site functions. You can view detailed information about each cookie category below. <br />Cookies marked as <b>Necessary</b> are stored in your browser because they are essential for basic site functionality. <b>These cookies do not require your consent under GDPR.</b> <br />We also use third-party cookies to analyze site usage, remember your preferences, and deliver relevant content and ads. These will only be activated with your consent. You can choose to enable or disable these cookies, but please note that turning off some types may affect your browsing experience."
+msgstr "Folosim cookie-uri pentru a asigura o navigare fluidă și pentru a activa funcțiile esențiale ale site-ului. Puteți vedea informații detaliate despre fiecare categorie de cookie-uri mai jos. <br />Cookie-urile marcate ca <b>Esențiale</b> sunt stocate în browserul dvs. deoarece sunt necesare pentru funcționalitatea de bază a site-ului. <b>Aceste cookie-uri nu necesită consimțământul dvs. conform GDPR.</b> <br />De asemenea, folosim cookie-uri terțe pentru a analiza utilizarea site-ului, a reține preferințele dvs. și a oferi conținut și reclame relevante. Acestea vor fi activate doar cu consimțământul dvs. Puteți alege să activați sau să dezactivați aceste cookie-uri, dar rețineți că dezactivarea unor tipuri poate afecta experiența de navigare."
+
+#: cookieadmin/assets/cookie/policies.php:21
+#: cookieadmin/assets/cookie/policies.php:56
+msgid "Modify Cookie Preferences"
+msgstr "Modifică preferințele pentru cookie-uri"
+
+#: cookieadmin/assets/cookie/policies.php:30
+#: cookieadmin/assets/cookie/policies.php:65
+msgid "Customize"
+msgstr "Personalizează"
+
+#: cookieadmin/assets/cookie/policies.php:33
+#: cookieadmin/assets/cookie/policies.php:68
+msgid "Reject All"
+msgstr "Respinge tot"
+
+#: cookieadmin/assets/cookie/policies.php:36
+#: cookieadmin/assets/cookie/policies.php:71
+msgid "Accept All"
+msgstr "Acceptă tot"
+
+#: cookieadmin/assets/cookie/policies.php:39
+#: cookieadmin/assets/cookie/policies.php:74
+msgid "Save Preferences"
+msgstr "Salvează preferințele"
+
+#: cookieadmin/assets/cookie/policies.php:52
+msgid "Your Privacy Matters"
+msgstr "Confidențialitatea ta contează"
+
+#: cookieadmin/assets/cookie/policies.php:53
+msgid "We use cookies to improve your browsing experience, deliver personalized content and ads, and analyze website traffic. By clicking <b>Accept All</b>, you consent to our use of cookies. You can choose to manage your preferences or opt out of the sale or sharing of your personal information."
+msgstr "Folosim cookie-uri pentru a îmbunătăți experiența de navigare, a oferi conținut și reclame personalizate și a analiza traficul site-ului. Prin clic pe <b>Acceptă tot</b>, îți dai consimțământul pentru utilizarea cookie-urilor. Poți alege să gestionezi preferințele sau să renunți la vânzarea sau partajarea informațiilor tale personale."
+
+#: cookieadmin/assets/cookie/policies.php:54
+msgid "Customize Your Cookie Settings"
+msgstr "Personalizează setările cookie-urilor"
+
+#: cookieadmin/assets/cookie/policies.php:55
+msgid "We use cookies to support essential site functions and help you navigate efficiently. You can find detailed information about each cookie category below. <br /><b>Necessary</b> cookies are required for core site functionality and are always enabled. These do not require your consent. <br />Other cookies, including third-party cookies, are used to analyze usage, remember preferences, and provide relevant ads and content. These cookies are only used if you choose to enable them. You can adjust your preferences at any time. Disabling certain cookies may impact your browsing experience."
+msgstr "Folosim cookie-uri pentru a susține funcțiile esențiale ale site-ului și pentru a te ajuta să navighezi eficient. Mai jos găsești informații detaliate despre fiecare categorie de cookie-uri. <br /><b>Cookie-urile necesare</b> sunt obligatorii pentru funcționalitatea de bază a site-ului și sunt întotdeauna activate. Acestea nu necesită consimțământul tău. <br />Alte cookie-uri, inclusiv cele terțe, sunt folosite pentru a analiza utilizarea, a reține preferințele și a oferi reclame și conținut relevante. Aceste cookie-uri sunt utilizate doar dacă alegi să le activezi. Poți ajusta preferințele în orice moment. Dezactivarea anumitor cookie-uri poate afecta experiența ta de navigare."
+
+#: cookieadmin/includes/admin.php:70
+msgid "CookieAdmin"
+msgstr "CookieAdmin"
+
+#: cookieadmin/includes/admin.php:76 cookieadmin/includes/admin.php:158
+msgid "Dashboard"
+msgstr "Tablou de bord"
+
+#: cookieadmin/includes/admin.php:78 cookieadmin/includes/admin.php:480
+msgid "Consent Form"
+msgstr "Formular de consimțământ"
+
+#: cookieadmin/includes/admin.php:80 cookieadmin/includes/admin.php:197
+msgid "Settings"
+msgstr "Setări"
+
+#: cookieadmin/includes/admin.php:82 cookieadmin/includes/admin.php:296
+msgid "Scan Cookies"
+msgstr "Scanează cookie-urile"
+
+#: cookieadmin/includes/admin.php:92
+msgid "CookieAdmin Go Pro"
+msgstr "CookieAdmin Go Pro"
+
+#: cookieadmin/includes/admin.php:92
+msgid "Go Pro"
+msgstr "Go Pro"
+
+#: cookieadmin/includes/admin.php:131
+msgid "Share with your followers"
+msgstr "Distribuie cu urmăritorii tăi"
+
+#: cookieadmin/includes/admin.php:133
+msgid "I easily manage Cookie Consent Banner on my #WordPress site using @cookieadmin"
+msgstr "Gestionez ușor bannerul de consimțământ pentru cookie-uri pe site-ul meu #WordPress folosind @cookieadmin"
+
+#: cookieadmin/includes/admin.php:143
+msgid " You can report any bugs "
+msgstr " Poți raporta orice erori "
+
+#: cookieadmin/includes/admin.php:143
+msgid "here"
+msgstr "aici"
+
+#: cookieadmin/includes/admin.php:166
+msgid "Consent Banner"
+msgstr "Banner de consimțământ"
+
+#: cookieadmin/includes/admin.php:167 cookieadmin/includes/admin.php:181
+msgid "Enabled"
+msgstr "Activat"
+
+#: cookieadmin/includes/admin.php:171 cookieadmin/includes/admin.php:502
+msgid "Consent Type"
+msgstr "Tip de consimțământ"
+
+#: cookieadmin/includes/admin.php:172 cookieadmin/includes/admin.php:179
+msgid "Edit"
+msgstr "Editează"
+
+#: cookieadmin/includes/admin.php:174 cookieadmin/includes/admin.php:506
+msgid "US State Laws"
+msgstr "Legi statale din SUA"
+
+#: cookieadmin/includes/admin.php:174 cookieadmin/includes/admin.php:505
+msgid "GDPR"
+msgstr "GDPR"
+
+#: cookieadmin/includes/admin.php:178 cookieadmin/includes/admin.php:244
+msgid "Google Consent Mode v2"
+msgstr "Modul de consimțământ Google v2"
+
+#: cookieadmin/includes/admin.php:181
+msgid "Disabled"
+msgstr "Dezactivat"
+
+#: cookieadmin/includes/admin.php:215
+msgid "Load Cookies prior to consent"
+msgstr "Încarcă cookie-urile înainte de consimțământ"
+
+#: cookieadmin/includes/admin.php:219 cookieadmin/includes/admin.php:446
+msgid "Necessary"
+msgstr "Necesare"
+
+#: cookieadmin/includes/admin.php:222 cookieadmin/includes/admin.php:447
+msgid "Functional"
+msgstr "Funcționale"
+
+#: cookieadmin/includes/admin.php:225 cookieadmin/includes/admin.php:448
+msgid "Analytical"
+msgstr "Analitice"
+
+#: cookieadmin/includes/admin.php:228
+msgid "Advertisement"
+msgstr "Publicitate"
+
+#: cookieadmin/includes/admin.php:233
+msgid "Reload page on consent"
+msgstr "Reîncarcă pagina la consimțământ"
+
+#: cookieadmin/includes/admin.php:254
+msgid "Hide Powered by Link"
+msgstr "Ascunde linkul Powered by"
+
+#: cookieadmin/includes/admin.php:264
+msgid "Hide Re-consent Icon"
+msgstr "Ascunde pictograma de reconsimțământ"
+
+#: cookieadmin/includes/admin.php:276 cookieadmin/includes/admin.php:713
+msgid "Save Settings"
+msgstr "Salvează setările"
+
+#: cookieadmin/includes/admin.php:319 cookieadmin/includes/admin.php:339
+msgid "days"
+msgstr "zile"
+
+#: cookieadmin/includes/admin.php:365
+msgid "No uncategorized cookies yet. Click on Scan Cookies button to scan for new cookies!"
+msgstr "Nu există încă cookie-uri necategorizate. Apasă pe butonul Scan Cookies pentru a scana pentru cookie-uri noi!"
+
+#: cookieadmin/includes/admin.php:369
+msgid "No scanned cookies yet. Click on Scan Cookies button to scan for new cookies!"
+msgstr "Nu există încă cookie-uri scanate. Apasă pe butonul Scan Cookies pentru a scana pentru cookie-uri noi!"
+
+#: cookieadmin/includes/admin.php:383
+msgid "Scanned Cookies"
+msgstr "Cookie-uri scanate"
+
+#: cookieadmin/includes/admin.php:391
+msgid "Name"
+msgstr "Nume"
+
+#: cookieadmin/includes/admin.php:392 cookieadmin/includes/admin.php:459
+msgid "Description"
+msgstr "Descriere"
+
+#: cookieadmin/includes/admin.php:393
+msgid "Expiry"
+msgstr "Expirare"
+
+#: cookieadmin/includes/admin.php:394
+msgid "Action"
+msgstr "Acțiune"
+
+#: cookieadmin/includes/admin.php:398 cookieadmin/includes/functions.php:215
+msgid "Necessary Cookies"
+msgstr "Cookie-uri necesare"
+
+#: cookieadmin/includes/admin.php:399 cookieadmin/includes/admin.php:403
+#: cookieadmin/includes/admin.php:407 cookieadmin/includes/admin.php:411
+#: cookieadmin/includes/admin.php:415
+msgid "No Cookies Found!"
+msgstr "Nu s-au găsit cookie-uri!"
+
+#: cookieadmin/includes/admin.php:402 cookieadmin/includes/functions.php:217
+msgid "Functional Cookies"
+msgstr "Cookie-uri funcționale"
+
+#: cookieadmin/includes/admin.php:406 cookieadmin/includes/functions.php:219
+msgid "Analytical Cookies"
+msgstr "Cookie-uri analitice"
+
+#: cookieadmin/includes/admin.php:410
+msgid "Marketing Cookies"
+msgstr "Cookie-uri de marketing"
+
+#: cookieadmin/includes/admin.php:414
+msgid "Unknown Cookies"
+msgstr "Cookie-uri necunoscute"
+
+#: cookieadmin/includes/admin.php:437
+msgid "Edit Cookie"
+msgstr "Editează cookie"
+
+#: cookieadmin/includes/admin.php:443
+msgid "Category"
+msgstr "Categorie"
+
+#: cookieadmin/includes/admin.php:445
+msgid "Unknown"
+msgstr "Necunoscut"
+
+#: cookieadmin/includes/admin.php:449
+msgid "Marketing"
+msgstr "Marketing"
+
+#: cookieadmin/includes/admin.php:454
+msgid "Cookie Name/ID"
+msgstr "Nume/ID cookie"
+
+#: cookieadmin/includes/admin.php:455
+msgid "Enter Cookie Name or id"
+msgstr "Introdu numele sau ID-ul cookie-ului"
+
+#: cookieadmin/includes/admin.php:460
+msgid "Enter Cookie description here"
+msgstr "Introdu descrierea cookie-ului aici"
+
+#: cookieadmin/includes/admin.php:464 cookieadmin/includes/enduser.php:45
+msgid "Duration"
+msgstr "Durată"
+
+#: cookieadmin/includes/admin.php:465
+msgid "30 days"
+msgstr "30 de zile"
+
+#: cookieadmin/includes/admin.php:469
+msgid "Save"
+msgstr "Salvează"
+
+#: cookieadmin/includes/admin.php:512
+msgid "Consent Expiry"
+msgstr "Expirarea consimțământului"
+
+#: cookieadmin/includes/admin.php:519
+msgid "Notice Type"
+msgstr "Tip de notificare"
+
+#: cookieadmin/includes/admin.php:522
+msgid "Box"
+msgstr "Casetă"
+
+#: cookieadmin/includes/admin.php:524
+msgid "Footer"
+msgstr "Subsol"
+
+#: cookieadmin/includes/admin.php:526
+msgid "Popup"
+msgstr "Fereastră pop-up"
+
+#: cookieadmin/includes/admin.php:531
+msgid "Notice Position"
+msgstr "Poziția notificării"
+
+#: cookieadmin/includes/admin.php:534
+msgid "Bottom Left"
+msgstr "Stânga jos"
+
+#: cookieadmin/includes/admin.php:536
+msgid "Bottom Right"
+msgstr "Dreapta jos"
+
+#: cookieadmin/includes/admin.php:538
+msgid "Top Left"
+msgstr "Stânga sus"
+
+#: cookieadmin/includes/admin.php:540
+msgid "Top Right"
+msgstr "Dreapta sus"
+
+#: cookieadmin/includes/admin.php:542
+msgid "Top"
+msgstr "Sus"
+
+#: cookieadmin/includes/admin.php:544
+msgid "Bottom"
+msgstr "Jos"
+
+#: cookieadmin/includes/admin.php:549
+msgid "Preference Position"
+msgstr "Poziția preferinței"
+
+#: cookieadmin/includes/admin.php:552
+msgid "Center"
+msgstr "Centru"
+
+#: cookieadmin/includes/admin.php:554
+msgid "Side"
+msgstr "Lateral"
+
+#: cookieadmin/includes/admin.php:556
+msgid "Draw down"
+msgstr "Derulare în jos"
+
+#: cookieadmin/includes/admin.php:561
+msgid "Notice Section"
+msgstr "Secțiunea de notificări"
+
+#: cookieadmin/includes/admin.php:563 cookieadmin/includes/admin.php:569
+#: cookieadmin/includes/admin.php:652 cookieadmin/includes/admin.php:658
+msgid "Title"
+msgstr "Titlu"
+
+#: cookieadmin/includes/admin.php:565
+msgid "Notice"
+msgstr "Notificare"
+
+#: cookieadmin/includes/admin.php:576 cookieadmin/includes/admin.php:665
+msgid "Content"
+msgstr "Conținut"
+
+#: cookieadmin/includes/admin.php:583 cookieadmin/includes/admin.php:672
+msgid "Background"
+msgstr "Fundal"
+
+#: cookieadmin/includes/admin.php:590 cookieadmin/includes/admin.php:679
+msgid "Border"
+msgstr "Margine"
+
+#: cookieadmin/includes/admin.php:601
+msgid "Buttons"
+msgstr "Butonuri"
+
+#: cookieadmin/includes/admin.php:650
+msgid "Preference Section"
+msgstr "Secțiunea de preferințe"
+
+#: cookieadmin/includes/admin.php:654
+msgid "Privacy Notice"
+msgstr "Notificare de confidențialitate"
+
+#: cookieadmin/includes/admin.php:689
+msgid "Links"
+msgstr "Linkuri"
+
+#: cookieadmin/includes/admin.php:696
+msgid "Button Switch On"
+msgstr "Buton Activare"
+
+#: cookieadmin/includes/admin.php:703
+msgid "Button Switch Off"
+msgstr "Buton Dezactivare"
+
+#: cookieadmin/includes/admin.php:715
+msgid "Show Preview"
+msgstr "Arată previzualizarea"
+
+#: cookieadmin/includes/admin.php:751
+msgid "No cookies found!"
+msgstr "Nu s-au găsit cookie-uri!"
+
+#: cookieadmin/includes/admin.php:771
+msgid "Sorry, but you do not have permissions to perform this action"
+msgstr "Ne pare rău, dar nu aveți permisiunile necesare pentru a efectua această acțiune"
+
+#: cookieadmin/includes/admin.php:870
+msgid "Settings saved successfully"
+msgstr "Setările au fost salvate cu succes"
+
+#: cookieadmin/includes/admin.php:927
+msgid "No cookies to categorize!"
+msgstr "Nu există cookie-uri de categorisit!"
+
+#: cookieadmin/includes/admin.php:958
+msgid "Error editing cookie, Error: "
+msgstr "Eroare la editarea cookie-ului, Eroare: "
+
+#: cookieadmin/includes/admin.php:961
+msgid "Cookie updated!"
+msgstr "Cookie actualizat!"
+
+#: cookieadmin/includes/admin.php:1037
+#, php-format
+msgid "New versions of %1$s %2$s available. Updating ensures better performance, security, and access to the latest features."
+msgstr "Sunt disponibile versiuni noi pentru %1$s %2$s. Actualizarea asigură performanță mai bună, securitate și acces la cele mai recente funcții."
+
+#: cookieadmin/includes/admin.php:1094
+msgid "Pro"
+msgstr "Pro"
+
+#: cookieadmin/includes/enduser.php:43 cookieadmin/includes/functions.php:209
+msgid "show more"
+msgstr "arată mai mult"
+
+#: cookieadmin/includes/enduser.php:44
+msgid "show less"
+msgstr "arată mai puțin"
+
+#: cookieadmin/includes/enduser.php:46
+msgid "Session"
+msgstr "Sesiune"
+
+#: cookieadmin/includes/functions.php:208
+msgid "Powered by"
+msgstr "Furnizat de"
+
+#: cookieadmin/includes/functions.php:210
+msgid "Re-consent"
+msgstr "Re-consimțire"
+
+#: cookieadmin/includes/functions.php:211
+msgid "Cookie Preferences"
+msgstr "Preferințe cookie"
+
+#: cookieadmin/includes/functions.php:212
+msgid "Standard"
+msgstr "Standard"
+
+#: cookieadmin/includes/functions.php:213
+msgid "Remark"
+msgstr "Observație"
+
+#: cookieadmin/includes/functions.php:214
+msgid "None"
+msgstr "Niciunul"
+
+#: cookieadmin/includes/functions.php:216
+msgid "Necessary cookies enable essential site features like secure log-ins and consent preference adjustments. They do not store personal data."
+msgstr "Cookie-urile necesare permit funcții esențiale ale site-ului, cum ar fi autentificările securizate și ajustarea preferințelor de consimțământ. Nu stochează date personale."
+
+#: cookieadmin/includes/functions.php:218
+msgid "Functional cookies support features like content sharing on social media, collecting feedback, and enabling third-party tools."
+msgstr "Cookie-urile funcționale susțin funcții precum partajarea conținutului pe rețele sociale, colectarea feedback-ului și activarea instrumentelor terțe."
+
+#: cookieadmin/includes/functions.php:220
+msgid "Analytical cookies track visitor interactions, providing insights on metrics like visitor count, bounce rate, and traffic sources."
+msgstr "Cookie-urile analitice urmăresc interacțiunile vizitatorilor, oferind informații despre metrici precum numărul de vizitatori, rata de respingere și sursele de trafic."
+
+#: cookieadmin/includes/functions.php:221
+msgid "Advertisement Cookies"
+msgstr "Cookie-uri pentru publicitate"
+
+#: cookieadmin/includes/functions.php:222
+msgid "Advertisement cookies deliver personalized ads based on your previous visits and analyze the effectiveness of ad campaigns."
+msgstr "Cookie-urile pentru publicitate oferă reclame personalizate bazate pe vizitele anterioare și analizează eficiența campaniilor publicitare."
+
+#: cookieadmin/includes/functions.php:223
+msgid "Unclassified Cookies"
+msgstr "Cookie-uri neclasificate"
+
+#: cookieadmin/includes/functions.php:224
+msgid "Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies."
+msgstr "Cookie-urile neclasificate sunt cookie-uri pe care suntem în proces de clasificare, împreună cu furnizorii fiecărui cookie."
