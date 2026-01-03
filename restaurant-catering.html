@@ -6,7 +6,7 @@
     
     <!-- AI-OPTIMIZED RESTAURANT CATERING SEO TAGS -->
     <title>Restaurant Catering Nairobi | Full-Service Catering for Events & Functions | Kilimanibistro</title>
-    <meta name="description" content="Premium restaurant catering in Nairobi for weddings, corporate events, and private celebrations. Full-course meals, professional service, and custom menus. Buffet, plated, and on-site catering. 9+ years experience. Call +254722233257">
+    <meta name="description" content="Premium restaurant catering in Nairobi for weddings, corporate events, and private celebrations. Full-course meals, professional service, and custom menus. Buffet, plated, and on-site catering. 5+ years experience. Call +254722233257">
     <meta name="keywords" content="restaurant catering Nairobi, full service catering Kenya, event catering Nairobi, buffet catering services, plated catering Nairobi, on-site catering, custom menu catering, professional catering Kilimani, Westlands restaurant catering, corporate lunch catering">
     
     <!-- AI Generated SEO Meta Tags -->
@@ -29,25 +29,84 @@
     <meta name="twitter:description" content="Professional restaurant catering for events. Full-course meals, custom menus, and exceptional service.">
     <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
     
-    <!-- AI Schema.org Structured Data -->
+    <!-- Consolidated Schema.org Graph -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FoodEstablishment",
-        "@id": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html",
-        "name": "Kilimanibistro Restaurant Catering",
-        "description": "Premium restaurant catering services providing full-course meals for events in Nairobi",
-        "url": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html",
-        "servesCuisine": ["International", "African", "Continental", "Fusion"],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-        },
-        "priceRange": "$$$",
-        "telephone": "+254722233257",
-        "email": "hello@kilimanibistrocaterers.co.ke",
-        "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "name": "Kilimanibistro Caterers",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                "name": "Kilimanibistro Caterers",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                    "width": 100,
+                    "height": 60
+                },
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+254722233257",
+                    "contactType": "customer service",
+                    "areaServed": "KE",
+                    "availableLanguage": ["en"]
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/profile.php?id=100063911658532",
+                    "https://www.instagram.com/kilimanibistro/?hl=en"
+                ]
+            },
+            {
+                "@type": "Service",
+                "@id": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html#service",
+                "serviceType": "Restaurant Catering",
+                "areaServed": "Nairobi",
+                "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "description": "Full-service restaurant catering with custom menus and professional staff for events in Nairobi.",
+                "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "KES",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html"
+                },
+                "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
+                "telephone": "+254722233257",
+                "serviceLocation": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
+                        "addressLocality": "Nairobi",
+                        "addressCountry": "KE",
+                        "postalCode": "00100"
+                    }
+                }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html#page",
+                "url": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html",
+                "name": "Restaurant Catering in Nairobi | Kilimanibistro",
+                "description": "Premium restaurant catering for weddings, corporate events, and private celebrations across Nairobi.",
+                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                "inLanguage": "en",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
+                },
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/restaurant-catering.html#service" }
+            }
+        ]
     }
     </script>
     
@@ -57,7 +116,7 @@
     <meta name="geo.placename" content="Nairobi">
     <meta name="author" content="Kilimanibistro Caterers">
     
-    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
+    <link rel="icon" type="image/png" href="Images/logo01.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -390,7 +449,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
+                <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
@@ -398,7 +457,7 @@
                 
                 <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link active">
+                    <a href="index.html#services" class="nav-link active">
                         Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
@@ -419,7 +478,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="https://kilimanibistrocaterers.co.ke/Blog/" target="_blank" rel="noopener">Blog</a>
+                        <a href="https://kilimanibistrocaterers.co.ke/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
                         <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -642,7 +701,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Kilimanibistro Caterers</h3>
-                    <p>Exceptional catering services for all occasions across Nairobi and beyond. Experience culinary excellence with 9+ years of professional service.</p>
+                    <p>Exceptional catering services for all occasions across Nairobi and beyond. Experience culinary excellence with 5+ years of professional service.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100063911658532" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>

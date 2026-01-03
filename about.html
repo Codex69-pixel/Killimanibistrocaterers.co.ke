@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Critical Image Preloading -->
-    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/logo01.png">
     <link rel="preload" as="image" href="Images/catering%203.jpg">
     <link rel="preload" as="image" href="Images/cater%201.jpeg">
     <link rel="preload" as="image" href="Images/cater02.jpeg">
     
     <!-- Primary AI SEO Tags -->
     <title>About Kilimani Bistro & Kilimanibistro Caterers | Premium Dining & Catering Nairobi</title>
-    <meta name="description" content="Discover Kilimani Bistro & Kilimanibistro Caterers: 9+ years delivering premium catering services across Nairobi (Kilimani, Westlands, CBD, Karen). Award-winning caterer with 450+ events. Our culinary story, expert team, and commitment to excellence.">
+    <meta name="description" content="Discover Kilimani Bistro & Kilimanibistro Caterers: 5+ years delivering premium catering services across Nairobi (Kilimani, Westlands, CBD, Karen). Award-winning caterer with 450+ events. Our culinary story, expert team, and commitment to excellence.">
     <meta name="keywords" content="Kilimani Bistro Nairobi, Kilimanibistro caterers, restaurant Nairobi, catering company Kenya, our story catering, professional caterers Nairobi, award-winning catering, culinary team Kenya, fine dining Kilimani">
     
     <!-- AI Generated SEO Meta Tags -->
@@ -23,7 +23,7 @@
     
     <!-- Open Graph AI Tags for Social Media -->
     <meta property="og:title" content="About Kilimani Bistro | Restaurant & Catering Services">
-    <meta property="og:description" content="Experience Nairobi's finest dining at Kilimani Bistro and premium catering services for all events since 2015">
+    <meta property="og:description" content="Experience Nairobi's finest dining at Kilimani Bistro and premium catering services for all events since 2020">
     <meta property="og:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
     <meta property="og:url" content="https://kilimanibistrocaterers.co.ke/about.html">
     <meta property="og:type" content="website">
@@ -40,38 +40,103 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "name": "About Kilimani Bistro",
-        "description": "About page for Kilimani Bistro restaurant and catering services",
-        "url": "https://kilimanibistrocaterers.co.ke/about.html",
-        "mainEntity": [{
-            "@type": "Restaurant",
-            "name": "Kilimani Bistro",
-            "servesCuisine": ["Contemporary Kenyan", "Fusion", "International"],
-            "priceRange": "$$",
-            "telephone": "+254722233257",
-            "email": "hello@kilimanibistrocaterers.co.ke",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
-                "addressLocality": "Nairobi",
-                "addressCountry": "KE",
-                "postalCode": "00100"
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "name": "Kilimani Bistro & Caterers",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
             },
-            "openingHours": "Mo-Su 08:00-22:00"
-        },
-        {
-            "@type": "Organization",
-            "name": "Kilimani Bistro Caterers",
-            "foundingDate": "2015",
-            "founder": "Kilimani Bistro Team",
-            "numberOfEmployees": "50+",
-            "description": "Premier catering services delivering culinary excellence across Kenya since 2015",
-            "award": "Multiple award-winning catering service",
-            "brand": "Kilimani Bistro",
-            "telephone": "+254722233257",
-            "email": "hello@kilimanibistrocaterers.co.ke"
-        }]
+            {
+                "@type": "Organization",
+                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                "name": "Kilimani Bistro Caterers",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                    "width": 100,
+                    "height": 60
+                },
+                "foundingDate": "2020",
+                "numberOfEmployees": 50,
+                "brand": "Kilimani Bistro",
+                "contactPoint": [
+                    {
+                        "@type": "ContactPoint",
+                        "telephone": "+254722233257",
+                        "contactType": "customer service",
+                        "areaServed": "KE",
+                        "availableLanguage": ["en"]
+                    }
+                ],
+                "sameAs": [
+                    "https://www.instagram.com/kilimanibistro/?hl=en"
+                ]
+            },
+            {
+                "@type": "Restaurant",
+                "@id": "https://kilimanibistrocaterers.co.ke/#restaurant",
+                "name": "Kilimani Bistro",
+                "url": "https://kilimanibistrocaterers.co.ke/about.html",
+                "image": [
+                    "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
+                    "https://kilimanibistrocaterers.co.ke/Images/cater%201.jpeg",
+                    "https://kilimanibistrocaterers.co.ke/Images/cater02.jpeg"
+                ],
+                "servesCuisine": ["Contemporary Kenyan", "Fusion", "International"],
+                "priceRange": "$$",
+                "telephone": "+254722233257",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
+                    "addressLocality": "Nairobi",
+                    "addressRegion": "Nairobi",
+                    "postalCode": "00100",
+                    "addressCountry": "KE"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -1.2921,
+                    "longitude": 36.8219
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ],
+                        "opens": "08:00",
+                        "closes": "22:00"
+                    }
+                ],
+                "acceptsReservations": true,
+                "parentOrganization": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+            },
+            {
+                "@type": "AboutPage",
+                "@id": "https://kilimanibistrocaterers.co.ke/about.html#about",
+                "url": "https://kilimanibistrocaterers.co.ke/about.html",
+                "name": "About Kilimani Bistro",
+                "description": "Discover Kilimani Bistro & Kilimanibistro Caterers: 5+ years delivering premium catering services across Nairobi (Kilimani, Westlands, CBD, Karen). Award-winning caterer with 450+ events.",
+                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
+                },
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/#restaurant" }
+            }
+        ]
     }
     </script>
     
@@ -89,8 +154,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
-    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
-    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="icon" type="image/png" href="Images/logo01.png">
+    <link rel="apple-touch-icon" href="Images/logo01.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -859,7 +924,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
+                <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager" decoding="async">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
@@ -867,7 +932,7 @@
                 
                 <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link">
+                    <a href="index.html#services" class="nav-link">
                         Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
@@ -911,7 +976,7 @@
     <section class="about-hero">
         <div class="container">
             <h1>Our <span class="highlight">Story</span></h1>
-            <p>Delivering culinary excellence since 2015</p>
+            <p>Delivering culinary excellence since 2020</p>
         </div>
     </section>
 
@@ -1019,7 +1084,7 @@
             <div class="story-content">
                 <div class="story-text">
                     <h2>The Kilimani Bistro <span class="highlight">Journey</span></h2>
-                    <p>Founded in 2015, Kilimani Bistro began with a simple vision: to elevate dining and event catering in Kenya through uncompromising quality, creativity, and service excellence.</p>
+                    <p>Founded in 2020, Kilimani Bistro began with a simple vision: to elevate dining and event catering in Kenya through uncompromising quality, creativity, and service excellence.</p>
                     <p>What started as a small team of passionate chefs has grown into one of Kenya's most trusted culinary destinations, serving prestigious events across the country while maintaining our beloved restaurant in Nairobi.</p>
                     <p>Our journey is built on a foundation of culinary innovation, attention to detail, and a deep commitment to making every dining experience memorable through exceptional food and service.</p>
                 </div>
@@ -1229,10 +1294,10 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimani Bistro Logo" class="logo" width="80" height="50" loading="lazy">
+                        <img src="Images/logo01.png" alt="Kilimani Bistro Logo" class="logo" width="80" height="50" loading="lazy">
                         <span class="brand-name">Kilimani Bistro & Caterers</span>
                     </div>
-                    <p>Premier restaurant and catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <p>Premier restaurant and catering services delivering culinary excellence across Kenya since 2020.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -1362,16 +1427,6 @@
                     }
                 });
             });
-            
-            // Service Worker Registration for PWA
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('sw.js').catch(err => {
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-                });
-            }
-            
             // Restaurant card hover effects enhancement
             const restaurantCards = document.querySelectorAll('.restaurant-card');
             restaurantCards.forEach(card => {

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Critical Image Preloading -->
-    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/logo01.png">
     <link rel="preload" as="image" href="Images/catering-setup.jpg">
     
     <!-- Primary AI SEO Tags -->
@@ -34,93 +34,76 @@
     <meta name="twitter:description" content="Get in touch for premium catering services across Kenya. Quick quotes, professional service.">
     <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/catering-setup.jpg">
     
-    <!-- AI Schema.org Structured Data for Contact Page -->
+    <!-- Consolidated Schema.org Graph for Contact Page -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "name": "Contact Kilimanibistro Caterers",
-        "description": "Contact page for Kilimanibistro Caterers catering services serving Nairobi, Kilimani, Westlands, CBD, Kabete and surrounding areas",
-        "url": "https://kilimanibistrocaterers.co.ke/contact.html",
-        "mainEntity": {
-            "@type": "Organization",
-            "name": "Kilimanibistro Caterers",
-            "description": "Premium catering services in Nairobi serving Kilimani, Westlands, CBD, Kabete, Karen and surrounding areas",
-            "telephone": "+254722233257",
-            "email": "hello@kilimanibistrocaterers.co.ke",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
-                "addressLocality": "Nairobi",
-                "addressCountry": "KE",
-                "postalCode": "00100"
-            },
-            "areaServed": ["Kilimani", "Westlands", "Central Business District", "Kabete", "Karen", "Lavington", "Upper Hill", "Parklands", "Gigiri"],
-            "openingHours": "Mo-Su 07:00-21:00",
-            "url": "https://kilimanibistrocaterers.co.ke",
-            "image": "https://kilimanibistrocaterers.co.ke/Images/logo.jpeg",
-            "sameAs": [
-                "https://www.facebook.com/profile.php?id=100063911658532",
-                "https://www.instagram.com/kilimanibistro/?hl=en"
-            ]
-        }
-    }
-    </script>
-
-    <!-- Service Area Schema for Multiple Locations -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Kilimanibistro Caterers",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE",
-            "postalCode": "00100"
-        },
-        "areaServed": [
+        "@graph": [
             {
-                "@type": "City",
-                "name": "Kilimani"
+                "@type": "WebSite",
+                "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "name": "Kilimanibistro Caterers",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
             },
             {
-                "@type": "City",
-                "name": "Westlands"
+                "@type": "Organization",
+                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                "name": "Kilimanibistro Caterers",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                    "width": 100,
+                    "height": 60
+                },
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+254722233257",
+                    "contactType": "customer service",
+                    "areaServed": "KE",
+                    "availableLanguage": ["en"]
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/profile.php?id=100063911658532",
+                    "https://www.instagram.com/kilimanibistro/?hl=en"
+                ]
             },
             {
-                "@type": "City",
-                "name": "Central Business District"
+                "@type": "ContactPage",
+                "@id": "https://kilimanibistrocaterers.co.ke/contact.html#page",
+                "url": "https://kilimanibistrocaterers.co.ke/contact.html",
+                "name": "Contact Kilimanibistro Caterers",
+                "description": "Request a catering quote or booking for corporate events, weddings, and private functions in Nairobi.",
+                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
             },
             {
-                "@type": "City",
-                "name": "Kabete"
-            },
-            {
-                "@type": "City",
-                "name": "Karen"
-            },
-            {
-                "@type": "City",
-                "name": "Lavington"
-            },
-            {
-                "@type": "City",
-                "name": "Upper Hill"
-            },
-            {
-                "@type": "City",
-                "name": "Parklands"
-            },
-            {
-                "@type": "City",
-                "name": "Gigiri"
+                "@type": "Service",
+                "@id": "https://kilimanibistrocaterers.co.ke/contact.html#service",
+                "serviceType": "Catering Services",
+                "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "areaServed": ["Kilimani", "Westlands", "CBD", "Kabete", "Karen", "Lavington", "Upper Hill", "Parklands", "Gigiri"],
+                "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://kilimanibistrocaterers.co.ke/contact.html",
+                    "telephone": "+254722233257",
+                    "serviceLocation": {
+                        "@type": "Place",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Kilimani Road, off Elgeyo Marakwet Road, Elysee Plaza",
+                            "addressLocality": "Nairobi",
+                            "postalCode": "00100",
+                            "addressCountry": "KE"
+                        }
+                    }
+                }
             }
-        ],
-        "telephone": "+254722233257",
-        "email": "hello@kilimanibistrocaterers.co.ke",
-        "url": "https://kilimanibistrocaterers.co.ke"
+        ]
     }
     </script>
     
@@ -133,8 +116,8 @@
     <meta name="author" content="Kilimanibistro Caterers">
     <meta name="language" content="English">
     
-    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
-    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="icon" type="image/png" href="Images/logo01.png">
+    <link rel="apple-touch-icon" href="Images/logo01.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -596,7 +579,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
+                <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
@@ -604,7 +587,7 @@
                 
                 <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link">
+                    <a href="index.html#services" class="nav-link">
                         Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
@@ -625,7 +608,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="https://kilimanibistrocaterers.co.ke/Blog/" target="_blank" rel="noopener">Blog</a>
+                        <a href="https://kilimanibistrocaterers.co.ke/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
                         <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -921,10 +904,10 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
+                        <img src="Images/logo01.png" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
                         <span class="brand-name">Kilimanibistro</span>
                     </a>
-                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2020.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100063911658532"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en"><i class="fab fa-instagram"></i></a>
@@ -1172,15 +1155,6 @@
                 });
             });
         });
-        
-        // Service Worker Registration for PWA
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js').catch(err => {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
     </script>
     
     <!-- WhatsApp Chat Widget -->

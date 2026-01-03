@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Critical Image Preloading -->
-    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/logo01.png">
     <link rel="preload" as="image" href="Images/catering%203.jpg">
     <link rel="preload" as="image" href="Images/catering-setup.jpg">
     <link rel="preload" as="image" href="Images/catering%204.jpg">
@@ -36,24 +36,70 @@
     <meta name="twitter:description" content="View our premium catering gallery showcasing weddings, corporate events and private functions">
     <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%204.jpg">
     
-    <!-- AI Schema.org Structured Data for Gallery -->
+    <!-- Consolidated Schema.org Graph for Gallery -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ImageGallery",
-        "name": "Kilimanibistro Caterers Gallery",
-        "description": "Portfolio of catering events including corporate functions, weddings, and private celebrations",
-        "url": "https://kilimanibistrocaterers.co.ke/gallery.html",
-        "image": [
-            "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
-            "https://kilimanibistrocaterers.co.ke/Images/catering-setup.jpg",
-            "https://kilimanibistrocaterers.co.ke/Images/catering%204.jpg"
-        ],
-        "publisher": {
-            "@type": "Organization",
-            "name": "Kilimanibistro Caterers",
-            "url": "https://kilimanibistrocaterers.co.ke"
-        }
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "name": "Kilimanibistro Caterers",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                "name": "Kilimanibistro Caterers",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                    "width": 100,
+                    "height": 60
+                },
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+254722233257",
+                    "contactType": "customer service",
+                    "areaServed": "KE",
+                    "availableLanguage": ["en"]
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/profile.php?id=100063911658532",
+                    "https://www.instagram.com/kilimanibistro/?hl=en"
+                ]
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": "https://kilimanibistrocaterers.co.ke/gallery.html#page",
+                "url": "https://kilimanibistrocaterers.co.ke/gallery.html",
+                "name": "Kilimanibistro Catering Gallery",
+                "description": "Portfolio of catering events including corporate functions, weddings, and private celebrations in Kenya.",
+                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                "inLanguage": "en",
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
+                },
+                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/gallery.html#gallery" },
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+            },
+            {
+                "@type": "ImageGallery",
+                "@id": "https://kilimanibistrocaterers.co.ke/gallery.html#gallery",
+                "name": "Kilimanibistro Caterers Gallery",
+                "url": "https://kilimanibistrocaterers.co.ke/gallery.html",
+                "image": [
+                    "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
+                    "https://kilimanibistrocaterers.co.ke/Images/catering-setup.jpg",
+                    "https://kilimanibistrocaterers.co.ke/Images/catering%204.jpg"
+                ],
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+            }
+        ]
     }
     </script>
     
@@ -66,8 +112,8 @@
     <meta name="author" content="Kilimanibistro Caterers">
     <meta name="language" content="English">
     
-    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
-    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="icon" type="image/png" href="Images/logo01.png">
+    <link rel="apple-touch-icon" href="Images/logo01.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -394,7 +440,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
+                <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
@@ -402,7 +448,7 @@
                 
                 <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link">
+                    <a href="index.html#services" class="nav-link">
                         Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
@@ -423,7 +469,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="https://kilimanibistrocaterers.co.ke/Blog/" target="_blank" rel="noopener">Blog</a>
+                        <a href="https://kilimanibistrocaterers.co.ke/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
                         <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -635,10 +681,10 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="80" height="50" loading="eager">
+                        <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="80" height="50" loading="eager">
                         <span class="brand-name">Kilimani Bistro Caterers</span>
                     </a>
-                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2020.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100063911658532"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en"><i class="fab fa-instagram"></i></a>
@@ -821,15 +867,6 @@
         ];
         allImages.forEach(src => { const img = new Image(); img.src = src; });
     });
-
-    // Service Worker Registration for PWA
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js').catch(err => {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-        });
-    }
     </script>
     <!-- Load shared behavior -->
     <script src="script.js"></script>

@@ -32,75 +32,79 @@
     <meta name="twitter:image" content="https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg">
     <meta name="twitter:site" content="@kilimanibistro">
     
-    <!-- 𝗔𝗜 𝗦𝗰𝗵𝗲𝗺𝗮.𝗼𝗿𝗴 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲𝗱 𝗗𝗮𝘁𝗮 𝗳𝗼𝗿 𝗖𝗼𝗿𝗽𝗼𝗿𝗮𝘁𝗲 𝗖𝗮𝘁𝗲𝗿𝗶𝗻𝗴 -->
+    <!-- Consolidated Schema.org Graph for Corporate Catering -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "FoodEstablishment",
-        "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html",
-        "name": "Kilimanibistro Corporate Catering",
-        "description": "Premium corporate catering services for businesses in Nairobi, Kenya",
-        "url": "https://kilimanibistrocaterers.co.ke/corporate-catering.html",
-        "servesCuisine": ["Executive Business Lunches", "Conference Catering", "Board Meeting Dining", "Corporate Event Cuisine", "Office Meal Solutions"],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Nairobi",
-            "addressRegion": "Nairobi County",
-            "addressCountry": "KE",
-            "postalCode": "00100"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "-1.2921",
-            "longitude": "36.8219"
-        },
-        "priceRange": "$$$",
-        "openingHours": "Mo-Fr 06:00-20:00, Sa 08:00-18:00",
-        "telephone": "+254722233257",
-        "email": "corporate@kilimanibistrocaterers.co.ke",
-        "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
-        "makesOffer": [{
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Executive Board Meeting Catering",
-                "description": "Premium catering for C-suite and board meetings with impeccable presentation"
-            }
-        }, {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Conference & Seminar Catering",
-                "description": "Large-scale catering for corporate conferences and training events"
-            }
-        }, {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Corporate Account Services",
-                "description": "Dedicated catering solutions for corporate clients with regular needs"
-            }
-        }],
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "-1.2921",
-                "longitude": "36.8219"
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "name": "Kilimanibistro Caterers",
+                "inLanguage": "en",
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
             },
-            "geoRadius": "75000"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "89",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "sameAs": [
-            "https://www.facebook.com/kilimanibistrocaterers",
-            "https://www.instagram.com/kilimanibistrocaterers",
-            "https://www.linkedin.com/company/kilimanibistro"
+            {
+                "@type": "Organization",
+                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                "name": "Kilimanibistro Caterers",
+                "url": "https://kilimanibistrocaterers.co.ke/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                    "width": 100,
+                    "height": 60
+                },
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "+254722233257",
+                    "contactType": "customer service",
+                    "areaServed": "KE",
+                    "availableLanguage": ["en"]
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/kilimanibistrocaterers",
+                    "https://www.instagram.com/kilimanibistrocaterers",
+                    "https://www.linkedin.com/company/kilimanibistro"
+                ]
+            },
+            {
+                "@type": "Service",
+                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service",
+                "serviceType": "Corporate Catering",
+                "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "description": "Executive catering for board meetings, conferences, and corporate events in Nairobi.",
+                "areaServed": "Nairobi",
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "Executive Board Meeting Catering" }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "Conference & Seminar Catering" }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "Corporate Account Services" }
+                    }
+                ],
+                "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg",
+                "aggregateRating": { "@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 89 }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#page",
+                "url": "https://kilimanibistrocaterers.co.ke/corporate-catering.html",
+                "name": "Corporate Catering in Nairobi | Kilimanibistro",
+                "description": "Professional corporate catering for meetings, conferences, and product launches across Nairobi.",
+                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                "inLanguage": "en",
+                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg" },
+                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service" }
+            }
         ]
     }
     </script>
@@ -119,12 +123,12 @@
     
     <!-- 𝗣𝗿𝗲𝗹𝗼𝗮𝗱 𝗖𝗿𝗶𝘁𝗶𝗰𝗮𝗹 𝗔𝘀𝘀𝗲𝘁𝘀 -->
     <link rel="preload" as="image" href="Images/catering%203.jpg">
-    <link rel="preload" as="image" href="Images/logo.jpeg">
+    <link rel="preload" as="image" href="Images/logo01.png">
     <link rel="preload" as="style" href="styles.css">
     <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="icon" type="image/jpeg" href="Images/logo.jpeg">
-    <link rel="apple-touch-icon" href="Images/logo.jpeg">
+    <link rel="icon" type="image/png" href="Images/logo01.png">
+    <link rel="apple-touch-icon" href="Images/logo01.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -799,7 +803,7 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="logo-container">
-                <img src="Images/logo.jpeg" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
+                <img src="Images/logo01.png" alt="Kilimanibistro Caterers Logo" class="logo" width="100" height="60" loading="eager">
                 <span class="brand-name">Kilimani Bistro Caterers</span>
             </a>
             <ul class="nav-menu">
@@ -807,7 +811,7 @@
                 
                 <!-- Our Services Dropdown -->
                 <li class="nav-item-dropdown">
-                    <a href="#" class="nav-link">
+                    <a href="index.html#services" class="nav-link">
                         Our Services 
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
@@ -827,7 +831,7 @@
                         <i class="fas fa-chevron-down dropdown-icon"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="https://kilimanibistrocaterers.co.ke/Blog/" target="_blank" rel="noopener">Blog</a>
+                        <a href="https://kilimanibistrocaterers.co.ke/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
                         <a href="about.html">Our Restaurant</a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en" target="_blank" class="external-link">Follow Us <i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -1076,10 +1080,10 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="logo-container">
-                        <img src="Images/logo.jpeg" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
+                        <img src="Images/logo01.png" alt="Kilimanibistro Logo" class="logo" width="80" height="50" loading="eager">
                         <span class="brand-name">Kilimanibistro</span>
                     </a>
-                    <p>Premier catering services delivering culinary excellence across Kenya since 2015.</p>
+                    <p>Premier catering services delivering culinary excellence across Kenya since 2020.</p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/profile.php?id=100063911658532"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/kilimanibistro/?hl=en"><i class="fab fa-instagram"></i></a>
