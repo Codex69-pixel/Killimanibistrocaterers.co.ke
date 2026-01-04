@@ -447,7 +447,6 @@ function initVideoModal() {
                 
                 // Example video URLs - REPLACE WITH YOUR ACTUAL VIDEOS
                 const videoUrls = {
-                    'wedding-highlights': 'https://www.youtube.com/embed/dQw4w9WgXcQ',
                     'corporate-event': 'https://www.youtube.com/embed/dQw4w9WgXcQ'
                 };
                 
