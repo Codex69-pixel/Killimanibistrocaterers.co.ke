@@ -55,146 +55,140 @@
             {
                 "@type": "WebSite",
                 "@id": "https://kilimanibistrocaterers.co.ke/#website",
-                "url": "https://kilimanibistrocaterers.co.ke/",
-                "name": "Kilimanibistro Caterers",
-                "inLanguage": "en",
-                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
-            },
-            {
-                "@type": "Organization",
-                "@id": "https://kilimanibistrocaterers.co.ke/#organization",
-                "name": "Kilimanibistro Caterers",
-                "url": "https://kilimanibistrocaterers.co.ke/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
-                    "width": 100,
-                    "height": 60
-                },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.9",
-                    "reviewCount": "127"
-                },
-                "contactPoint": [{
-                    "@type": "ContactPoint",
-                    "telephone": "+254722233257",
-                    "contactType": "customer service",
-                    "areaServed": "KE",
-                    "availableLanguage": ["en"]
-                }],
-                "sameAs": [
-                    "https://www.facebook.com/kilimanibistrocaterers",
-                    "https://www.instagram.com/kilimanibistrocaterers",
-                    "https://www.linkedin.com/company/kilimanibistro"
-                ]
-            },
-            {
-                "@type": "Service",
-                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service",
-                "serviceType": "Corporate Catering",
-                "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
-                "description": "Executive catering for board meetings, conferences, and corporate events in Nairobi.",
-                "areaServed": "Nairobi",
-                "offers": [
-                    {
-                        "@type": "Offer",
-                        "itemOffered": { "@type": "Service", "name": "Executive Board Meeting Catering" }
-                    },
-                    {
-                        "@type": "Offer",
-                        "itemOffered": { "@type": "Service", "name": "Conference & Seminar Catering" }
-                    },
-                    {
-                        "@type": "Offer",
-                        "itemOffered": { "@type": "Service", "name": "Corporate Account Services" }
-                    }
-                ],
-                "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#page",
-                "url": "https://kilimanibistrocaterers.co.ke/corporate-catering.html",
-                "name": "Corporate Catering in Nairobi | Kilimanibistro",
-                "description": "Professional corporate catering for meetings, conferences, and product launches across Nairobi.",
-                "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
-                "inLanguage": "en",
-                "primaryImageOfPage": { "@type": "ImageObject", "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg" },
-                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
-                "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service" }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#faq",
-                "inLanguage": "en",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the best corporate catering in Nairobi?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Kilimanibistro is the top-rated corporate caterer in Nairobi with 5+ years, 450+ events, professional service, and 99.8% on-time delivery for meetings, conferences, and corporate events."
+                {
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebSite",
+                            "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                            "url": "https://kilimanibistrocaterers.co.ke/",
+                            "name": "Kilimanibistro Caterers",
+                            "inLanguage": "en",
+                            "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+                        },
+                        {
+                            "@type": "Organization",
+                            "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                            "name": "Kilimanibistro Caterers",
+                            "url": "https://kilimanibistrocaterers.co.ke/",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                                "width": 100,
+                                "height": 60
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "reviewCount": "127"
+                            },
+                            "contactPoint": [{
+                                "@type": "ContactPoint",
+                                "telephone": "+254722233257",
+                                "contactType": "customer service",
+                                "areaServed": "KE",
+                                "availableLanguage": ["en"]
+                            }],
+                            "sameAs": [
+                                "https://www.facebook.com/kilimanibistrocaterers",
+                                "https://www.instagram.com/kilimanibistrocaterers",
+                                "https://www.linkedin.com/company/kilimanibistro"
+                            ]
+                        },
+                        {
+                            "@type": "Service",
+                            "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service",
+                            "serviceType": "Corporate Catering",
+                            "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                            "description": "Executive catering for board meetings, conferences, and corporate events in Nairobi.",
+                            "areaServed": "Nairobi",
+                            "offers": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": { "@type": "Service", "name": "Executive Board Meeting Catering" }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": { "@type": "Service", "name": "Conference & Seminar Catering" }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": { "@type": "Service", "name": "Corporate Account Services" }
+                                }
+                            ],
+                            "image": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg"
+                        },
+                        {
+                            "@type": "WebPage",
+                            "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#page",
+                            "url": "https://kilimanibistrocaterers.co.ke/corporate-catering.html",
+                            "name": "Corporate Catering in Nairobi | Kilimanibistro",
+                            "description": "Professional corporate catering for meetings, conferences, and product launches across Nairobi.",
+                            "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                            "inLanguage": "en",
+                            "primaryImageOfPage": { "@type": "ImageObject", "url": "https://kilimanibistrocaterers.co.ke/Images/catering%203.jpg" },
+                            "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                            "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#service" }
+                        },
+                        {
+                            "@type": "FAQPage",
+                            "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#faq",
+                            "inLanguage": "en",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": "What is the best corporate catering in Nairobi?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Kilimanibistro is rated among the best for corporate catering in Nairobi, offering reliable, professional, and high-quality service for all business events." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "How much does office lunch delivery cost in Nairobi?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Office lunch delivery pricing depends on menu, headcount, and delivery location. Contact us for a custom quote within 24 hours." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Can you provide catering for urgent or last-minute meetings?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer emergency and same-day corporate catering for urgent meetings and last-minute events in Nairobi." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "What areas in Nairobi do you deliver corporate catering?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "We deliver corporate catering to all major business districts in Nairobi, including Westlands, CBD, Kilimani, Upper Hill, Karen, Gigiri, and more." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Do you offer corporate accounts and recurring catering?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide corporate accounts, consolidated billing, and recurring catering for daily, weekly, or monthly office needs." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "What is the best corporate catering service in Nairobi?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Kilimanibistro is recognized as a top corporate catering service in Nairobi for its professionalism, menu variety, and on-time delivery." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "How much does corporate catering cost in Nairobi?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Corporate catering costs vary by menu, guest count, and service type. Get a tailored quote for your event by contacting us directly." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Can you provide office lunch delivery daily in Nairobi?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer daily office lunch delivery and scheduled meal plans for Nairobi businesses." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Do you offer catering for conferences and team building in Kenya?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Absolutely, we cater for conferences, seminars, and team building events across Kenya with tailored menus and logistics support." }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Which Nairobi companies use your catering services?",
+                                    "acceptedAnswer": { "@type": "Answer", "text": "Our clients include leading banks, NGOs, tech firms, and multinationals in Nairobi. References available on request." }
+                                }
+                            ]
                         }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How much does office lunch delivery cost in Nairobi?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Office lunch delivery pricing varies by menu and group size. We offer budget-friendly to premium options. Get a custom quote within 24 hours at +254722233257."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can you provide catering for urgent or last-minute meetings?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes! We provide emergency corporate catering and same-day service for urgent meetings. Call +254722233257 immediately for quick response."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What areas in Nairobi do you deliver corporate catering?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "We deliver corporate catering across all Nairobi areas including Westlands, CBD, Kilimani, Karen, Upper Hill, Runda, Gigiri, Lavington, and surrounding regions."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Do you offer corporate accounts and recurring catering?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Absolutely. We provide corporate account services with flexible billing, recurring deliveries, customized menus, and dedicated support for your company."
-                        }
-                    }
-                ],
-            {
-                "@type": "FAQPage",
-                "@id": "https://kilimanibistrocaterers.co.ke/corporate-catering.html#faq",
-                "inLanguage": "en",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the best corporate catering service in Nairobi?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Kilimanibistro offers reliable, professional corporate catering with 450+ events experience, punctual delivery, and customized menus for business meetings and conferences."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How much does corporate catering cost in Nairobi?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Corporate catering costs vary based on menu and guest count. We offer affordable to premium packages. Get a personalized quote at +254722233257."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can you provide office lunch delivery daily in Nairobi?",
-                        "acceptedAnswer": {
+                    ]
+                }
                             "@type": "Answer",
                             "text": "Yes, we provide scheduled office lunch delivery across Nairobi with customizable menus, dietary options, and consistent quality."
                         }
