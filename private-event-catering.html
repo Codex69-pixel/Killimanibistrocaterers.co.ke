@@ -49,125 +49,110 @@
     
     <!-- Consolidated Schema.org Graph for Private Events -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "WebSite",
-                "@id": "https://kilimanibistrocaterers.co.ke/#website",
-                "url": "https://kilimanibistrocaterers.co.ke/",
-                "name": "Kilimanibistro Caterers",
-                "inLanguage": "en",
-                "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
-            {
-                "@context": "https://schema.org",
-                "@graph": [
-                    {
-                        "@type": "WebSite",
-                        "@id": "https://kilimanibistrocaterers.co.ke/#website",
-                        "url": "https://kilimanibistrocaterers.co.ke/",
-                        "name": "Kilimanibistro Caterers",
-                        "inLanguage": "en",
-                        "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://kilimanibistrocaterers.co.ke/#website",
+                    "url": "https://kilimanibistrocaterers.co.ke/",
+                    "name": "Kilimanibistro Caterers",
+                    "inLanguage": "en",
+                    "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://kilimanibistrocaterers.co.ke/#organization",
+                    "name": "Kilimanibistro Caterers",
+                    "url": "https://kilimanibistrocaterers.co.ke/",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
+                        "width": 100,
+                        "height": 60
                     },
-                    {
-                        "@type": "Organization",
-                        "@id": "https://kilimanibistrocaterers.co.ke/#organization",
-                        "name": "Kilimanibistro Caterers",
-                        "url": "https://kilimanibistrocaterers.co.ke/",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://kilimanibistrocaterers.co.ke/Images/logo01.png",
-                            "width": 100,
-                            "height": 60
-                        },
-                        "aggregateRating": {
-                            "@type": "AggregateRating",
-                            "ratingValue": "4.9",
-                            "reviewCount": "127"
-                        },
-                        "contactPoint": [{
-                            "@type": "ContactPoint",
-                            "telephone": "+254722233257",
-                            "contactType": "customer service",
-                            "areaServed": "KE",
-                            "availableLanguage": ["en"]
-                        }],
-                        "sameAs": [
-                            "https://www.facebook.com/profile.php?id=100063911658532",
-                            "https://www.instagram.com/kilimanibistro/?hl=en",
-                            "https://www.pinterest.com/kilimanibistro"
-                        ]
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "4.9",
+                        "reviewCount": "127"
                     },
-                    {
-                        "@type": "Service",
-                        "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#service",
-                        "serviceType": "Private Event Catering",
-                        "description": "Personalized catering for birthdays, anniversaries, and family celebrations in Nairobi.",
-                        "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
-                        "offers": [
-                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Birthday Party Catering" } },
-                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anniversary Celebration Catering" } },
-                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Gathering Catering" } }
-                        ],
-                        "image": "https://kilimanibistrocaterers.co.ke/Images/cater04.jpeg",
-                        "areaServed": {
-                            "@type": "GeoCircle",
-                            "geoMidpoint": { "@type": "GeoCoordinates", "latitude": -1.2921, "longitude": 36.8219 },
-                            "geoRadius": 50000
-                        }
-                    },
-                    {
-                        "@type": "WebPage",
-                        "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#page",
-                        "url": "https://kilimanibistrocaterers.co.ke/private-event-catering.html",
-                        "name": "Private Event Catering in Nairobi | Kilimanibistro",
-                        "description": "Restaurant-quality catering for birthdays, anniversaries, and celebrations in Nairobi and surrounds.",
-                        "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
-                        "inLanguage": "en",
-                        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://kilimanibistrocaterers.co.ke/Images/cater04.jpeg" },
-                        "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
-                        "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#service" }
-                    },
-                    {
-                        "@type": "FAQPage",
-                        "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#faq",
-                        "inLanguage": "en",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "How much does birthday party catering cost in Nairobi?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "Birthday party catering costs depend on menu, guest count, and service style. Contact us for a custom quote within 24 hours." }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Can you do last-minute party catering in Nairobi?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer last-minute and same-day party catering for urgent celebrations in Nairobi." }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What's included in your party catering packages?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "Our packages include menu planning, food preparation, delivery, setup, and optional service staff and tableware." }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Do you cater at home or external venues?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "We cater at homes, gardens, offices, and external venues across Nairobi and surrounding areas." }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Can you accommodate dietary requirements for guests?",
-                                "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We offer vegetarian, vegan, gluten-free, and allergy-friendly options for all private events." }
-                            }
-                        ]
+                    "contactPoint": [{
+                        "@type": "ContactPoint",
+                        "telephone": "+254722233257",
+                        "contactType": "customer service",
+                        "areaServed": "KE",
+                        "availableLanguage": ["en"]
+                    }],
+                    "sameAs": [
+                        "https://www.facebook.com/profile.php?id=100063911658532",
+                        "https://www.instagram.com/kilimanibistro/?hl=en",
+                        "https://www.pinterest.com/kilimanibistro"
+                    ]
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#service",
+                    "serviceType": "Private Event Catering",
+                    "description": "Personalized catering for birthdays, anniversaries, and family celebrations in Nairobi.",
+                    "provider": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                    "offers": [
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Birthday Party Catering" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Anniversary Celebration Catering" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family Gathering Catering" } }
+                    ],
+                    "image": "https://kilimanibistrocaterers.co.ke/Images/cater04.jpeg",
+                    "areaServed": {
+                        "@type": "GeoCircle",
+                        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": -1.2921, "longitude": 36.8219 },
+                        "geoRadius": 50000
                     }
-                ]
-            }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#page",
+                    "url": "https://kilimanibistrocaterers.co.ke/private-event-catering.html",
+                    "name": "Private Event Catering in Nairobi | Kilimanibistro",
+                    "description": "Restaurant-quality catering for birthdays, anniversaries, and celebrations in Nairobi and surrounds.",
+                    "isPartOf": { "@id": "https://kilimanibistrocaterers.co.ke/#website" },
+                    "inLanguage": "en",
+                    "primaryImageOfPage": { "@type": "ImageObject", "url": "https://kilimanibistrocaterers.co.ke/Images/cater04.jpeg" },
+                    "publisher": { "@id": "https://kilimanibistrocaterers.co.ke/#organization" },
+                    "mainEntity": { "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#service" }
+                },
+                {
+                    "@type": "FAQPage",
+                    "@id": "https://kilimanibistrocaterers.co.ke/private-event-catering.html#faq",
+                    "inLanguage": "en",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "How much does birthday party catering cost in Nairobi?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "Birthday party catering costs depend on menu, guest count, and service style. Contact us for a custom quote within 24 hours." }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can you do last-minute party catering in Nairobi?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer last-minute and same-day party catering for urgent celebrations in Nairobi." }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "What's included in your party catering packages?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "Our packages include menu planning, food preparation, delivery, setup, and optional service staff and tableware." }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Do you cater at home or external venues?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "We cater at homes, gardens, offices, and external venues across Nairobi and surrounding areas." }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Can you accommodate dietary requirements for guests?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We offer vegetarian, vegan, gluten-free, and allergy-friendly options for all private events." }
                         }
-                    }
-                ]
-        ]
-    }
+                    ]
+                }
+            ]
+        }
     </script>
     
     <!-- 𝗔𝗜 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗦𝗘𝗢 -->
