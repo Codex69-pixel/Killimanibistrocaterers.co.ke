@@ -289,7 +289,7 @@ function initChatWidget() {
                         window.location.href = 'contact.html#quote';
                         break;
                     case 'follow':
-                        window.open('https://www.instagram.com/kilimanibistro/?hl=en', '_blank');
+                        window.open('https://www.instagram.com/kilimanibistrocaterers?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank');
                         break;
                     case 'contact':
                         window.location.href = 'contact.html';
